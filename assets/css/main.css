@@ -3038,7 +3038,7 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: "Montserrat", "Helvetica", Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h1,
@@ -3050,6 +3050,7 @@ h3,
 h4,
 .h4 {
   margin: 30px 0 0;
+  font-weight: 400;
 }
 
 h1,
@@ -6593,7 +6594,7 @@ License - nucleoapp.com/license/
   background-color: #B2AFAB;
   background-position: center center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 80vh;
   max-height: 999px;
   overflow: hidden;
   position: relative;

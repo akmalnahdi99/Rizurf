@@ -1,20 +1,3 @@
-/*!
-
- =========================================================
- * Paper Kit - v2.2.0
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/paper-kit
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
-
- * Coded by www.creative-tim.com
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
-
 
 var transparent = true;
 var big_image;
@@ -316,3 +299,15 @@ function debounce(func, wait, immediate) {
     if (immediate && !timeout) func.apply(context, args);
   };
 };
+
+// on scroll change logo
+$(function () { 
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) { 
+          $('.navbar .navbar-brand img').attr('src','assets/img/rizurflogo-color.png');
+      }
+      if ($(this).scrollTop() < 300) { 
+          $('.navbar .navbar-brand img').attr('src','assets/img/rizurflogo-white.png');
+      }
+  })
+});
