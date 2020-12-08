@@ -303,10 +303,10 @@ function debounce(func, wait, immediate) {
 // on scroll change logo
 $(function () { 
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 300) { 
+      if ($(this).scrollTop() > 100) { 
           $('.navbar .navbar-brand img').attr('src','assets/img/rizurflogo-color.png');
       }
-      if ($(this).scrollTop() < 300) { 
+      if ($(this).scrollTop() < 100) { 
           $('.navbar .navbar-brand img').attr('src','assets/img/rizurflogo-white.png');
       }
   })

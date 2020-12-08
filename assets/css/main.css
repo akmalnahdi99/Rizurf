@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 .bootstrap-switch {
   display: inline-block;
   direction: ltr;
@@ -3037,7 +3039,7 @@ select,
 textarea {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 400;
 }
 
@@ -3140,7 +3142,7 @@ h3 .small {
 .footer-big h5,
 .footer-big h4,
 .media .media-heading {
-  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .title,
@@ -3166,7 +3168,8 @@ h3 .small {
 }
 
 .description {
-  color: #9A9A9A;
+  color: #474747;
+  font-weight: 500;
 }
 
 blockquote small {
@@ -3255,6 +3258,15 @@ blockquote small {
   margin-bottom: 25px;
   min-height: 32px;
 }
+.title::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #51cbce;
+  margin: 0 auto;
+  width: 25%;
+  position: relative;
+  bottom: -15px; /* your padding + border-width */
+}
 
 .title.text-center {
   margin-bottom: 50px;
@@ -3266,7 +3278,7 @@ body {
   color: #66615b;
   font-size: 14px;
   font-weight: 300;
-  font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 a {
@@ -6878,7 +6890,7 @@ License - nucleoapp.com/license/
 }
 
 .section {
-  padding: 70px 0;
+  padding: 60px 0 100px;
   position: relative;
   background-color: #FFFFFF;
 }
@@ -7846,6 +7858,9 @@ License - nucleoapp.com/license/
   .form-control+.form-control-feedback {
     padding-left: 0 !important;
   }
+  .page-header {
+    min-height: 100vh;
+}
 }
 
 @media screen and (min-width: 991px) {
