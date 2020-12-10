@@ -3235,10 +3235,6 @@ blockquote small {
   }
 }
 
-.footer .credits,
-.footer-nav {
-  line-height: 85px;
-}
 
 .footer .btn {
   margin-bottom: 0;
@@ -5697,7 +5693,6 @@ License - nucleoapp.com/license/
 }
 
 .carousel-control {
-  background-color: #f5593d;
   border-radius: 50%;
   opacity: 1;
   text-shadow: none;
@@ -5706,7 +5701,6 @@ License - nucleoapp.com/license/
 .carousel-control:hover,
 .carousel-control:focus {
   opacity: 1;
-  background-color: #f33816;
 }
 
 .carousel-control.left {
@@ -5799,6 +5793,21 @@ License - nucleoapp.com/license/
   background-attachment: fixed;
   position: relative;
   line-height: 20px;
+  padding: 40px 5px;
+}
+
+.footer.copyrighted {
+  padding: 10px 5px;
+  border-top: 0.02em solid #353535;
+}
+
+ul.footerlist {
+  padding-inline-start: 0px !important;
+}
+
+.footerlist li {
+  list-style-type: none;
+  line-height: 30px;
 }
 
 .footer .footer-nav ul {
@@ -5813,10 +5822,16 @@ License - nucleoapp.com/license/
 
 .footer nav>ul>li {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 5px;
   margin: 15px 3px;
   line-height: 20px;
   text-align: center;
+}
+
+.footer a.socialmediaicon {
+  font-size: 26px !important;
+  margin: 0px;
+  color: #51bcda !important;
 }
 
 .footer nav>ul a:not(.btn) {
@@ -5838,9 +5853,8 @@ License - nucleoapp.com/license/
 
 .footer .copyright {
   color: #777777;
-  padding: 10px 0px;
   font-size: 14px;
-  margin: 15px 3px;
+  margin: 8px 3px;
   line-height: 20px;
   text-align: center;
 }
@@ -5849,10 +5863,6 @@ License - nucleoapp.com/license/
   color: #EB5E28;
 }
 
-.footer {
-  background-color: #FFFFFF;
-  line-height: 36px;
-}
 
 .footer.footer-black h4 {
   color: #FFFFFF;
@@ -6208,7 +6218,7 @@ License - nucleoapp.com/license/
 }
 
 .card .card-body {
-  padding: 20px;
+  padding: 10px;
 }
 
 .card .card-body .card-title {
@@ -6923,7 +6933,7 @@ License - nucleoapp.com/license/
 }
 
 .section-dark-blue {
-  background-color: #506367;
+  background-color: #111E37;
   color: #FFFFFF;
 }
 
@@ -7088,6 +7098,8 @@ License - nucleoapp.com/license/
   h6 {
     font-size: 1em;
   }
+/* Navbar */
+
   .navbar .container {
     left: 0;
     width: 100%;
@@ -7105,6 +7117,9 @@ License - nucleoapp.com/license/
   .demo-header .motto {
     padding-top: 30% !important;
   }
+  .navbar-toggler {
+    border: 0px solid transparent;
+}
   .navbar-toggle .icon-bar {
     display: block;
     position: relative;
@@ -7426,6 +7441,7 @@ License - nucleoapp.com/license/
     border-bottom-color: white;
     border-top-color: white;
   }
+  /* end of Navigation */
   .footer .footer-nav,
   .footer .credits {
     margin: 0 auto;
@@ -7782,7 +7798,6 @@ License - nucleoapp.com/license/
     display: block;
     position: static;
     float: none;
-    background: transparent !important;
   }
   .navbar-translate {
     width: 100%;
