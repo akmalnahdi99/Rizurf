@@ -367,7 +367,8 @@
   font-size: 15px;
   transition: 0.4s;
   margin: 10px 0px;
-  border-radius:10px
+  border-radius:10px;
+  font-weight: 500;
 }
 .accordion:focus {
   outline: 0px auto -webkit-focus-ring-color !important;
@@ -392,6 +393,9 @@
   display: none;
   background-color: white;
   overflow: hidden;
+}
+.panel p{
+  font-weight: 500;
 }
 
 /* Price Range */

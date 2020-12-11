@@ -977,9 +977,9 @@
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled).active:focus, .show>.btn-primary.dropdown-toggle {
-  background-color: #34b5b8;
+  background-color: #1493b9;
   color: #FFFFFF;
-  border-color: #34b5b8;
+  border-color: #1493b9;
   box-shadow: none;
 }
 
