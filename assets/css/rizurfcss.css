@@ -371,6 +371,11 @@
 .bdrradius {
   border-radius: 10px;
 }
+.textbreak {
+  word-wrap: break-word;
+  clear: both;
+  white-space: normal;
+}
 
 /* TimeLine */
 

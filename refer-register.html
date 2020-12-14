@@ -36,13 +36,13 @@
 </head>
 
 <body class="landing-page sidebar-collapse refer-background" style="color: white;">
-  <nav class="navbar navbar-expand-lg noboxshadow borderbtm">
+  <nav class="navbar navbar-expand-lg  fixed-top navbar-transparent fixed-top" color-on-scroll="100">
 
     <div class="container-fluid">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="../index.html" rel="tooltip" title="Coded by Creative Tim"
+            <a class="navbar-brand logo" href="../index.html" rel="tooltip" title="Coded by Creative Tim"
                 data-placement="bottom" target="_blank">
-                <img src="assets/img/rizurflogo-color.png" width="180px">
+                <img src="assets/img/rizurflogo-white.png" width="180px">
             </a>
             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navigation" aria-controls="navigation-index" aria-expanded="false"
@@ -77,12 +77,22 @@
     </div>
 
 </nav>
+<div class="page-header page-header-xs" data-parallax="true" style="background-image: url('./assets/img/daniel-olahh.jpg');">
+  <div class="filter"></div>
+  <div class="container">
+    <div class="motto text-center">
+      <h2 class="m-0 mt-5" >Any Time, Any Place, Sign-Up</h2>
+    </div>
+  </div>
+</div>
+<section class="mt-5">
   <form>
     <div class="container">
-      <h1 class="m-4 mt-5 text-center title" style="color: white;">Sign up</h1>
-    <div class="row">
-      <div class="col-md-12">
-        <label>Name</label>
+     <div class="row justify-content-center"> 
+       <div class="col-sm-8 ">
+    <div class="row mt-5">
+      <div class="col-md-12 my-2">
+        
         <div class="input-group">
           <div class="input-group-prepend">
           </div>
@@ -91,18 +101,18 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
-        <label>Surname</label>
+      <div class="col-md-12 my-2">
+        
         <div class="input-group">
           <div class="input-group-prepend">
           </div>
-          <input type="text" class="form-control" placeholder="Surname" required>
+          <input type="text" class="form-control" placeholder="Surname">
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
-        <label>Email</label>
+      <div class="col-md-12 my-2">
+        
         <div class="input-group">
           <div class="input-group-prepend">
           </div>
@@ -111,8 +121,7 @@
       </div>
     </div>
       <div class="row">
-      <div class="col-md-12">
-        <label>Password</label>
+      <div class="col-md-12 my-2">
         <div class="input-group">
           <div class="input-group-prepend">
           </div>
@@ -121,16 +130,14 @@
       </div>
       </div>
       <div class="row">
-      <div class="col-md-3">
-        <label>Area</label>
+      <div class="col-md-3 col-5 my-2 pr-0">
         <div class="input-group">
           <div class="input-group-prepend">
           </div>
           <input type="text" class="form-control" placeholder="+60">
         </div>
       </div>
-      <div class="col-md-9">
-        <label>Phone number</label>
+      <div class="col-md-9 col-7 my-2">
         <div class="input-group">
           <div class="input-group-prepend">
           </div>
@@ -139,27 +146,31 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-3 col-xs-12">
-          <div class="input-group-desc mb-2">
-            <button class="btn btn-refer btn-primary mt-4" type="submit">Request OTP</button>
+      <div class="col-lg-3 col-5 my-2 pr-0">
+          <div class="input-group-desc">
+            <button class="btn btn-refer btn-primary" type="submit">Request OTP</button>
           </div>
       </div>
-      <div class="col-lg-9 col-xs-12">
-        <label>Enter OTP</label>
+      <div class="col-lg-9 col-7 my-2 ">
         <div class="input-group">
           <div class="input-group-prepend">
           </div>
-          <input type="number" class="form-control" placeholder="OTP" required>
+          <input type="number" class="form-control" placeholder="Enter OTP" required>
         </div>
       </div>
-  </div><p class="text-center mt-4">Already have an account? <a href="#">Sign in</a>.</p>
-  <div class="row mb-5 justify-content-center">
-    <div class="col-6"><a class=" btn btn-refer font-medium btn-primary mt-1" href="refer-steps.html">Sign up</a></div>
-        
+  </div>
+  <hr />
+  <div class="row mb-5 mt-5 justify-content-center">
+    <div class="col-lg-6 col-12">
+      <a class=" btn btn-refer font-medium btn-primary mt-1" href="refer-steps.html">Sign up</a>
+      <p class="text-center mt-4">Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
+</div>
+</div>
 </div>
     </div>
   </form>
-</div>
+  </section>
 <footer class="footer section-dark">
   <div class="container">
     <div class="row">
