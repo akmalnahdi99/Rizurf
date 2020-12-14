@@ -29,36 +29,67 @@
     .btn-refer {
         width: 100%;
      }
+     .blob-home {
+      background: black;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+      margin: 10px;
+      height: 20px;
+      width: 20px;
+      transform: scale(1);
+      animation: pulse-black 2s infinite;
+      margin: -38px 61px;
+      position: absolute;
+    }
   </style>
 </head>
 
 <body class="landing-page sidebar-collapse">
-    
+  <nav class="navbar navbar-expand-lg noboxshadow borderbtm">
+
+    <div class="container-fluid">
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="../index.html" rel="tooltip" title="Coded by Creative Tim"
+                data-placement="bottom" target="_blank">
+                <img src="assets/img/rizurflogo-color.png" width="180px">
+            </a>
+            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navigation" aria-controls="navigation-index" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <ul class="navbar-nav">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">How it Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                  <a href="../refer-home.html"><button class=" btn btn-primary"><i class="fas fa-house-user"></i> Home <div class="blob blob-home red"></div></button></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
     <div class="container">
-          <div class="row">
-              <div class="col-6">
-        <a class="navbar-brand justify-content-center" href="../index.html" rel="tooltip" title="Coded by Creative Tim" data-placement="bottom"
-          target="_blank">
-          <img src="assets/img/rizurflogo-color.png" width="180px">
-        </a>
-        </div>
-        <div class="col-6 pr-0 float-right">
-            <a href="refer-home.html" class="float-right mt-3">
-                <img class="float-right" src="assets/img/unnamed.png" width="50px">
-            </a> 
-        </div>
-        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-          aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-bar bar1"></span>
-          <span class="navbar-toggler-bar bar2"></span>
-          <span class="navbar-toggler-bar bar3"></span>
-        </button>
-      </div>
       <div class="row justify-content-center">
-      <h2 class="m-4 text-center">Referee Profile</h2>
+      <h2 class="m-4 text-center title" style="width: 80%;">Referee Profile</h2>
       </div>
       <div class="btn-row mb-5" onclick="location.href='referee-profile.html';">
-      <div class="row">
+      <div class="row mb-2">
               <div class="col-lg-6  md-12 text-left m-0">
                 <div class="media py-2">
                   <img src="assets/img/unnamed.png" width="80px" alt="generic place holder">
@@ -79,42 +110,42 @@
             </div>
             </div>
       </div>
-      <div class="row">
+      <div class="row mb-2">
             <div class="col-md-9  xs-12 text-left m-0">
                         <h5 class="mt-0 mb-0"><strong>Referee name </strong></h5>
                     <h5 class="mt-0 mb-0">Referee name</h5>
             </div>
         </div>
         <hr>
-        <div class="row">
+        <div class="row mb-2">
             <div class="col-md-9  xs-12 text-left m-0">
                         <h5 class="mt-0 mb-0"><strong>Referee contact number </strong></h5>
                     <h5 class="mt-0 mb-0">Referee contact number</h5>
             </div>
         </div>
         <hr>
-        <div class="row">
+        <div class="row mb-2">
             <div class="col-md-9  xs-12 text-left m-0">
                         <h5 class="mt-0 mb-0"><strong>Referee email ID</strong></h5>
                     <h5 class="mt-0 mb-0">Referee email ID</h5>
             </div>
         </div>
         <hr>
-        <div class="row">
+        <div class="row mb-2">
             <div class="col-md-9  xs-12 text-left m-0">
                         <h5 class="mt-0 mb-0"><strong>Date of referal </strong></h5>
                     <h5 class="mt-0 mb-0">Date of referal</h5>
             </div>
         </div>
         <hr>
-        <div class="row">
+        <div class="row mb-2">
             <div class="col-md-9  xs-12 text-left m-0">
                         <h5 class="mt-0 mb-0"><strong>Status </strong></h5>
                     <h5 class="mt-0 mb-0">Not Rented</h5>
             </div>
         </div>
       <hr>
-      <div class="row">
+      <div class="row mb-2">
         <div class="col-md-9  xs-12 text-left m-0">
                     <h5 class="mt-0 mb-0"><strong>Earnings </strong></h5>
                 <h5 class="mt-0 mb-0">-</h5>

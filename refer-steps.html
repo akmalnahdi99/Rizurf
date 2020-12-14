@@ -16,155 +16,129 @@
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
   <!-- CSS Files -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/css/main.css" rel="stylesheet" />
   <link href="assets/css/rizurfcss.css" rel="stylesheet" />
   <style>
-    
-
-.blue-bg {
-  background-color: #4D4545;
-  color: #17a3b6;
-  height: 100%;
-}
-
-.circle {
-  font-weight: bold;
-  padding: 15px 20px;
-  border-radius: 50%;
-  background-color: #17a3b6;
-  color: #4D4545;
-  max-height: 50px;
-  z-index: 2;
-}
-
-.how-it-works.row {
-  display: flex;
-}
-.how-it-works.row .col-2 {
-  display: inline-flex;
-  align-self: stretch;
-  align-items: center;
-  justify-content: center;
-}
-.how-it-works.row .col-2::after {
-  content: "";
-  position: absolute;
-  border-left: 3px solid #17a3b6;
-  z-index: 1;
-}
-.how-it-works.row .col-2.bottom::after {
-  height: 50%;
-  left: 50%;
-  top: 50%;
-}
-.how-it-works.row .col-2.middle::after {
-  height: 100%;
-  left: 50%;
-  top: 0;
-}
-.how-it-works.row .col-2.full::after {
-  height: 100%;
-  left: calc(50% - 3px);
-}
-.how-it-works.row .col-2.top::after {
-  height: 50%;
-  left: 50%;
-  top: 0;
-}
-
-.timeline div {
-  padding: 0;
-  height: 40px;
-}
-.timeline hr {
-  border-top: 3px solid #17a3b6;
-  margin: 0;
-  top: 17px;
-  position: relative;
-}
-.timeline .col-2 {
-  display: flex;
-  overflow: hidden;
-}
-.timeline .corner {
-  border: 3px solid #17a3b6;
-  width: 100%;
-  position: relative;
-  border-radius: 15px;
-}
-.timeline .top-right {
-  left: 50%;
-  top: -50%;
-}
-.timeline .left-bottom {
-  left: -50%;
-  top: calc(50% - 3px);
-}
-.timeline .top-left {
-  left: -50%;
-  top: -50%;
-}
-.timeline .right-bottom {
-  left: 50%;
-  top: calc(50% - 3px);
-}
-.background-sticker {
-  position: absolute;
-  opacity: 0.5;
-  left: 17%;
-  top: 66%;
-}
-.background-sticker img {
-  position: absolute;
-  opacity: 0.5;
-}
-.background-sticker2 {
-  position: absolute;
-  opacity: 0.5;
-  left: 17%;
-  top: 6%;
-}
-.background-sticker2 img {
-  position: absolute;
-  opacity: 0.5;
-}
-.background-sticker3 {
-  position: absolute;
-  opacity: 0.5;
-  left: 74%;
-  top: 12%;
-}
-.background-sticker3 img {
-  position: absolute;
-  opacity: 0.5;
-}
-.background-sticker4 {
-  position: absolute;
-  opacity: 0.5;
-  left: 15%;
-  top: 32%;
-}
-.background-sticker4 img {
-  position: absolute;
-  opacity: 0.5;
-}
-.background-sticker5 {
-  position: absolute;
-  opacity: 0.5;
-  left: 72%;
-  top: 45%;
-}
-.background-sticker5 img {
-  position: absolute;
-  opacity: 0.5;
-}
+   
 .img-hide {
   display: none;
 }
-  </style>
+.main-timeline:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.refer-timeline {
+  height: 200px;
+}
+
+.blob-home {
+      background: black;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+      margin: 10px;
+      height: 20px;
+      width: 20px;
+      transform: scale(1);
+      animation: pulse-black 2s infinite;
+      margin: -38px 61px;
+      position: absolute;
+    }
+.main-timeline .refer-timeline{
+    width: calc(50% + 40px);
+    float: left;
+}
+.main-timeline .timeline-content{
+    color: #777;
+    background: linear-gradient(to right,#17a3b6, #111e37);
+    padding: 30px 95px 40px 45px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.main-timeline .timeline-content:hover{ text-decoration: none; }
+.main-timeline .timeline-content:before{
+    content: '';
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 20px;
+    bottom: 20px;
+    z-index: -1;
+}
+.main-timeline .timeline-icon{
+    color: #111e37;
+    font-size: 55px;
+    line-height: 55px;
+    position: absolute;
+    bottom: 35px;
+    right: 15px;
+    z-index: 1;
+}
+.main-timeline .timeline-title{
+    color: #111e37;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 3px;
+}
+.main-timeline .description{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+.main-timeline .refer-timeline:nth-child(even){ float: right; }
+.main-timeline .refer-timeline:nth-child(even) .timeline-content{ padding: 30px 40px 40px 100px; }
+.main-timeline .refer-timeline:nth-child(even) .timeline-content:before{
+    right: 20px;
+    left: 0;
+}
+.main-timeline .refer-timeline:nth-child(even) .timeline-icon{
+    right: auto;
+    left: 15px;
+}
+.main-timeline .refer-timeline:nth-child(4n+2) .timeline-content{
+    background: linear-gradient(to right, #111e37, #17a3b6);
+}
+.main-timeline .refer-timeline:nth-child(4n+2) .timeline-icon,
+.main-timeline .refer-timeline:nth-child(4n+2) .timeline-title{
+    color: #111e37;
+}
+@media screen and (max-width:990px){
+    .main-timeline .refer-timeline{ width: 70%; }
+}
+@media screen and (max-width:767px){
+    .main-timeline .refer-timeline,
+    .main-timeline .refer-timeline:nth-child(even){
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
+@media screen and (max-width:479px){
+    .main-timeline .refer-timeline-content,
+    .main-timeline .refer-timeline:nth-child(even) .timeline-content{
+        text-align: center;
+        padding: 65px 25px 35px 35px;
+    }
+    .main-timeline .refer-timeline:nth-child(even) .timeline-content{ padding: 65px 35px 35px 25px; }
+    .main-timeline .refer-timeline-icon,
+    .main-timeline .refer-timeline:nth-child(even) .timeline-icon{
+        transform: translateX(-50%);
+        top: 0;
+        left: 50%;
+        right: auto;
+        bottom: auto;
+    }
+    .main-timeline .timeline-title{ font-size: 22px; }
+}
+</style>
 </head>
 
 <body class="landing-page sidebar-collapse"> 
@@ -198,10 +172,8 @@
                 </li>
                 <li class="nav-item">
                 </li>
-                <li class="nav-item d-flex">
-                  <a href="refer-home.html" class="float-right mt-3">
-                    <img src="assets/img/profile-user.svg" width="50px">
-                  </a> 
+                <li class="nav-item">
+                  <a href="../refer-home.html"><button class=" btn btn-primary"><i class="fas fa-house-user"></i> Home <div class="blob blob-home red"></div></button></a>
                 </li>
             </ul>
         </div>
@@ -209,129 +181,81 @@
     </div>
 
 </nav>
-<div class="page-header" style="background-color: white">
   <div class="container">
     <h4 class="mb-5 mt-5 text-center">Start referring today by following these steps</h4>
-        <!--first section-->
-        <div class="row align-items-center how-it-works mt-3">
-            <div class="col-2 text-center bottom">
-                <div class="circle">1</div>
-            </div>
-            <div class="col-6">
-                <h5>Step 1</h5>
-                <p>Provide the details of the potential customer that would like to rent a property</p>
-            </div>
-            <div class="col-4 background-sticker2">
-              <img class="img-responsive willhide" src="assets/img/paper.svg" width="180px">
-            </div>
-        </div>
-        <!--path between 1-2-->
-        <div class="row timeline">
-            <div class="col-2">
-                <div class="corner top-right"></div>
-            </div>
-            <div class="col-8">
-                <hr/>
-            </div>
-            <div class="col-2">
-                <div class="corner left-bottom"></div>
-            </div>
-        </div>
-        <!--second section-->
-        <div class="row align-items-center justify-content-end how-it-works">
-            <div class="col-6 text-right">
-                <h5>Step 2</h5>
-                <p>Send the link to the customer</p>
-            </div>
-            <div class="col-2 text-center full">
-                <div class="circle">2</div>
-            </div>
-            <div class="col-4 background-sticker3">
-              <img src="assets/img/users.svg" width="180px">
-            </div>
-        </div>
-        <!--path between 2-3-->
-        <div class="row timeline">
-            <div class="col-2">
-                <div class="corner right-bottom"></div>
-            </div>
-            <div class="col-8">
-                <hr/>
-            </div>
-            <div class="col-2">
-                <div class="corner top-left"></div>
-            </div>
-        </div>
-        <!--third section-->
-        <div class="row align-items-center how-it-works">
-            <div class="col-2 text-center middle">
-                <div class="circle">3</div>
-            </div>
-            <div class="col-6">
-                <h5>Step 3</h5>
-                <p>Track the status of the customer through Rizurf dashboard</p>
-            </div>
-            <div class="col-4 background-sticker4">
-              <img src="assets/img/analysis.svg" width="180px">
+       
+
+        <!--second design trial-->
+        <div class="row">
+          <div class="col-md-12">
+              <div class="main-timeline">
+                  <div class="refer-timeline mb-3">
+                    <div class="timeline-content">
+                          <h3 class="timeline-title">Step 1</h3>
+                          <p class="description" style="position: relative;">
+                              Provide the details of a potential customer would like to rent a property
+                          </p>
+                          <div class="timeline-icon"><img class="willhide" src="assets/img/paper.svg" style="opacity: 0.3;" alt="" width="100px"></div>
+                        </div>
+                  </div>
+                  <div class="refer-timeline mb-3">
+                    <div class="timeline-content">
+                          
+                          <h3 class="timeline-title">Step 2</h3>
+                          <p class="description">
+                              Send link to the customer
+                          </p>
+                          <div class="timeline-icon"><img class="willhide" src="assets/img/users.svg" style="opacity: 0.3;" alt="" width="100px"></div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <div class="main-timeline">
+                <div class="refer-timeline mb-3">
+                  <div class="timeline-content">
+                        <div class="timeline-icon"><img class="willhide" src="assets/img/analysis.svg" style="opacity: 0.3;" alt="" width="100px"></div>
+                        <h3 class="timeline-title">Step 3</h3>
+                        <p class="description">
+                            Track the status of the customer through Rizurf dashboard
+                        </p>
+                      </div>
+                </div>
+                <div class="refer-timeline mb-3">
+                    <div class="timeline-content">
+                        <div class="timeline-icon"><img class="willhide" src="assets/img/updated.svg" style="opacity: 0.3;" alt="" width="100px"></div>
+                        <h3 class="timeline-title">Step 4</h3>
+                        <p class="description">
+                            Get the programee updates
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <!--path between 3-4-->
-        <div class="row timeline">
-            <div class="col-2">
-                <div class="corner top-right"></div>
-            </div>
-            <div class="col-8">
-                <hr/>
-            </div>
-            <div class="col-2">
-                <div class="corner left-bottom"></div>
-            </div>
-        </div>
-        <!--fourth section-->
-        <div class="row align-items-center justify-content-end how-it-works">
-            <div class="col-6 text-right">
-                <h5>Step 4</h5>
-                <p>Get the programme updates</p>
-            </div>
-            <div class="col-2 text-center full">
-                <div class="circle">4</div>
-            </div>
-            <div class="col-4 background-sticker5">
-              <img src="assets/img/updated.svg" width="180px">
-            </div>
-        </div>
-        <!--path between 4-5-->
-        <div class="row timeline">
-            <div class="col-2">
-                <div class="corner right-bottom"></div>
-            </div>
-            <div class="col-8">
-                <hr/>
-            </div>
-            <div class="col-2">
-                <div class="corner top-left"></div>
-            </div>
-        </div>
-        <!--fifth section-->
-        <div class="row align-items-center how-it-works">
-            <div class="col-2 text-center top">
-                <div class="circle">5</div>
-            </div>
-            <div class="col-6">
-                <h5>Step 5</h5>
-                <p>Earn referral fees once the persons rents a property</p>
-            </div>
-            <div class="col-4 background-sticker">
-              <img src="assets/img/salary.svg" width="180px">
-            </div>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+          <div class="main-timeline mb-3">
+              <div class="refer-timeline">
+                  <a href="#" class="timeline-content">
+                      <div class="timeline-icon"><img class="willhide" src="assets/img/salary.svg" style="opacity: 0.3;" alt="" width="100px"></div>
+                      <h3 class="timeline-title">Step 5</h3>
+                      <p class="description">
+                          Earn referal fees once that person rents a property
+                      </p>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
     <div class="mb-5">
         <div class="row justify-content-center mt-5">
         <a class=" btn btn-primary mt-1" href="refer-form.html">Refer now</a>
         </div>
     </div>
   </div>
-</div>
   <footer class="footer section-dark">
     <div class="container">
       <div class="row">
