@@ -106,6 +106,33 @@
 
 .wrap {
   margin: 0 auto;
+
+  
+}
+/* pulsing lines */
+.bloblines {
+  border-bottom: 2px solid rgb(0, 180, 204) !important;
+  transform: scale(1);
+  animation: pulse-blue 2s infinite;
+}
+.bloblines::after {
+  border-bottom: 2px solid rgb(0, 180, 204) !important;
+  
+}
+
+@keyframes pulse-blue {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgb(0, 180, 204), 0.7;
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgb(0, 180, 204);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgb(0, 180, 204);
+  }
 }
 
 /* pulsing orbs */

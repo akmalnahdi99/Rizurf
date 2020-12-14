@@ -6867,8 +6867,8 @@ ul.footerlist {
     border-top: none;
     text-align: left;
     border-left: 1px solid #CCC5B9;
-    padding-right: 0px;
-    padding-left: 40px;
+    padding-right: 35px;
+    padding-left: 35px;
     padding-top: 15px;
     -webkit-transform: translateX(230px);
     -moz-transform: translateX(230px);
@@ -6896,7 +6896,7 @@ ul.footerlist {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.5em;
-    padding: 15px 0;
+    padding: 20px 10px;
   }
   .navbar-collapse .navbar-nav>.nav-item>.nav-link:hover, .navbar-collapse .navbar-nav>.nav-item>.nav-link:active {
     color: #403D39 !important;
