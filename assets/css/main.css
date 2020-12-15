@@ -3848,6 +3848,9 @@ License - nucleoapp.com/license/
   font-weight: 600;
   color: #66615B;
 }
+.navbar .navbar-nav .nav-item .nav-link.active {
+  border-bottom: 2px solid rgb(0, 180, 204) !important;
+}
 
 .navbar .navbar-nav .nav-item .nav-link p {
   margin: 0px 0px;
@@ -3944,6 +3947,10 @@ License - nucleoapp.com/license/
 
 .navbar.navbar-transparent .navbar-nav .nav-item .nav-link {
   color: #FFFFFF;
+}
+
+.navbar.navbar-transparent .navbar-nav .nav-item .nav-link.active {
+  border-bottom: 2px solid rgb(0, 180, 204) !important;
 }
 
 .navbar.navbar-transparent .navbar-toggler .navbar-toggler-bar {
