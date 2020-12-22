@@ -312,6 +312,15 @@ $(function () {
   })
 });
 
+$( window ).scroll(function() {
+  if($(window).scrollTop() > 200){
+    $('.shrinklogo').css({'width': '100'}); 
+  }else{
+      $('.shrinklogo').css({'width': '180'}); 
+  }
+ 
+});
+
 // messenger floation orbs
 
 
@@ -321,15 +330,11 @@ $(function () {
   };
   
   $.kc.fab = function(el, links, options){
-      // To avoid scope issues, use 'base' instead of 'this'
-      // to reference this class from internal events and functions.
       var base = this;
       
-      // Access to jQuery and DOM versions of element
       base.$el = $(el);
       base.el = el;
       
-      // Add a reverse reference to the DOM object
       base.$el.data("kc.fab", base);
       
       var main_fab_btn;
@@ -449,15 +454,6 @@ $(function () {
           
           
       };
-      
-      // Sample Function, Uncomment to use
-      // base.functionName = function(paramaters){
-      // 
-      // };
-
-
-      
-      // Run initializer
       base.init();
   };
   
@@ -470,5 +466,31 @@ $(function () {
   };
   
 })(jQuery);
+
+
+// horizontal scroller
+
+let scrollSpeed = 30;
+let scroller = document.getElementById("scroll");
+
+scroller.addEventListener("mousewheel", e=>{
+  // block if e.deltaY==0
+  if( !e.deltaY ) return;
+  // Set scrollDirection (-1 = up // 1 = down)
+  let scrollDirection = (e.deltaY > 0) ? 1 : -1;
+  // convert vertical scroll into horizontal
+  scroller.scrollLeft += scrollSpeed * scrollDirection;
+  let scrollLeft = Math.round(scroller.scrollLeft);
+  // calculate box total vertical scroll 
+  let maxScrollLeft = Math.round( scroller.scrollWidth - scroller.clientWidth );
+  // if element scroll has not finished scrolling
+  // prevent window to scroll
+  if( 
+    (scrollDirection === -1  && scrollLeft > 0) ||
+    (scrollDirection === 1 && scrollLeft < maxScrollLeft ) 
+  ) e.preventDefault()
+  // done!
+  return true;
+}, false);
 
 

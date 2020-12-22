@@ -31,10 +31,10 @@
 
         <div class="container">
           <div class="navbar-translate">
-            <a class="navbar-brand logo" href="../index.html" rel="tooltip" title="Coded by Creative Tim" data-placement="bottom"
-              target="_blank">
-              <img src="assets/img/rizurflogo-white.png" width="180px">
-            </a>
+            <a class="navbar-brand logo" href="../index.html" rel="tooltip" title="Rizur-Logo"
+          data-placement="bottom" target="_blank">
+          <img class="shrinklogo" src="assets/img/rizurflogo-white.png" style="width:180px">
+        </a>
             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
               aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-bar bar1"></span>
@@ -148,7 +148,7 @@
                                 </div>
                             </li>
                             <li class="timeline-inverted">
-                                <div class="timeline-badge primary">2</div>
+                                <div class="timeline-badge primary">3</div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
                                         <h4 class="timeline-title fontw-semibold">Move into your home</h4>
@@ -204,10 +204,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-6">
-                    <a href="../index.html" rel="tooltip" title="Coded by Creative Tim" data-placement="bottom"
-                        target="_blank">
-                        <img src="assets/img/rizurflogo-white.png" width="180px">
-                    </a>
+                    <a href="../index.html" rel="tooltip" title="Rizurf-Logo" data-placement="bottom" target="_blank">
+                        <img src="assets/img/rizurflogo-white.png" class="widthRes">
+                      </a>
                     <ul class="footerlist mt-3">
                         <li>
                             <a href="terms.html">Terms &amp; Conditions</a>
@@ -314,20 +313,7 @@
             </div>
         </div>
     </footer>
-    <div id="ss_menu" class="floatcircle" target="_blank">
-        <div>
-          <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."><i class="fab fa-whatsapp"></i></a>
-        </div>
-        <div>
-          <a href="https://www.jqueryscript.net/menu/"><i class="fab fa-facebook-messenger" style="top: -2px;"></i></a>
-        </div>
-        <div class="menu">
-          <div class="share" id="ss_toggle" data-rot="180">
-            <div class="circle"></div>
-            <div class="bar"></div>
-          </div>
-        </div>
-      </div>
+      <div class="kc_fab_wrapper"></div>
     <!--   Core JS Files   -->
     <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
     <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
@@ -338,32 +324,31 @@
     <script src="/assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
     <script src="/assets/js/rizurfjs.js" type="text/javascript"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-    <script>
-        $(document).ready(function(ev) {
-      var toggle = $('#ss_toggle');
-      var menu = $('#ss_menu');
-      var rot;
-      
-      $('#ss_toggle').on('click', function(ev) {
-        rot = parseInt($(this).data('rot')) - 180;
-        menu.css('transform', 'rotate(' + rot + 'deg)');
-        menu.css('webkitTransform', 'rotate(' + rot + 'deg)');
-        if ((rot / 180) % 2 == 0) {
-          //Moving in
-          toggle.parent().addClass('ss_active');
-          toggle.addClass('close');
-        } else {
-          //Moving Out
-          toggle.parent().removeClass('ss_active');
-          toggle.removeClass('close');
-        }
-        $(this).data('rot', rot);
-      });
-    
-     
-      
-    });
-      </script>
 </body>
-
+<script>
+    $(document).ready(function () {
+      var links = [
+        {
+          "bgcolor": "#51cbce",
+          "icon": "<i class='fas fa-comments fa-xs'></i>"
+        },
+        {
+          "url": "https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.",
+          "bgcolor": "#25D366",
+          "color": "#fffff",
+          "icon": "<i class='fab fa-whatsapp'></i>",
+          "target": "_blank",
+          "title": "Whatsapp Us"
+        },
+        {
+          "url": "http://www.example.com",
+          "bgcolor": "#fff",
+          "color": "#006AFF",
+          "icon": "<i class='fab fa-facebook-messenger'></i>",
+          "title": "FB Messenger Us"
+        }
+      ]
+      $('.kc_fab_wrapper').kc_fab(links);
+    })
+  </script>
 </html>
