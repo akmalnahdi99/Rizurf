@@ -529,9 +529,9 @@ video {
 
 .videoframe {
   position: relative;
-  border-radius: 45px;
+  border-radius: 30px;
   border-style: outset;
-  border: 30px #fff solid;
+  border: 5px #fff solid;
   background-color: #fff;
   margin: auto;
 }
@@ -1152,7 +1152,6 @@ button.kc_fab_main_btn {
     transform: scale(2.5);
   }
 }
-
 /* Nucelo Icons */
 
 #icons-row i.nc-icons {
@@ -1588,7 +1587,7 @@ button.kc_fab_main_btn {
   }
   .videoframe {
     width: 100%;
-    border: 15px solid #fff;
+    border: 5px solid #fff;
     padding: 0;
   }
 }
