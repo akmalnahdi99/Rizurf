@@ -27,8 +27,8 @@
     <link href="assets/css/main.css" rel="stylesheet" />
     <link href="assets/css/rizurfcss.css" rel="stylesheet" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/css/lightgallery.css" />
+    <link rel="stylesheet" href="assets/css/lightslider.css" />
+    <link rel="stylesheet" href="assets/css/lightgallery.css" />
 
     <!-- mapbox -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
@@ -86,7 +86,7 @@
     <section class="section section-dark-blue pb-0">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-sm-8 mb-5">
+                <div class="col-md-6 mb-5">
                     <div class="unitgallery">
                         <ul id="lightSlider">
                             <li data-src="http://sachinchoolur.github.io/lightslider/img/cS-1.jpg"
@@ -144,11 +144,11 @@
             </div>
             <hr />
             <div class="d-grid gap-2 d-flex mediabar mb-5 mt-5">
-                    <a id="galleryphoto" href="#" class="btn-width300 ">
-                        <img src="assets/img/photos.svg" alt="..." width="30px" />
-                        <br />
-                        Photos
-                    </a>
+                <a id="galleryphoto" href="#" class="btn-width300 ">
+                    <img src="assets/img/photos.svg" alt="..." width="30px" />
+                    <br />
+                    Photos
+                </a>
                 <div id="galleryvideo" class="btn-width300 ">
                     <a href="https://www.youtube.com/watch?v=bFIh_ZDerT8">
                         <img src="assets/img/youtube.svg" alt="..." width="30px" />
@@ -190,13 +190,27 @@
     <section class="section grey-bg">
         <div class="container-sm">
             <div class="row justify-content-start">
-                <div class="col-12">
-                    <h1 class="font-xlarge fontw-bold">
+                <div class="col col align-self-end">
+                    <h1 class="font-xlarge fontw-bold ">
                         Condominium at KL Gateway Residence
                     </h1>
                     <p>KL Gateway Residence, Bangsar South</p>
                     <hr />
                 </div>
+                <div class="col-md-5 align-self-end">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h4 class="card-title font-large"><img src="assets/img/moneybag.svg" alt="..."
+                                    width="40px" /> &nbsp; Refer &amp; Earn</h4>
+                            <a href="#" class="btn btn-block btn-warning text-black mt-3" style="width: 100%;">
+                                <sup class="m-0">Up to &nbsp;</sup>
+                                <span class="font-medium fontw-bold m-0">RM 2,500</span>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-7 mb-3">
 
                     <div class="row text-center mb-5">
@@ -272,61 +286,78 @@
                                     <h4 class="mt-0 font-normal">list-2019 32</h4>
                                 </div>
                             </div>
-                            <hr />
-                            <h4 class="fontw-semibold">
-                                Details
-                            </h4>
-                            <ul class="detaillist mt-2">
-                                <li>Property type: Service residence</li>
-                                <li>Floor area: 65 m²</li>
-                                <li>Floor: 4th</li>
-                                <li>Elevator: yes</li>
-                                <li>Number of bathrooms: 2</li>
-                                <li>Parking: yes, covered</li>
-                            </ul>
                         </div>
                     </div>
                     <div class="card" id="facilities">
                         <div class="card-body text-justify px-5 py-5">
                             <h3 class="fontw-semibold">
-                                Facilities
+                                Facilities &amp; Amenities
                             </h3>
+                            <hr />
                             <p class="mt-2">Common areas available at this building</p>
-                            <div class="row mt-3">
-                                <div class="col-sm-4 col-6 p-2">
-                                    <p><img src="assets/img/cctv.svg" alt="..." width="30px" /> &nbsp; Security</p>
+                            <div class="row mt-5">
+                                <div class="col-sm-4 col-6 p-2 py-3">
+                                    <p><img src="assets/img/cctv.svg" alt="..." width="30px" /> &nbsp; 24 hours Security
+                                    </p>
                                 </div>
-                                <div class="col-sm-4 col-6 p-2">
-                                    <p><img src="assets/img/dumbbell.svg" alt="..." width="30px" /> &nbsp; Gym</p>
+                                <div class="col-sm-4 col-6 p-2 py-3">
+                                    <p><img src="assets/img/dumbbell.svg" alt="..." width="30px" /> &nbsp; Gymnasium</p>
                                 </div>
-                                <div class="col-sm-4 col-6 p-2">
-                                    <p><img src="assets/img/barbecue.svg" alt="..." width="30px" /> &nbsp; BBQ</p>
+                                <div class="col-sm-4 col-6 p-2 py-3">
+                                    <p><img src="assets/img/barbecue.svg" alt="..." width="30px" /> &nbsp; Barbeque area
+                                    </p>
+                                </div>
+                                <div class="col-sm-4 col-6 p-2 py-3">
+                                    <p><img src="assets/img/parking.svg" alt="..." width="30px" /> &nbsp; Car
+                                        park</p>
                                 </div>
 
-
-                                <div class="col-sm-4 col-6 p-2">
-                                    <p><img src="assets/img/parking.svg" alt="..." width="30px" /> &nbsp; Parking</p>
+                                <div class="col-sm-4 col-6 p-2 py-3">
+                                    <p><img src="assets/img/car-park.svg" alt="..." width="30px" /> &nbsp; Covered car
+                                        park</p>
                                 </div>
-                                <div class="col-sm-4 col-6 p-2">
+                                <div class="col-sm-4 col-6 p-2 py-3">
                                     <p><img src="assets/img/slider.svg" alt="..." width="30px" /> &nbsp; Playground</p>
                                 </div>
-                                <div class="col-sm-4 col-6 p-2">
-                                    <p><img src="assets/img/swimmer.svg" alt="..." width="30px" /> &nbsp; Pool</p>
+                                <div class="col-sm-4 col-6 p-2 py-3">
+                                    <p><img src="assets/img/swimming.svg" alt="..." width="30px" /> &nbsp; Aqua Gym Pool
+                                    </p>
+                                </div>
+                                <div class="col-sm-4 col-6 p-2 py-3">
+                                    <p><img src="assets/img/swimming-pool3.svg" alt="..." width="30px" /> &nbsp; Lap Pool</p>
+                                </div>
+                                <div class="col-sm-4 col-6 p-2 py-3">
+                                    <p><img src="assets/img/waddingpool2.svg" alt="..." width="30px" /> &nbsp; Wadding Pool
+                                    </p>
                                 </div>
 
 
-                                <div class="col-sm-4 col-6 p-2">
-                                    <p><img src="assets/img/coffee-cup.svg" alt="..." width="30px" /> &nbsp; Cafe</p>
+                                <div class="col-sm-4 col-6 p-2 py-3">
+                                    <p><img src="assets/img/coffee.svg" alt="..." width="30px" /> &nbsp; Cafe</p>
                                 </div>
-                                <div class="col-sm-4 col-6 p-2">
-                                    <p><img src="assets/img/store.svg" alt="..." width="30px" /> &nbsp; Convenience
+                                <div class="col-sm-4 col-6 p-2 py-3">
+                                    <p><img src="assets/img/supermarket.svg" alt="..." width="30px" /> &nbsp; Convenience
                                         Store
                                     </p>
                                 </div>
-                                <div class="col-sm-4 col-6 p-2">
-                                    <p><img src="assets/img/saunaroom.svg" alt="..." width="30px" /> &nbsp; Sauna</p>
+                                <div class="col-sm-4 col-6 p-2 py-3">
+                                    <p><img src="assets/img/cinemahall.svg" alt="..." width="30px" /> &nbsp; Multi Purpose
+                                        Hall
+                                    </p>
                                 </div>
-                                <div class="col-sm-4 col-6 p-2">
+                                <div class="col-sm-4 col-6 p-2 py-3">
+                                    <p><img src="assets/img/loungearea.svg" alt="..." width="30px" /> &nbsp; Lounge Area
+                                    </p>
+                                </div>
+                                <div class="col-sm-4 col-6 p-2 py-3">
+                                    <p><img src="assets/img/joystick.svg" alt="..." width="30px" /> &nbsp; Games Room
+                                    </p>
+                                </div>
+                                <div class="col-sm-4 col-6 p-2 py-3">
+                                    <p><img src="assets/img/saunacolor.svg" alt="..." width="30px" /> &nbsp; Sauna &amp;
+                                        Steam</p>
+                                </div>
+                                <div class="col-sm-4 col-6 p-2 py-3">
                                     <p><img src="assets/img/bus.svg" alt="..." width="30px" /> &nbsp; Shuttle Bus</p>
                                 </div>
                             </div>
@@ -612,8 +643,8 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery.min.js"></script>
+    <script src="assets/js/plugins/lightslider.js"></script>
+    <script src="assets/js/plugins/lightgallery-all.js"></script>
 
     <script type="text/javascript">
         $('#galleryphoto').on('click', function () {
@@ -623,15 +654,14 @@
                 dynamicEl: [{
                     "src": 'http://sachinchoolur.github.io/lightslider/img/cS-1.jpg',
                     'thumb': 'http://sachinchoolur.github.io/lightslider/img/cS-1.jpg',
-                    'subHtml': '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>'
+                    
                 }, {
                     'src': '../static/img/2.jpg',
                     'thumb': '../static/img/thumb-2.jpg',
-                    'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>"
+                    
                 }, {
                     'src': '../static/img/3.jpg',
                     'thumb': '../static/img/thumb-3.jpg',
-                    'subHtml': "<h4>Coniston Calmness</h4><p>Beautiful morning</p>"
                 }]
             })
 
@@ -650,25 +680,25 @@
         $('#lightSlider').lightSlider({
 
             item: 1,
+            arrows: true,
             loop: true,
             gallery: true,
-            vertical: true,
             slideMargin: 2,
             enableDrag: true,
             thumbLeft: true,
+            thumbItem: 8,
             auto: true,
             speed: 600,
-            currentPagerPosition: 'left',
+            currentPagerPosition: 'right',
             zoom: true,
             fullScreen: true,
             keyPress: true,
-            mode: 'fade',
             autWidth: true,
             responsive: [
                 {
                     breakpoint: 767,
                     settings: {
-                        item: 2,
+                        item: 1,
                         slideMove: 1,
                         slideMargin: 6,
                     }
@@ -686,15 +716,9 @@
                     selector: '#lightSlider .lslide',
                     zoom: true,
                     fullScreen: true,
+                    pager: true,
                 });
             }
-        });
-    </script>
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiYXlvbm1hcGJveCIsImEiOiJja2lpYWtqYnoxZThtMnhxdzBmMzZzN3JpIn0.DiZsVtA4btIJLkCwVctWaw';
-        var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11'
         });
     </script>
     <script>
