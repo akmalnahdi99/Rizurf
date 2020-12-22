@@ -1410,7 +1410,7 @@
 
 .btn-warning.btn-link:hover, .btn-warning.btn-link:focus, .btn-warning.btn-link:active, .btn-warning.btn-link.active, .btn-warning.btn-link:focus:active, .open>.btn-warning.btn-link.dropdown-toggle {
   background-color: transparent !important;
-  color: #fab526 !important;
+  color: #e28000 !important;
 }
 
 .btn-warning.btn-link .caret {
