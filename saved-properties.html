@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img//apple-icon.png">
+    <link rel="icon" type="image/png" href="./assets/img//favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Searched By Building Name | Rizurf | Some Catchy Phrases
+    </title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+        name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/rizurfcss.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- mapbox -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body class="landing-page sidebar-collapse">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top noboxshadow borderbtm">
+
+        <div class="container-fluid">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="../index.html" rel="tooltip" title="Coded by Creative Tim"
+                    data-placement="bottom" target="_blank">
+                    <img src="assets/img/rizurflogo-color.png" width="150px">
+                </a>
+                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navigation" aria-controls="navigation-index" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link bloblines" href="refer-register.html">Refer &amp; Earn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="howitworks.html">How it Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="accountpage.html">My Account</a>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- End Navbar -->
+    <br/>
+
+    <section class="mainsection">
+        <div class="container">
+            <div class="justify-content-center">
+                <div class="listingunit">
+                    <div class="container-fluid">
+                        <div class="searchfilter">
+                            <p><strong>3</strong> saved properties <br /><strong>KL Gateway
+                                    Residence</strong> </p>
+                            <div class="dropdown mb-5px">
+
+                                <a class="dropdown-toggle font-normal text-black" data-toggle="dropdown" href="#"
+                                    role="button" aria-haspopup="true" aria-expanded="false">Sort by: <br />Best
+                                    Match</a>
+
+                                <ul class="dropdown-menu dropdown-menu-right dropdown-info">
+                                    <a class="dropdown-item" href="#pk">Sort by: Best Match</a>
+                                    <a class="dropdown-item" href="#pk">Sort by: Price</a>
+                                    <a class="dropdown-item" href="#pk">Sort by: New Arrivals</a>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="m-1" />
+                        <div class="nav-tabs-navigation mt-2">
+                            <div class="nav-tabs-wrapper font-medium">
+                                <ul id="tabs" class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active font-normal" data-toggle="tab" href="#home"
+                                            role="tab">Available
+                                            Units
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link font-normal" data-toggle="tab" href="#profile"
+                                            role="tab">Overview</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="list tab-content" id="my-tab-content">
+                            <div class="tab-pane active" id="home" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-12 ">
+                                        <div class="card" onclick="location.href='propertypage.html';"
+                                        style="cursor:pointer;">
+                                            <div class="card-img-top ">
+                                                <div>
+                                                    <img class="d-block img-fluid" src="./assets/img/soroush-karimi.jpg"
+                                                        alt="First slide">
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">RM 2,000</h5>
+                                                <div class="d-flex iconsmall">
+                                                    <p class="mr-2 ml-1"><i class='bx bx-bed'></i> 3</p>
+                                                    <p class="mr-2 ml-1"><i class='bx bx-bath'></i> 2</p>
+                                                    <p class="mr-2 ml-1"><i class='bx bx-car'></i> 3</p>
+                                                    <p class="mr-2 ml-1"><i class='bx bx-grid'></i> 3000 sqft.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 " >
+                                        <div class="card" onclick="location.href='propertypage.html';"
+                                        style="cursor:pointer;">
+                                            <div class="card-img-top ">
+                                                <div>
+                                                    <img class="d-block img-fluid" src="./assets/img/soroush-karimi.jpg"
+                                                        alt="First slide">
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">RM 2,000</h5>
+                                                <div class="d-flex iconsmall">
+                                                    <p class="mr-2 ml-1"><i class='bx bx-bed'></i> 3</p>
+                                                    <p class="mr-2 ml-1"><i class='bx bx-bath'></i> 2</p>
+                                                    <p class="mr-2 ml-1"><i class='bx bx-car'></i> 3</p>
+                                                    <p class="mr-2 ml-1"><i class='bx bx-grid'></i> 3000 sqft.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12" >
+                                        <div class="card" onclick="location.href='propertypage.html';"
+                                        style="cursor:pointer;">
+                                            <div class="card-img-top ">
+                                                <div>
+                                                    <img class="d-block img-fluid" src="./assets/img/soroush-karimi.jpg"
+                                                        alt="First slide">
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">RM 2,000</h5>
+                                                <div class="d-flex iconsmall">
+                                                    <p class="mr-2 ml-1"><i class='bx bx-bed'></i> 3</p>
+                                                    <p class="mr-2 ml-1"><i class='bx bx-bath'></i> 2</p>
+                                                    <p class="mr-2 ml-1"><i class='bx bx-car'></i> 3</p>
+                                                    <p class="mr-2 ml-1"><i class='bx bx-grid'></i> 3000 sqft.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <nav aria-label="...">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                </li>
+                                                <li class="page-item ml-auto">
+                                                    <a class="page-link" href="#">Next</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="profile" role="tabpanel">
+                                <div class="container">
+                                    <div class="">
+                                        <div class="row justify-content-center ">
+                                            <div class="col-lg-8 col-sm-6 col-12 ">
+                                                <h3 class="mb-3">KL Gateway Residence</h3>
+                                            </div>
+                                            <div class="col-lg-8 col-sm-6 col-12 ">
+                                                <div class="card page-carousel">
+                                                    <div id="carouselExampleIndicators" class="carousel slide"
+                                                        data-ride="carousel">
+                                                        <ol class="carousel-indicators">
+                                                            <li data-target="#carouselExampleIndicators"
+                                                                data-slide-to="0" class="active"></li>
+                                                            <li data-target="#carouselExampleIndicators"
+                                                                data-slide-to="1"></li>
+                                                            <li data-target="#carouselExampleIndicators"
+                                                                data-slide-to="2"></li>
+                                                        </ol>
+                                                        <div class="carousel-inner" role="listbox">
+                                                            <div class="carousel-item active">
+                                                                <img class="d-block img-fluid"
+                                                                    src="./assets/img/soroush-karimi.jpg"
+                                                                    alt="First slide">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img class="d-block img-fluid"
+                                                                    src="./assets/img/federico-beccari.jpg"
+                                                                    alt="Second slide">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img class="d-block img-fluid"
+                                                                    src="./assets/img/joshua-stannard.jpg"
+                                                                    alt="Third slide">
+                                                            </div>
+                                                        </div>
+                                                        <a class="left carousel-control carousel-control-prev"
+                                                            href="#carouselExampleIndicators" role="button"
+                                                            data-slide="prev">
+                                                            <span class="fa fa-angle-left"></span>
+                                                            <span class="sr-only">Previous</span>
+                                                        </a>
+                                                        <a class="right carousel-control carousel-control-next"
+                                                            href="#carouselExampleIndicators" role="button"
+                                                            data-slide="next">
+                                                            <span class="fa fa-angle-right"></span>
+                                                            <span class="sr-only">Next</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 col-sm-6 col-12 ">
+                                                <p class="m-0">Rent price range:</p>
+                                                <h4 class="m-0">RM 1,500 - RM 5,300</h4>
+                                                <br>
+                                                <p class="m-0">Sale price range:</p>
+                                                <h4 class="m-0">RM 490,000 - RM 3,800,000</h4>
+                                            </div>
+                                        </div>
+                                        <br /><br />
+
+
+                                    </div>
+                                    <hr />
+                                    <div class="container py-4">
+                                        <h3 class="fontw-semibold">Building Details</h3>
+                                        <hr class="hrblack" />
+                                        <div>
+                                            <div class="row" style="list-style:none;">
+                                                <div class="col-12 mt-3">
+                                                    <p>Address</p>
+                                                    <h4 class="mt-0">No. 2, Jalan Kerinchi, Gerbang Kerinchi Lestari,
+                                                        59200
+                                                        Kuala Lumpur</h4>
+                                                    <hr class="hrblack" />
+                                                </div>
+
+                                                <div class="col-6 mt-3">
+                                                    <p>Developer</p>
+                                                    <h4 class="mt-0">Suez Capital Sdn Bhd</h4>
+                                                    <hr class="hrblack" />
+                                                </div>
+
+                                                <div class="col-6 mt-3">
+                                                    Type
+                                                    <h4 class="mt-0">Service Residence</h4>
+                                                    <hr class="hrblack" />
+                                                </div>
+
+                                                <div class="col-6 mt-3">
+                                                    Tenure
+                                                    <h4 class="mt-0">Leasehold</h4>
+                                                    <hr class="hrblack" />
+                                                </div>
+
+                                                <div class="col-6 mt-3">
+                                                    Completion date
+                                                    <h4 class="mt-0">2017</h4>
+                                                    <hr class="hrblack" />
+                                                </div>
+
+                                                <div class="col-6 mt-3">
+                                                    Total units
+                                                    <h4 class="mt-0">714</h4>
+                                                    <hr class="hrblack" />
+                                                </div>
+
+                                                <div class="col-6 mt-3">
+                                                    Total levels
+                                                    <h4 class="mt-0">38</h4>
+                                                    <hr class="hrblack" />
+                                                </div>
+
+                                                <div class="col-6 mt-3">
+                                                    Total blocks
+                                                    <h4 class="mt-0">2</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-5">
+                                            <h3>Facilities &amp; Amenities</h3>
+                                            <hr class="hrblack" />
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="my-3"><img src="assets/img/security-camera.svg" alt="..."
+                                                            width="25px" /> 24 hours security</p>
+                                                    <p class="my-3"><img src="assets/img/swimming-pool2.svg" alt="..."
+                                                            width="25px" /> Aqua gym pool</p>
+                                                    <p class="my-3"><img src="assets/img/barbeque.svg" alt="..."
+                                                            width="25px" /> Barbeque area</p>
+                                                    <p class="my-3"><img src="assets/img/covered-carpark.svg" alt="..."
+                                                            width="25px" /> Covered car park</p>
+                                                    <p class="my-3"><img src="assets/img/cinema.svg" alt="..."
+                                                            width="25px" /> Function Room</p>
+                                                    <p class="my-3"><img src="assets/img/game-controller.svg" alt="..."
+                                                            width="25px" /> Games room</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="my-3"><img src="assets/img/barbell.svg" alt="..."
+                                                            width="25px" /> Gymnasium</p>
+                                                    <p class="my-3"><img src="assets/img/swimming-pool.svg" alt="..."
+                                                            width="25px" /> Lap pool</p>
+                                                    <p class="my-3"><img src="assets/img/lounge.svg" alt="..."
+                                                            width="25px" /> Lounge area</p>
+                                                    <p class="my-3"><img src="assets/img/construction.svg" alt="..."
+                                                            width="25px" /> Multi purpose hall</p>
+                                                    <p class="my-3"><img src="assets/img/sauna.svg" alt="..."
+                                                            width="25px" /> Sauna and Steam</p>
+                                                    <p class="my-3"><img src="assets/img/waddingpool.svg" alt="..."
+                                                            width="25px" /> Wading pool</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                            <h3 class="modal-title text-left" id="exampleModalLabel">Filters</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="row">
+                                                            <div class="col-sm-5 mb-3">
+                                                                <h4>Property Type</h4>
+                                                            </div>
+                                                            <div class="col-sm-7 font-medium fontw-normal">
+                                                                <div class="form-check">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="">
+                                                                        Entire Apartments
+                                                                        <span class="form-check-sign"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="">
+                                                                        Studios
+                                                                        <span class="form-check-sign"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="">
+                                                                        Rooms in shared apartment
+                                                                        <span class="form-check-sign"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="">
+                                                                        Student residences
+                                                                        <span class="form-check-sign"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="row">
+                                                            <div class="col-sm-5 mb-3">
+                                                                <h4>Rental Duration</h4>
+                                                            </div>
+                                                            <div class="col-sm-7 font-medium fontw-normal">
+                                                                <div class="form-check">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="">
+                                                                        1-6 months
+                                                                        <span class="form-check-sign"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="">
+                                                                        6-12 months
+                                                                        <span class="form-check-sign"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="">
+                                                                        12 months +
+                                                                        <span class="form-check-sign"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="row mt-4">
+                                                    <div class="col-sm-6">
+                                                        <div class="row">
+                                                            <div class="col-sm-5 mb-3">
+                                                                <h4>Advance Search</h4>
+                                                            </div>
+                                                            <div class="col-sm-7 font-medium fontw-normal">
+                                                                <div class="form-check">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="">
+                                                                        Checked - A homechecker has visited this
+                                                                        property
+                                                                        <span class="form-check-sign"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="">
+                                                                        Top landlord - Landlords who really care
+                                                                        <span class="form-check-sign"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="">
+                                                                        Instant booking - Get accepted immediately
+                                                                        <span class="form-check-sign"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="row">
+                                                            <div class="col-md-5 mb-3">
+                                                                <h4>Bills Included</h4>
+                                                            </div>
+                                                            <div class="col-md-7 font-medium fontw-normal">
+                                                                <div class="form-check">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="">
+                                                                        Wifi
+                                                                        <span class="form-check-sign"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="">
+                                                                        Water
+                                                                        <span class="form-check-sign"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="">
+                                                                        Electricity
+                                                                        <span class="form-check-sign"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="">
+                                                                        Gas
+                                                                        <span class="form-check-sign"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary btn-block btn-lg">View 70
+                                                result</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            <div class="col-sm-5 p-0 willhide">
+                <div id='map' style='width: 100%; height: 100%;'></div>
+            </div>
+        <br/> <br/> 
+    </div></div>
+        <footer class="footer copyrighted section-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="credits ml-auto mr-auto">
+                        <span class="copyright">
+                            ©
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> Rizurf Technology Sdn Bhd - All rights reserved
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+    </section>
+
+
+    <!--   Core JS Files   -->
+    <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/assets/js/plugins/bootstrap-switch.js"></script>
+    <script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <script src="/assets/js/plugins/moment.min.js"></script>
+    <script src="/assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="/assets/js/rizurfjs.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [75, 300],
+                slide: function (event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                " - $" + $("#slider-range").slider("values", 1));
+        });
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
