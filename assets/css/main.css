@@ -3887,7 +3887,7 @@ License - nucleoapp.com/license/
 }
 
 .navbar .navbar-collapse:after {
-  background-color: #FFFCF5;
+  background-color: #fff;
 }
 
 .navbar #navbarSupportedContent .nav-item {
@@ -4844,6 +4844,10 @@ License - nucleoapp.com/license/
   width: 100%;
 }
 
+.modal-header .close {
+  padding: 0;
+    margin: 6px auto;
+}
 
 .modal.open {
   display: block;
@@ -4868,8 +4872,12 @@ License - nucleoapp.com/license/
   bottom: 0;
 }
 
-.modal-header {
+.modal-header.bdrbottom {
   border-bottom: 1px solid #DDDDDD;
+}
+
+.modal-header {
+  border-bottom: 0px solid #DDDDDD;
   padding: 20px;
   text-align: center;
   display: block !important;
@@ -4895,6 +4903,9 @@ License - nucleoapp.com/license/
   border: 0 none;
   border-radius: 0px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content.fullhigh {
   min-height: 100vh;
 }
 
@@ -4907,7 +4918,7 @@ License - nucleoapp.com/license/
   border-top-right-radius: 0rem !important;
 }
 
-.modal-dialog {
+.modal-dialog.modalfull {
   padding-top: 0px;
   margin: 0 !important;
 }
@@ -6980,7 +6991,7 @@ ul.footerlist {
   }
   .navbar-collapse .navbar-nav>.nav-item>.nav-link {
     margin: 0px 0px;
-    color: #9A9A9A !important;
+    color: #000 !important;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
@@ -7290,6 +7301,12 @@ ul.footerlist {
   }
   .lightbox .modal-dialog {
     width: 960px;
+  }
+}
+@media (min-width: 576px) {
+  .modal-dialog.modalfull {
+    max-width: 100%;
+    margin: 0rem auto;
   }
 }
 
