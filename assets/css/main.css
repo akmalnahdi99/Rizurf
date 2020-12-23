@@ -440,35 +440,6 @@
   border-color: #f5593d;
 }
 
-/*!
- * Datetimepicker for Bootstrap 3
- * ! version : 4.7.14
- * https://github.com/Eonasdan/bootstrap-datetimepicker/
- */
-
-.sr-only, .bootstrap-datetimepicker-widget .btn[data-action="incrementHours"]::after, .bootstrap-datetimepicker-widget .btn[data-action="incrementMinutes"]::after, .bootstrap-datetimepicker-widget .btn[data-action="decrementHours"]::after, .bootstrap-datetimepicker-widget .btn[data-action="decrementMinutes"]::after, .bootstrap-datetimepicker-widget .btn[data-action="showHours"]::after, .bootstrap-datetimepicker-widget .btn[data-action="showMinutes"]::after, .bootstrap-datetimepicker-widget .btn[data-action="togglePeriod"]::after, .bootstrap-datetimepicker-widget .btn[data-action="clear"]::after, .bootstrap-datetimepicker-widget .btn[data-action="today"]::after, .bootstrap-datetimepicker-widget .picker-switch::after, .bootstrap-datetimepicker-widget table th.prev::after, .bootstrap-datetimepicker-widget table th.next::after {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-.bootstrap-datetimepicker-widget {
-  list-style: none;
-}
-
-.bootstrap-datetimepicker-widget a .btn:hover {
-  background-color: transparent;
-}
-
-.bootstrap-datetimepicker-widget.dropdown-menu {
-  padding: 4px;
-  width: 16em;
-}
 
 #ss_menu {
   bottom: 30px;
@@ -1199,11 +1170,12 @@
 
 .btn.btn-link {
   color: #66615B;
+  text-decoration: none;
 }
 
 .btn.btn-link:hover, .btn.btn-link:focus, .btn.btn-link:active, .btn.btn-link.active, .btn.btn-link:focus:active, .open>.btn.btn-link.dropdown-toggle {
-  background-color: transparent !important;
-  color: #403D39 !important;
+  background-color: #51cbce !important;
+  color: #000 !important;
 }
 
 .btn.btn-link .caret {
@@ -2562,7 +2534,7 @@ h6, .h6 {
 
 p {
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1.3em;
   margin-bottom: 5px;
 }
 
@@ -5220,6 +5192,10 @@ License - nucleoapp.com/license/
   padding: 40px 5px;
 }
 
+.footer.footermb {
+  margin-bottom: auto;
+}
+
 .footer.copyrighted {
   padding: 10px 5px;
   border-top: 0.02em solid #353535;
@@ -7388,6 +7364,7 @@ ul.footerlist {
   .footer a.socialmediaicon {
     font-size: 20px !important;
   }
+  
 }
 
 @media screen and (max-width: 1367px) {
