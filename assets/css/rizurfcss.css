@@ -425,6 +425,9 @@
 .bdrradius {
   border-radius: 10px;
 }
+.bdrradius-none {
+  border-radius: 0;
+}
 
 .mediabar {
   justify-content: center!important;
@@ -555,6 +558,10 @@ video {
 
 .btn-width300 {
   width: 300px;
+}
+
+.btn-width100 {
+  width: 110px;
 }
 
 .sticky {
