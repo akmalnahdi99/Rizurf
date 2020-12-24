@@ -344,32 +344,36 @@
   </footer>
   <div class="modal fade" id="signInmodal" tabindex="-1" aria-labelledby="signInmodalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content modal-brdradius">
-        <div class="modal-header text-start">
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-          <h3 class="modal-title m-0 fontw-bold" id="signInmodalLabel">Sign-In</h3>
+        <div class="modal-content modal-brdradius">
+            <div class="modal-header text-start">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h3 class="modal-title m-0 fontw-bold text-center" id="signInmodalLabel">Sign-In</h3>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="emailUser" aria-describedby="emailHelp"
+                            placeholder="Email Address or Phone Number*" required>
+                    </div>
+                    <div class="mb-5">
+                        <input type="password" class="form-control" id="passwordInput" placeholder="Password*"
+                            required>
+                        <label class="fontw-normal ms-2 mt-1">Forgot your password? Don't worry <a
+                                href="signup.html">Reset Here</a></label>
+                    </div>
+                    <hr />
+                    <div class="d-grid gap-2 mt-3">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                    <p class="mt-3 text-center fontw-normal">Don't have an account? <a href="signup.html">Sign-Up
+                            Here</a></p>
+                </form>
+            </div>
         </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <input type="email" class="form-control" id="emailUser" aria-describedby="emailHelp" placeholder="Email Address or Phone Number*" required>
-            </div>
-            <div class="mb-5">
-              <input type="password" class="form-control" id="passwordInput" placeholder="Password*" required>
-            <label class="fontw-normal ms-2 mt-1">Forgot your password? Don't worry <a href="signup.html">Reset Here</a></label>
-            </div>
-            <hr />
-            <div class="d-grid gap-2 mt-3">
-              <button class="btn btn-primary" type="submit">Submit</button>
-            </div>
-            <p class="mt-3 text-center fontw-normal">Don't have an account? <a href="signup.html">Sign-Up Here</a></p>
-          </form>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
   <div class="kc_fab_wrapper"></div>
   <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
