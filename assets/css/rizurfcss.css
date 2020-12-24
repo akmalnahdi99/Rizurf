@@ -749,6 +749,9 @@ button.close {
 .timeline.timelinebtm:before {
   bottom: 120px;
 }
+.timeline.timelinebtm2:before {
+  bottom: 122px;
+}
 
 .timeline:before {
   top: 50px;
@@ -791,7 +794,6 @@ button.close {
   border-radius: 2px;
   padding: 20px;
   position: relative;
-  border-bottom: 1px solid #d4d4d4;
 }
 
 .timeline>li>.timeline-panel:after {

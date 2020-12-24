@@ -303,20 +303,20 @@ function debounce(func, wait, immediate) {
 // on scroll change logo
 $(function () { 
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) { 
+      if ($(this).scrollTop() > 90) { 
           $('.navbar .logo img').attr('src','assets/img/rizurflogo-color.png');
       }
-      if ($(this).scrollTop() < 100) { 
+      if ($(this).scrollTop() < 90) { 
           $('.navbar .logo img').attr('src','assets/img/rizurflogo-white.png');
       }
   })
 });
 
 $( window ).scroll(function() {
-  if($(window).scrollTop() > 200){
+  if($(window).scrollTop() > 80){
     $('.shrinklogo').css({'width': '100'}); 
   }else{
-      $('.shrinklogo').css({'width': '180'}); 
+      $('.shrinklogo').css({'width': '150'}); 
   }
  
 });
