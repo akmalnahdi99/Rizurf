@@ -2059,6 +2059,7 @@ textarea.form-control {
   padding-left: 35px;
   line-height: 26px;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 .form-check .form-check-sign::before, .form-check .form-check-sign::after {
@@ -2080,8 +2081,8 @@ textarea.form-control {
 }
 
 .form-check .form-check-sign::after {
-  font-family: 'FontAwesome';
-  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
   top: -1px;
   text-align: center;
   font-size: 15px;
@@ -2662,7 +2663,7 @@ blockquote small {
 body {
   color: #000;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -4842,6 +4843,10 @@ License - nucleoapp.com/license/
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.modal .modal-brdradius {
+  border-radius: 10px;
 }
 
 .modal-header .close {
