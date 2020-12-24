@@ -4843,6 +4843,11 @@ License - nucleoapp.com/license/
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 99999999;
+}
+
+.modal-backdrop {
+  z-index: 99999;
 }
 
 .modal .modal-brdradius {
@@ -7385,6 +7390,10 @@ ul.footerlist {
   }
   .footer a.socialmediaicon {
     font-size: 20px !important;
+  }
+  
+  .footer a.socialmediaicon img{
+    width: 20px;
   }
   
 }
