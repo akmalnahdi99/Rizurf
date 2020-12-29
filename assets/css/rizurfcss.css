@@ -599,6 +599,15 @@ button.close {
   appearance: none;
 }
 
+/* sign up background */
+
+.signup-bg {
+}
+
+/* feature div */
+.feature {
+  display: none;
+}
 
 
 /* content navigation */
@@ -738,12 +747,36 @@ button.close {
   width: 100%;
 }
 
+/* splide slider */
+
+.splide__pagination {
+  position: relative;
+  z-index: 1;
+  bottom: -1.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+}
+.splide__slide {
+  margin: 10px;
+}
+
+.splide-res {
+  display: block;
+}
+
+
 /* TimeLine */
 
 .timeline {
   list-style: none;
   padding: 20px 0 20px;
   position: relative;
+}
+
+.timeline.timelinenone:before {
+  content: none;
+  display: none;
 }
 
 .timeline.timelinebtm:before {
@@ -1637,6 +1670,12 @@ button.kc_fab_main_btn {
   }
   .shrinklogo {
     width: 150px;
+  }
+  .splide-res {
+    display: none;
+  }
+  .feature {
+    display: block;
   }
 }
 
