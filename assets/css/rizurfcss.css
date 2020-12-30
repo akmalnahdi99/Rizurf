@@ -599,10 +599,6 @@ button.close {
   appearance: none;
 }
 
-/* sign up background */
-
-.signup-bg {
-}
 
 /* feature div */
 .feature {
@@ -776,6 +772,14 @@ button.close {
 
 .timeline.timelinenone:before {
   content: none;
+  display: none;
+}
+.timeline.horiz-style {
+  overflow: scroll;
+  display: flex;
+}
+
+.timeline.horiz-style::-webkit-scrollbar {
   display: none;
 }
 

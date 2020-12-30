@@ -8,13 +8,15 @@
   <link rel="icon" type="image/png" href="../assets/img//favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Rizurf | Some Catchy Phrases
+    Sign-Up | Rizurf | Some Catchy Phrases
   </title>
 
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
     name='viewport' />
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
@@ -22,6 +24,8 @@
   <!-- CSS Files -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
   <link href="assets/css/main.css" rel="stylesheet" />
   <link href="assets/css/rizurfcss.css" rel="stylesheet" />
   <style>
@@ -35,14 +39,13 @@
   </style>
 </head>
 
-<body class="landing-page sidebar-collapse refer-background" >
-  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="90">
-
+<body class="landing-page sidebar-collapse refer-background">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <div class="navbar-translate">
-        <a class="navbar-brand logo" href="../index.html" rel="tooltip" title="Rizurf-Logo" data-placement="bottom"
+        <a class="navbar-brand" href="../index.html" rel="tooltip" title="Rizurf" data-placement="bottom"
           target="_blank">
-          <img class="shrinklogo" src="assets/img/rizurflogo-white.png">
+          <img src="assets/img/rizurflogo-color.png" width="150px" alt="..." />
         </a>
         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
           aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +57,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navigation">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link bloblines" href="refer-register.html">Refer &amp; Earn</a>
+            <a class="nav-link bloblines" href="refer-steps.html">Refer &amp; Earn</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="publishaproperty.html">Publish a property</a>
@@ -65,39 +68,47 @@
           <li class="nav-item">
             <a class="nav-link" href="aboutus.html">About Us</a>
           </li>
+          <li class="nav-item">
+          </li>
           <li class="nav-item d-flex">
             <a class="nav-link pr-0" href="javascript:void(0)" data-bs-toggle="modal"
               data-bs-target="#signInmodal">Sign-In</a>
-            <span class="nav-link px-0" style="cursor: pointer;">|</span>
+            <span class="nav-link px-2">|</span>
             <a class="nav-link pl-0" href="signup.html">Sign-Up</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="page-header page-header-xs" data-parallax="true"
-    style="background-image: url('./assets/img/howitworks.jpg');">
-    <div class="filter"></div>
-    <div class="container">
+  <!-- <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('./assets/img/signup2.jpg');">
+  <div class="filter"></div>
+  <div class="container">
       <div class="motto text-center">
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="wrap">
-              <h2 class="m-0 mt-5">Any Time, Any Place, Sign-Up</h2>
-            </div>
-          </div>
+          <div class="row justify-content-center">
+              <div class="col-md-8">
+                  <div class="wrap">
+                      <h2 class="m-0 mt-5">Any Time, Any Place, Sign-Up</h2>
+                  </div>
+              </div>
 
-        </div>
+          </div>
       </div>
-    </div>
   </div>
+</div> -->
   <div class="main">
     <div class="section-dark-blue section mt-5">
-      <form>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-sm-8 ">
+      <div class="row m-0">
+        <div class="col-sm-6 align-self-center signup-bg text-center">
 
+          <img src="./assets/img/rockethome.svg" alt="..." width="250px" />
+          <h2 class="mt-5 ">Refer &amp; Earn, Sign-Up!</h2>
+          <p class="mb-5 mt-3">Create an account. Tell us who you are</p>
+
+
+        </div>
+        <div class="col-sm-6">
+          <form action="refer-steps.html" class="needs-validation" novalidate>
+            <div class="container px-md-5">
               <div class="row">
                 <div class="col-md-12 my-2">
                   <div class="input-group">
@@ -107,7 +118,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="row">
                 <div class="col-md-12 my-2">
                   <div class="input-group">
@@ -119,14 +129,14 @@
               </div>
 
               <div class="row">
-                <div class="col-md-6 my-2 pr-0">
+                <div class="col-6 my-2 pr-0">
                   <div class="input-group">
                     <div class="input-group-prepend">
                     </div>
                     <input type="password" class="form-control" placeholder="Password*" required>
                   </div>
                 </div>
-                <div class="col-md-6 my-2">
+                <div class="col-6 my-2">
                   <div class="input-group">
                     <div class="input-group-prepend">
                     </div>
@@ -136,7 +146,6 @@
               </div>
 
               <div class="row">
-
                 <div class="col-md-3 col-5 my-2 pr-0">
                   <select class="form-control">
                     <option selected>MY +60</option>
@@ -166,190 +175,244 @@
                   </div>
                 </div>
               </div>
-              <div class="form-check mt-5 justify-content-center text-center">
-                <label class="form-check-label">
-                  <input class="form-check-input fontw-normal" type="checkbox" value="">
-                  Agree to Terms &amp; Conditions
-                  <span class="form-check-sign"></span>
-                </label>
-              </div>
               <hr />
               <div class="row mb-5 mt-5 justify-content-center">
                 <div class="col-lg-6 col-12">
-                  <a class=" btn btn-refer font-medium btn-primary mt-1" href="refer-steps.html">Sign up</a>
-                  <p class="text-center mt-4">Already have an account? <a href="#">Sign in</a>.</p>
+
+                  <div class="form-check mt-5 justify-content-center text-center">
+                    <label class="form-check-label" for="invalidCheck">
+                      <input class="form-check-input fontw-normal" id="invalidCheck" type="checkbox" value="" required>
+                      Agree to Terms &amp; Conditions
+                      <span class="form-check-sign"></span>
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                  <button class=" btn btn-refer font-medium btn-primary mt-1" href="refer-steps.html">Sign up</button>
+
+                  <p class="text-center mt-4">Already have an account? <a href="javascript:void(0)"
+                      data-bs-toggle="modal" data-bs-target="#signInmodal">Sign in</a>.</p>
                 </div>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer section-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-6">
+            <a href="../index.html" rel="tooltip" title="Rizurf-Logo" data-placement="bottom" target="_blank">
+              <img src="assets/img/rizurflogo-white.png" class="widthRes">
+            </a>
+            <ul class="footerlist mt-3">
+              <li>
+                <a href="terms.html">Terms &amp; Conditions</a>
+              </li>
+              <li>
+                <a href="privacy.html">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="cookies.html">Cookies Policy</a>
+              </li>
+              <li>
+                <a href="workwithus.html">Work With Us</a>
+              </li>
+              <li>
+                <a href="sitemap.html">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-6 quicklinks-mt">
+            <h5 class="mb-3 text-white">QuickLinks</h5>
+            <hr />
+            <ul class="footerlist mt-3">
+              <li>
+                <a href="refer-steps.html">Refer &amp; Earn</a>
+              </li>
+              <li>
+                <a href="publishaproperty.html">Publish a property</a>
+              </li>
+              <li>
+                <a href="howitworks.html">How it Works</a>
+              </li>
+              <li>
+                <a href="aboutus.html">About Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-lg-12 col-sm-12 col-6 mb-3">
+                <h5 class="mb-3 text-white">Account</h5>
+                <hr />
+                <ul class="footerlist">
+                  <li>
+                    <a class="me-2" href="javascript:void(0)" data-bs-toggle="modal"
+                      data-bs-target="#signInmodal">Sign-In</a>
+                    <span>|</span>
+                    <a class="ms-2" href="signup.html">Sign-Up</a>
+                  </li>
+                  <li>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-12 col-sm-12 col-6 ">
+                <h5 class="mb-3 text-white">Follow Us</h5>
+                <hr />
+                <nav class="footer-nav">
+                  <ul>
+                    <li>
+                      <a class="socialmediaicon" rel="tooltip" title="Like us on Facebook" data-placement="bottom"
+                        href="#" target="_blank">
+                        <img src="assets/img/facebook.svg" alt="..." width="30px" />
+
+                      </a>
+                    </li>
+                    <li>
+                      <a class="socialmediaicon" rel="tooltip" title="Follow us on Instagram" data-placement="bottom"
+                        href="#" target="_blank">
+                        <img src="assets/img/instagram.svg" alt="..." width="30px" />
+                      </a>
+                    </li>
+                    <li>
+                      <a class="socialmediaicon" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="#"
+                        target="_blank">
+                        <img src="assets/img/tik-tok.svg" alt="..." width="30px" />
+                      </a>
+                    </li>
+                    <li>
+                      <a class="socialmediaicon" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="#"
+                        target="_blank">
+                        <img src="assets/img/youtube.svg" alt="..." width="40px" />
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
         </div>
-      </form>
-    </div>
-  </div>
-  
-  <footer class="footer section-dark">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-6">
-          <a href="../index.html" rel="tooltip" title="Rizurf-Logo" data-placement="bottom" target="_blank">
-            <img src="assets/img/rizurflogo-white.png" class="widthRes">
-          </a>
-          <ul class="footerlist mt-3">
-            <li>
-              <a href="terms.html">Terms &amp; Conditions</a>
-            </li>
-            <li>
-              <a href="privacy.html">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="cookies.html">Cookies Policy</a>
-            </li>
-            <li>
-              <a href="workwithus.html">Work With Us</a>
-            </li>
-            <li>
-              <a href="sitemap.html">Sitemap</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4 col-6 quicklinks-mt">
-          <h5 class="mb-3 text-white">QuickLinks</h5>
-          <hr />
-          <ul class="footerlist mt-3">
-            <li>
-              <a href="refer-register.html">Refer &amp; Earn</a>
-            </li>
-            <li>
-              <a href="publishaproperty.html">Publish a property</a>
-            </li>
-            <li>
-              <a href="howitworks.html">How it Works</a>
-            </li>
-            <li>
-              <a href="aboutus.html">About Us</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <div class="row">
-            <div class="col-lg-12 col-sm-12 col-6 mb-3">
-              <h5 class="mb-3 text-white">Account</h5>
-              <hr />
-              <ul class="footerlist">
-                <li>
-                  <a class="me-2" href="javascript:void(0)" data-bs-toggle="modal"
-                    data-bs-target="#signInmodal">Sign-In</a>
-                  <span>|</span>
-                  <a class="ms-2" href="signup.html">Sign-Up</a>
-                </li>
-                <li>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-12 col-sm-12 col-6 ">
-              <h5 class="mb-3 text-white">Follow Us</h5>
-              <hr />
-              <nav class="footer-nav">
-                <ul>
-                  <li>
-                    <a class="socialmediaicon" rel="tooltip" title="Like us on Facebook" data-placement="bottom"
-                      href="#" target="_blank">
-                      <img src="assets/img/facebook.svg" alt="..." width="30px" />
-
-                    </a>
-                  </li>
-                  <li>
-                    <a class="socialmediaicon" rel="tooltip" title="Follow us on Instagram" data-placement="bottom"
-                      href="#" target="_blank">
-                      <img src="assets/img/instagram.svg" alt="..." width="30px" />
-                    </a>
-                  </li>
-                  <li>
-                    <a class="socialmediaicon" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="#"
-                      target="_blank">
-                      <img src="assets/img/tik-tok.svg" alt="..." width="30px" />
-                    </a>
-                  </li>
-                  <li>
-                    <a class="socialmediaicon" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="#"
-                      target="_blank">
-                      <img src="assets/img/youtube.svg" alt="..." width="40px" />
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+      </div>
+    </footer>
+    <footer class="footer copyrighted section-dark">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-12">
+            <div class="credits me-auto ms-auto">
+              <span class="copyright">
+                ©
+                <script>
+                  document.write(new Date().getFullYear())
+                </script> Rizurf Technology Sdn Bhd - All rights reserved
+              </span>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <footer class="footer copyrighted section-dark">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-12">
-          <div class="credits me-auto ms-auto">
-            <span class="copyright">
-              ©
-              <script>
-                document.write(new Date().getFullYear())
-              </script> Rizurf Technology Sdn Bhd - All rights reserved
-            </span>
+    </footer>
+
+    <div class="modal fade" id="signInmodal" tabindex="-1" aria-labelledby="signInmodalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-brdradius">
+          <div class="modal-header text-start">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h3 class="modal-title m-0 fontw-bold text-center" id="signInmodalLabel1">Sign-In</h3>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="emailUser" aria-describedby="emailHelp"
+                  placeholder="Email Address or Phone Number*" required>
+              </div>
+              <div class="mb-5">
+                <input type="password" class="form-control" id="passwordInput" placeholder="Password*" required>
+                <label class="fontw-normal ms-2 mt-1">Forgot your password? Don't worry <a href="signup.html">Reset
+                    Here</a></label>
+              </div>
+              <hr />
+              <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+              <p class="mt-3 text-center fontw-normal">Don't have an account? <a href="signup.html">Sign-Up Here</a></p>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </footer>
-  <div class="modal fade" id="signInmodal" tabindex="-1" aria-labelledby="signInmodalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content modal-brdradius">
-        <div class="modal-header text-start">
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-          <h3 class="modal-title m-0 fontw-bold text-center" id="signInmodalLabel">Sign-In</h3>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <input type="email" class="form-control" id="emailUser" aria-describedby="emailHelp"
-                placeholder="Email Address or Phone Number*" required>
-            </div>
-            <div class="mb-5">
-              <input type="password" class="form-control" id="passwordInput" placeholder="Password*" required>
-              <label class="fontw-normal ms-2 mt-1">Forgot your password? Don't worry <a href="signup.html">Reset
-                  Here</a></label>
-            </div>
-            <hr />
-            <div class="d-grid gap-2 mt-3">
-              <button class="btn btn-primary" type="submit">Submit</button>
-            </div>
-            <p class="mt-3 text-center fontw-normal">Don't have an account? <a href="signup.html">Sign-Up
-                Here</a></p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--   Core JS Files   -->
-  <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
-  <script src="/assets/js/plugins/bootstrap-switch.js"></script>
-  <script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-  <script src="/assets/js/plugins/moment.min.js"></script>
-  <script src="/assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
-  <script src="/assets/js/rizurfjs.js" type="text/javascript"></script>
-  <script>
-    var myModal = document.getElementById('myModal')
-    var myInput = document.getElementById('myInput')
 
-    myModal.addEventListener('shown.bs.modal', function () {
-      myInput.focus()
-    })
-  </script>
+    <!--   Core JS Files   -->
+    <div class="kc_fab_wrapper"></div>
+    <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>
+    <script src="/assets/js/plugins/bootstrap-switch.js"></script>
+    <script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <script src="/assets/js/plugins/moment.min.js"></script>
+    <script src="/assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="/assets/js/rizurfjs.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <script>
+      var myModal = document.getElementById('myModal')
+      var myInput = document.getElementById('myInput')
+
+      myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+      })
+    </script>
+    <script>
+      $(document).ready(function () {
+        var links = [
+          {
+            "bgcolor": "#51cbce",
+            "icon": "<img src='assets/img/chat.svg' alt='...' width='35px' />"
+          },
+          {
+            "url": "https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.",
+            "bgcolor": "#25D366",
+            "color": "#fffff",
+            "icon": "<img src='assets/img/whatsappcolorised.svg' alt='...' width='20px' />",
+            "target": "_blank",
+            "title": "Whatsapp Us"
+          },
+          {
+            "url": "http://www.example.com",
+            "bgcolor": "#fff",
+            "color": "#006AFF",
+            "icon": "<img src='assets/img/facebook-messenger-logo.svg' alt='...' width='20px' />",
+            "title": "FB Messenger Us"
+          }
+        ]
+        $('.kc_fab_wrapper').kc_fab(links);
+      })
+    </script>
+    <script>
+        (function () {
+          'use strict'
+          var forms = document.querySelectorAll('.needs-validation')
+
+          // Loop over them and prevent submission
+          Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+    </script>
 </body>
 
 </html>
