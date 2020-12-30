@@ -33,6 +33,52 @@
 
     <!-- mapbox -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .rate {
+            float: left;
+        }
+
+        .rate:not(:checked)>input {
+            position: absolute;
+            top: -9999px;
+        }
+
+        .rate:not(:checked)>label {
+            float: right;
+            width: 1em;
+            overflow: hidden;
+            white-space: nowrap;
+            cursor: pointer;
+            font-size: 30px;
+            color: #ccc;
+        }
+
+        .rate:not(:checked)>label:before {
+            content: '★ ';
+        }
+
+        .rate>input:checked~label {
+            color: #c59b08;
+        }
+
+        .rate:not(:checked)>label:hover,
+        .rate:not(:checked)>label:hover~label {
+            color: #c59b08;
+        }
+
+        .rate>input:checked+label:hover,
+        .rate>input:checked+label:hover~label,
+        .rate>input:checked~label:hover,
+        .rate>input:checked~label:hover~label,
+        .rate>label:hover~input:checked~label {
+            color: #c59b08;
+        }
+    </style>
 </head>
 
 <body class="landing-page sidebar-collapse">
@@ -119,84 +165,89 @@
                                         <div class="row">
                                             <strong style="font-size: 17px;">Rate the unit</strong>
                                         </div>
-                                        <br/>
+                                        <br />
                                         <div class="row">
-                                        <p>Appearance and Design</p>
-                                            </div>
+                                            <p class="rate">Appearance and Design
+                                                <input type="radio" id="star5" name="rate" value="5"/>
+                                                <label for="star5" title="text">5 stars</label>
+                                                <input type="radio" id="star4" name="rate" value="4" checked/>
+                                                <label for="star4" title="text">4 stars</label>
+                                                <input type="radio" id="star3" name="rate" value="3"/>
+                                                <label for="star3" title="text">3 stars</label>
+                                                <input type="radio" id="star2" name="rate" value="2"/>
+                                                <label for="star2" title="text">2 stars</label>
+                                                <input type="radio" id="star1" name="rate" value="1" />
+                                                <label for="star1" title="text">1 star</label>
+                                            </p>
+                                        </div>
                                         <div class="row">
-                                        <p>Facilities</p></div>
+                                            <p class="rate">Facilities
+                                                <input type="radio" id="1star5" name="rate1" value="5" />
+                                                <label for="1star5" title="text">5 stars</label>
+                                                <input type="radio" id="1star4" name="rate1" value="4" />
+                                                <label for="1star4" title="text">4 stars</label>
+                                                <input type="radio" id="1star3" name="rate1" value="3" checked/>
+                                                <label for="1star3" title="text">3 stars</label>
+                                                <input type="radio" id="1star2" name="rate1" value="2" />
+                                                <label for="1star2" title="text">2 stars</label>
+                                                <input type="radio" id="1star1" name="rate1" value="1" />
+                                                <label for="1star1" title="text">1 star</label>
+                                            </p>
+                                        </div>
                                         <div class="row">
-                                        <p>Cleanliness</p></div>
+                                            <p class="rate">Cleanliness
+                                                <input type="radio" id="2star5" name="rate2" value="5" checked/>
+                                                <label for="2star5" title="text">5 stars</label>
+                                                <input type="radio" id="2star4" name="rate2" value="4" />
+                                                <label for="2star4" title="text">4 stars</label>
+                                                <input type="radio" id="2star3" name="rate2" value="3" />
+                                                <label for="2star3" title="text">3 stars</label>
+                                                <input type="radio" id="2star2" name="rate2" value="2" />
+                                                <label for="2star2" title="text">2 stars</label>
+                                                <input type="radio" id="2star1" name="rate2" value="1" />
+                                                <label for="2star1" title="text">1 star</label>
+                                            </p>
+                                        </div>
                                         <div class="row">
                                             <p>Are you interested in this unit?</p>
                                             <div class="col-lg-4 col-md-6 col-12">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                                <label class="form-check-label" for="inlineRadio1">1</label>
-                                            </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-12">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                                <label class="form-check-label" for="inlineRadio2">2</label>
-                                            </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" checked
+                                                        name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
                                             </div>
                                             <div class="col-lg-4 col-md-6 col-12">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-                                                <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
                                             </div>
+                                            <div class="col-lg-4 col-md-6 col-12">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">May Be</label>
+                                                </div>
                                             </div>
+                                            <br />
+                                            <p><strong>Notes about this unit/viewing</strong></p>
+                                            <textarea class="form-control" id="exampleFormControlTextarea2"
+                                                placeholder="Key in your notes about this unit" rows="2"></textarea>
                                         </div>
-                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                         </button>
-
-
-                        <div class="modal fade" id="requestsmodal" tabindex="-1" aria-labelledby="requestsmodal"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content modal-brdradius">
-                                    <div class="modal-header text-start">
-                                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">×</span>
-                                        </button>
-                                        <h3 class="modal-title m-0 fontw-bold" id="requestsmodal">Scheduled Appointments
-                                        </h3>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Type of appoinment</p>
-                                        <p><strong>Propoerty Viewing</strong></p>
-                                        <hr />
-                                        <p>Status of appoinment</p>
-                                        <p><strong>Scheduled</strong></p>
-                                        <hr />
-                                        <p>Date of appoinment</p>
-                                        <p><strong>25-Feb-2020</strong></p>
-                                        <hr />
-                                        <p>Time of appoinment</p>
-                                        <p><strong>11.30 A.M. To 11.40 A.M</strong></p>
-                                        <hr />
-                                        <p>Comment</p>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1"
-                                            placeholder="Key in your notes about this unit" rows="3"></textarea><br />
-                                    </div>
-
-
-
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
             <br /> <br />
         </div>
         </div>
+
 
         <footer class="footer copyrighted section-dark">
             <div class="container">
