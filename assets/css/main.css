@@ -4946,6 +4946,9 @@ License - nucleoapp.com/license/
     text-align: center;
     justify-content: start;
   }
+  .img-circle {
+    padding: 15px;
+}
 
   .box{
     width: 70%;
@@ -5514,6 +5517,13 @@ ul.footerlist {
   -webkit-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
+}
+.card.nohover:not(.card-plain):hover {
+  box-shadow: 0px 12px 19px -7px rgba(0, 0, 0, 0.3);
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -moz-transform: translateY(0px);
 }
 
 .card.no-transition:hover, .card.page-carousel:hover, .card.card-refine:hover, .card.card-register:hover {
