@@ -599,6 +599,15 @@ button.close {
   appearance: none;
 }
 
+/* paymentfilter */
+
+.payfilter {
+  overflow: scroll;
+}
+
+.payfilter::-webkit-scrollbar {
+  display: none;
+}
 
 /* feature div */
 .feature {
