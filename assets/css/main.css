@@ -1127,6 +1127,20 @@
   bottom: -11px;
 }
 
+/* text */
+
+.text-red {
+  color: red !important;
+}
+
+.text-green {
+  color: #06D85F !important;
+}
+
+.text-blue {
+  color: #17a2b8 !important;
+}
+
 .btn {
   box-sizing: border-box;
   border-width: 2px;
@@ -1862,6 +1876,7 @@
 .form-control:focus+.input-group-text {
   border: 1px solid black;
 }
+
 
 .form-control {
   background-color: #FFFFFF;
@@ -5347,7 +5362,6 @@ License - nucleoapp.com/license/
 .footer.fixedbtm {
   position: absolute;
   width: 100%;
-  bottom: 0;
 }
 
 ul.footerlist {
@@ -6406,6 +6420,10 @@ ul.footerlist {
 }
 .section.sectionpad {
   padding: 100px 0 100px;
+}
+
+.section.sectionnopad {
+  padding: 0;
 }
 
 .section-with-space {

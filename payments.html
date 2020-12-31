@@ -84,21 +84,21 @@
                     <div class="payfilter">
                         <div class="row p-0 justify-content-center">
                             <div class="col-lg-8 px-2">
-                                <div id="FilterContainer" class="mb-2 mt-2 multiple-items d-flex text-center">
+                                <div id="FilterContainer" class="mb-4 mt-2 multiple-items d-flex text-center">
                                         <div class="widthfitcontent p-0 mx-1">
-                                            <a class="btnfiltermain btnfilter m-1" value="rental"
-                                                onclick="filterSelection('rental')">
-                                                <i class="fas fa-hand-holding-usd"></i> Payment</a>
+                                            <a class="btnfiltermain btnfilter m-1" value="new"
+                                                onclick="filterSelection('new')">
+                                                <i class="fas fa-hand-holding-usd me-1"></i>New Payment</a>
                                         </div>
                                         <div class="widthfitcontent p-0 mx-1">
-                                            <a class="btnfiltermain btnfilter m-1" value="maintenance"
-                                                onclick="filterSelection('maintenance')"><i class="fas fa-wrench"></i>
-                                                Maintenance</a>
+                                            <a class="btnfiltermain btnfilter m-1" value="made"
+                                                onclick="filterSelection('made')"><i class="fas fa-check"></i>
+                                                Payments Made</a>
                                         </div>
                                         <div class="widthfitcontent p-0 mx-1">
                                             <a class="btnfiltermain btnfilter current m-1" value="all"
                                                 onclick="filterSelection('all')">
-                                                <i class="fas fa-bars"></i>
+                                                <i class="fas fa-bars me-1"></i>
                                                 All
                                             </a>
                                         </div>
@@ -107,15 +107,8 @@
                         </div>
                     </div>
                     <div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-12 ">
-                                <div class="card" onclick="location.href='propertypage.html';" style="cursor:pointer;">
-                                    <div class="card-img-top ">
-                                        <div>
-                                            <img class="d-block img-fluid" src="./assets/img/soroush-karimi.jpg"
-                                                alt="First slide">
-                                        </div>
-                                    </div>
+                            <div class="row">
+                                <div class="card nohover" data-name="all, new">
                                     <div class="card-body">
                                         <h5 class="card-title">RM 2,000</h5>
                                         <div class="d-flex iconsmall">
@@ -128,14 +121,30 @@
 
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-12 ">
-                                <div class="card" onclick="location.href='propertypage.html';" style="cursor:pointer;">
-                                    <div class="card-img-top ">
-                                        <div>
-                                            <img class="d-block img-fluid" src="./assets/img/soroush-karimi.jpg"
-                                                alt="First slide">
+                            <div class="row" data-name="all, made">
+                                <div class="card nohover">
+                                    <div class="card-body">
+                                        <div class="row">
+                                        <div class="col-md-9 col-xs-12">
+                                        <h5 class="card-title">Booking fees - advanced rental for one month
+                                            (inclusive of Service Charge)
+                                            </h5>
+                                            <p class="my-1"></i> Due date xx-xx-xxxx</p>
+                                            <a href="#" class="my-1"></i> Listing ID: 7623edxe</a>
+                                            <p class="my-1 mb-2"><strong>Status:</strong><strong class="text-red">Unpaid</strong></p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12" style="align-self: flex-end">
+                                            <button class="btn btn-primary float-end mb-2">
+                                                View Details
+                                            </button>
                                         </div>
                                     </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row" data-name="all, new">
+                                <div class="card nohover">
                                     <div class="card-body">
                                         <h5 class="card-title">RM 2,000</h5>
                                         <div class="d-flex iconsmall">
@@ -148,27 +157,6 @@
 
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="card" onclick="location.href='propertypage.html';" style="cursor:pointer;">
-                                    <div class="card-img-top ">
-                                        <div>
-                                            <img class="d-block img-fluid" src="./assets/img/soroush-karimi.jpg"
-                                                alt="First slide">
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">RM 2,000</h5>
-                                        <div class="d-flex iconsmall">
-                                            <p class="me-2 ms-1"><i class='bx bx-bed'></i> 3</p>
-                                            <p class="me-2 ms-1"><i class='bx bx-bath'></i> 2</p>
-                                            <p class="me-2 ms-1"><i class='bx bx-car'></i> 3</p>
-                                            <p class="me-2 ms-1"><i class='bx bx-grid'></i> 3000 sqft.</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <br /> <br />
