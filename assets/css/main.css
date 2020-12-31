@@ -2210,7 +2210,139 @@ textarea.form-control {
 .progress-bar-danger {
   background-color: #f5593d;
 }
+/*   filter   */
+.btnfiltermain {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 15px;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
 
+.btnfilter-xs {
+  /* font-size: 0.7rem; */
+  /* padding: 0.2rem 0.4rem; */
+}
+
+.btnfilter {
+  line-height: 1.6;
+  margin: 15px 3px;
+  padding: 5px;
+  opacity: .8;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000;
+}
+
+.btnfilter:hover {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 3px solid #51cbce !important;
+  cursor: pointer;
+}
+
+.btnfilter.current {
+  color: #000;
+  border-bottom: 3px solid #51cbce !important;
+}
+
+.dataTables_filter label {
+  margin-right: 5px;
+}
+
+#toast-container>div {
+  -moz-box-shadow: 0 0 3px #999;
+  -webkit-box-shadow: 0 0 3px #999;
+  box-shadow: 0 0 3px #999;
+  opacity: 0.9;
+  -ms-filter: alpha(opacity=90);
+  filter: alpha(opacity=90);
+}
+
+#toast-container> :hover {
+  -moz-box-shadow: 0 0 4px #999;
+  -webkit-box-shadow: 0 0 4px #999;
+  box-shadow: 0 0 4px #999;
+  opacity: 1;
+  -ms-filter: alpha(opacity=100);
+  filter: alpha(opacity=100);
+  cursor: pointer;
+}
+
+.toast {
+  background-color: #1ab394;
+}
+
+.toast-success {
+  background-color: #1ab394;
+}
+
+.toast-error {
+  background-color: #ed5565;
+}
+
+.toast-info {
+  background-color: #23c6c8;
+}
+
+.toast-warning {
+  background-color: #f8ac59;
+}
+
+.toast-top-full-width {
+  margin-top: 20px;
+}
+
+.toast-bottom-full-width {
+  margin-bottom: 20px;
+}
+
+#FilterContainer {
+  text-align: center;
+  justify-content: center;
+}
+
+.dropdownfiltericon {
+  display: inline-flex;
+}
+
+.dropdownfilter-xs {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.dropdownfilter {
+  cursor: pointer;
+  color: #17a2b8;
+  background: transparent;
+}
+
+.dropdownfilter:hover {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.dropdownfilter.clicked {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.filterDiv {
+  display: none;
+}
+
+.widthfitcontent {
+  width: fit-content !important;
+}
 /*           badges & Progress-bar              */
 
 .badge {
@@ -4831,6 +4963,12 @@ License - nucleoapp.com/license/
 }
 
 @media screen and (max-width: 700px){
+
+  #FilterContainer {
+    text-align: center;
+    justify-content: start;
+  }
+
   .box{
     width: 70%;
   }
