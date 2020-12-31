@@ -1127,6 +1127,20 @@
   bottom: -11px;
 }
 
+/* text */
+
+.text-red {
+  color: red !important;
+}
+
+.text-green {
+  color: #06D85F !important;
+}
+
+.text-blue {
+  color: #17a2b8 !important;
+}
+
 .btn {
   box-sizing: border-box;
   border-width: 2px;
