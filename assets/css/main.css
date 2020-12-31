@@ -1866,7 +1866,7 @@
 .form-control {
   background-color: #FFFFFF;
   border: 1px solid #DDDDDD;
-  border-radius: 4px;
+  border-radius: 4px !important;
   color: #414141;
   font-size: 14px;
   transition: background-color 0.3s ease 0s;
@@ -3836,6 +3836,9 @@ License - nucleoapp.com/license/
   text-transform: uppercase;
   font-weight: 600;
   color: #000;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  border-bottom: 2px solid rgb(0, 180, 204) !important;
 }
 
 .navbar .navbar-nav .nav-item .nav-link.active {
