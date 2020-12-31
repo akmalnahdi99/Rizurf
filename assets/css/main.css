@@ -1863,6 +1863,7 @@
   border: 1px solid black;
 }
 
+
 .form-control {
   background-color: #FFFFFF;
   border: 1px solid #DDDDDD;
@@ -5346,7 +5347,6 @@ License - nucleoapp.com/license/
 .footer.fixedbtm {
   position: absolute;
   width: 100%;
-  bottom: 0;
 }
 
 ul.footerlist {
@@ -6405,6 +6405,10 @@ ul.footerlist {
 }
 .section.sectionpad {
   padding: 100px 0 100px;
+}
+
+.section.sectionnopad {
+  padding: 0;
 }
 
 .section-with-space {
