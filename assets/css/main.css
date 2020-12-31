@@ -2078,6 +2078,7 @@ textarea.form-control {
   color-adjust: exact;
   transition: background-color .15s ease-in-out,background-position .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   cursor: pointer;
+  margin-left: 0 !important;
 }
 
 
@@ -7195,7 +7196,7 @@ ul.footerlist {
   .register-page.full-screen .page-header .container {
     margin-top: 30%;
   }
-  .dropdown.show .dropdown-menu, .dropdown .dropdown-menu {
+  /* .dropdown.show .dropdown-menu, .dropdown .dropdown-menu {
     border: 0;
     width: auto;
     height: auto;
@@ -7216,7 +7217,7 @@ ul.footerlist {
   .dropdown.show .dropdown-menu {
     display: block;
     float: none;
-  }
+  } */
   .navbar-translate {
     width: 100%;
     position: relative;

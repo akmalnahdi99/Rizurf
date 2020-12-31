@@ -11,30 +11,24 @@
         Saved properties | Rizurf | Some Catchy Phrases
     </title>
 
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
-        name='viewport' />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- CSS Files -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
     <link href="assets/css/rizurfcss.css" rel="stylesheet" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-    <!-- mapbox -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 
-<body class="landing-page sidebar-collapse">
+<body class="sidebar-collapse">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top noboxshadow borderbtm">
 
@@ -80,21 +74,35 @@
     <!-- End Navbar -->
     <br />
 
-    <section class="mainsection">
+    <!-- <section class="mainsection">
         <div class="container">
             <div class="justify-content-center">
                 <div class="mb-5">
                     <div class="container">
                         <div class="searchfilter">
                             <p><strong>3</strong> saved properties <br /><strong>KL Gateway
-                                    Residence</strong> </p>
-                            <div class="dropdown mb-5px">
+                                    Residence</strong>
+                            </p>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown mb-5">
 
-                                <a class="dropdown-toggle font-normal text-black" data-toggle="dropdown" href="#"
-                                    role="button" aria-haspopup="true" aria-expanded="false">Sort by: <br />Best
+                                <a class="dropdown-toggle font-normal text-black" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" href="javascript:void" role="button"
+                                    aria-expanded="false">Sort by: <br />Best
                                     Match</a>
 
-                                <ul class="dropdown-menu dropdown-menu-right dropdown-info">
+                                <ul class="dropdown-menu dropdown-menu-right dropdown-info"
+                                    aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item" href="#pk">Sort by: Best Match</a>
                                     <a class="dropdown-item" href="#pk">Sort by: Price</a>
                                     <a class="dropdown-item" href="#pk">Sort by: New Arrivals</a>
@@ -206,40 +214,15 @@
                 </div>
             </div>
         </footer>
-
-    </section>
-
-
+    </section> -->
+    <div class="kc_fab_wrapper"></div>
     <!--   Core JS Files   -->
-    <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
-    <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/plugins/bootstrap-switch.js"></script>
     <script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
     <script src="/assets/js/plugins/moment.min.js"></script>
     <script src="/assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
     <script src="/assets/js/rizurfjs.js" type="text/javascript"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $(function () {
-            $("#slider-range").slider({
-                range: true,
-                min: 0,
-                max: 500,
-                values: [75, 300],
-                slide: function (event, ui) {
-                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-                }
-            });
-            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-                " - $" + $("#slider-range").slider("values", 1));
-        });
-    </script>
     <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
@@ -255,6 +238,32 @@
                 }
             });
         }
+    </script>
+    <script>
+        $(document).ready(function () {
+            var links = [
+                {
+                    "bgcolor": "#51cbce",
+                    "icon": "<img src='assets/img/chat.svg' alt='...' width='35px' />"
+                },
+                {
+                    "url": "https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.",
+                    "bgcolor": "#25D366",
+                    "color": "#fffff",
+                    "icon": "<img src='assets/img/whatsappcolorised.svg' alt='...' width='20px' />",
+                    "target": "_blank",
+                    "title": "Whatsapp Us"
+                },
+                {
+                    "url": "http://www.example.com",
+                    "bgcolor": "#fff",
+                    "color": "#006AFF",
+                    "icon": "<img src='assets/img/facebook-messenger-logo.svg' alt='...' width='20px' />",
+                    "title": "FB Messenger Us"
+                }
+            ]
+            $('.kc_fab_wrapper').kc_fab(links);
+        })
     </script>
 </body>
 
