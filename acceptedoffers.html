@@ -142,10 +142,14 @@
                                 <div class="card-body ">
                                     <h5 class="card-title">RM 2,000 (KL Gateway)</h5>
                                     <div class="d-flex iconsmall">
-                                        <p class="me-2 ms-1"><img src="/assets/img/double-bed.svg" alt="..." width="20px"> 3</p>
-                                        <p class="me-2 ms-1"><img src="/assets/img/bath-tub.svg" alt="..." width="20px"> 2</p>
-                                        <p class="me-2 ms-1"><img src="/assets/img/parking.svg" alt="..." width="20px"> 3</p>
-                                        <p class="me-2 ms-1"><img src="/assets/img/area-graph.svg" alt="..." width="20px"> 3000 sqft.</p>
+                                        <p class="me-2 ms-1"><img src="/assets/img/double-bed.svg" alt="..."
+                                                width="20px"> 3</p>
+                                        <p class="me-2 ms-1"><img src="/assets/img/bath-tub.svg" alt="..." width="20px">
+                                            2</p>
+                                        <p class="me-2 ms-1"><img src="/assets/img/parking.svg" alt="..." width="20px">
+                                            3</p>
+                                        <p class="me-2 ms-1"><img src="/assets/img/area-graph.svg" alt="..."
+                                                width="20px"> 3000 sqft.</p>
                                     </div>
                                     <h6>Unit for rent</h6>
                                 </div>
@@ -161,6 +165,41 @@
                             <p><strong>Offers accepted by owner</strong></p>
                             <hr />
                             <br />
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                            <p>
+                                <button class="btn btn-primary btn-width300" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                Ratings and feedback
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                </div>
+                            </div></div>
+
+                            <div class="col-lg-6 col-md-6">
+                            <p>
+                                <button class="btn btn-primary btn-width300" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                Appointment history
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample2">
+                                <div class="card card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                           
+
+                            <hr/>
+
                             <a href="payments.html" class="btn btn-refer btn-primary btn-width300" href="#"
                                 type="submit">Make Payment</a>
                         </div>
@@ -208,7 +247,7 @@
                         </div>
                         <div class="col-lg-8 col-md-8 mt-4">
 
-                            <strong style="font-size: 24.5px;">Appointment details</strong>
+                            <strong style="font-size: 24.5px;">Appointment history</strong>
                             <hr />
                             <div class="row">
                                 <div class="col-6">
@@ -237,7 +276,7 @@
 
 
 
-                    
+
                 </div>
             </div>
         </div>
@@ -315,6 +354,27 @@
             });
         }
     </script>
+
+
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }    
+</script>
 </body>
 
 </html>
