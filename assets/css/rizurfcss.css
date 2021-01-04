@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .rizurf-row {
   margin-bottom: 20px;
 }
@@ -348,6 +350,10 @@
 
 .text-black {
   color: #000;
+}
+
+.text-fancy {
+  font-family: 'Pacifico', cursive;
 }
 
 .listingunit::-webkit-scrollbar {
