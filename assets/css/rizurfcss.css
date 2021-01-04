@@ -751,7 +751,10 @@ button.close {
   height: auto;
   width: 100%;
 }
-
+/* iconsmall */
+.iconsmall img {
+  vertical-align: bottom;
+}
 /* splide slider */
 
 .splide__pagination {
