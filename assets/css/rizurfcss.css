@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
 .rizurf-row {
   margin-bottom: 20px;
 }
@@ -606,6 +605,7 @@ button.close {
 }
 
 /* circular images */
+
 .circular--landscape {
   display: inline-block;
   position: relative;
@@ -632,10 +632,10 @@ button.close {
 }
 
 /* feature div */
+
 .feature {
   display: none;
 }
-
 
 /* content navigation */
 
@@ -773,13 +773,47 @@ button.close {
   height: auto;
   width: 100%;
 }
+
 .btn-refer {
   width: 100%;
 }
-/* iconsmall */
+
 .iconsmall img {
   vertical-align: bottom;
 }
+
+.referallist {
+  border-bottom: 1px solid #314a6f;
+}
+
+.referallist:hover {
+  border-bottom: 2px solid #51cbce;
+}
+
+.daterefer {
+  display: none;
+}
+
+.datediv {
+  display: block;
+}
+
+/* Table */
+
+.table.tablebdrblue {
+  vertical-align: middle;
+  border-color: #51cbce;
+}
+
+.table.tablebdrblue tbody tr:hover {
+  color: #fff;
+  background: rgb(1, 90, 131)
+}
+
+.table>:not(caption)>*>* {
+  padding: 1rem 1rem;
+}
+
 /* splide slider */
 
 .splide__pagination {
@@ -790,6 +824,7 @@ button.close {
   transform: translate(0px, 10px);
   padding: 0;
 }
+
 .splide__slide {
   margin: 10px;
 }
@@ -797,7 +832,6 @@ button.close {
 .splide-res {
   display: block;
 }
-
 
 /* TimeLine */
 
@@ -811,6 +845,7 @@ button.close {
   content: none;
   display: none;
 }
+
 .timeline.horiz-style {
   overflow: scroll;
   display: flex;
@@ -823,6 +858,7 @@ button.close {
 .timeline.timelinebtm:before {
   bottom: 120px;
 }
+
 .timeline.timelinebtm2:before {
   bottom: 122px;
 }
@@ -1087,6 +1123,59 @@ button.close {
 .ui-draggable, .ui-droppable {
   background-position: top;
 }
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+/* uploader */
+
+.dropzone {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+}
+
+.glyphicon-download {
+  font-size: 1.5em;
+}
+
+.dropzone .dz-preview.dz-image-preview {
+  background: transparent;
+}
+
+#DropZoneFiddle {
+  cursor: pointer;
+  border: 2px dotted #fff;
+  padding: 30px 0;
+  border-radius: 10px;
+}
+
+.dropzone .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark {
+  pointer-events: none;
+  opacity: 0;
+  z-index: 500;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-left: -27px;
+  margin-top: -34px;
+  margin-right: auto;
+}
+.dropzone .dz-preview .dz-error-message:after {
+  top: auto;
+  bottom: -6px;
+  border-top: 6px solid #be2626;
+  border-bottom: 0px;
+}
+.dropzone .dz-preview .dz-error-message {
+  top: -60px;
+}
+
 
 /* scroller gallery */
 
@@ -1731,6 +1820,12 @@ button.kc_fab_main_btn {
     width: 100%;
     border: 5px solid #fff;
     padding: 0;
+  }
+  .daterefer {
+    display: block;
+  }
+  .datediv {
+    display: none;
   }
 }
 

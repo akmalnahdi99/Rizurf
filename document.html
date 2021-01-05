@@ -17,14 +17,11 @@
     name='viewport' />
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
   <!-- CSS Files -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
   <link href="assets/css/main.css" rel="stylesheet" />
   <link href="assets/css/rizurfcss.css" rel="stylesheet" />
   <style>
@@ -75,89 +72,100 @@
 
 
 
-<section class="section section-dark-blue sectionpad">
-    <div class="justify-content-center">
-        <div class="mb-5">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-12">
-                    <div class="justify-content-center">
-                        <div class="container-fluid">
-                            <h2 class="text-center">Documents</h2>
-                            <hr class="m-1" />
-
-
-
-                            
-
-
-
-                            <div class="row">
-                                <div class="col-md-12 my-2">
-                                    <div class="mb-4 mt-4">
-                                        <label for="formFile" class="form-label">
-                                            <h5><strong>Passport Copy</strong></h5>
-                                        </label>
-                                        <input class="form-control" type="file" id="formFile"
-                                            accept="image/x-png,image/gif,image/jpeg" />
-                                    </div>
-                                    <div class="mb-4 mt-4">
-                                        <label for="formFile" class="form-label">
-                                            <h5><strong>IC Copy</strong></h5>
-                                        </label>
-                                        <input class="form-control" type="file" id="formFile"
-                                            accept="image/x-png,image/gif,image/jpeg" />
-                                    </div>
-                                    <div class="mb-4 mt-4">
-                                        <label for="formFile" class="form-label">
-                                            <h5><strong>Visa</strong></h5>
-                                        </label>
-                                        <input class="form-control" type="file" id="formFile"
-                                            accept="image/x-png,image/gif,image/jpeg" />
-                                    </div>
-                                    <div class="mb-4 mt-4">
-                                        <label for="formFile" class="form-label">
-                                            <h5><strong>Bank Statement</strong></h5>
-                                        </label>
-                                        <input class="form-control" type="file" id="formFile"
-                                            accept="image/x-png,image/gif,image/jpeg" />
-                                    </div>
-                                    <div class="mb-4 mt-4">
-                                        <label for="formFile" class="form-label">
-                                            <h5><strong>Employee ID</strong></h5>
-                                        </label>
-                                        <input class="form-control" type="file" id="formFile"
-                                            accept="image/x-png,image/gif,image/jpeg" />
-                                    </div>
-                                    <div class="mb-4 mt-4">
-                                        <label for="formFile" class="form-label">
-                                            <h5><strong>Student ID</strong></h5>
-                                        </label>
-                                        <input class="form-control" type="file" id="formFile"
-                                            accept="image/x-png,image/gif,image/jpeg" />
-                                    </div>
-                                    <div class="mb-4 mt-4">
-                                        <label for="formFile" class="form-label">
-                                            <h5><strong>Company Registration Letter</strong></h5>
-                                        </label>
-                                        <input class="form-control" type="file" id="formFile"
-                                            accept="image/x-png,image/gif,image/jpeg" />
-                                    </div>
-                                    <hr />
-                                    <div class="d-grid gap-2 col-6 mx-auto">
-                                        <button class="btn btn-refer btn-primary btn-lg" onclick="myFunction()"
-                                            type="button">
-                                            <span id="save">Save your edits</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+  <section class="section section-dark-blue sectionpad">
+    <div class="container justify-content-center">
+      <div class="mb-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-12">
+            <div class="justify-content-center">
+              <div class="container-fluid">
+                <h2 class="text-center title text-white">Documents</h2>
+                <div class="row">
+                  <div class="col-md-6 my-2">
+                    <div class="mb-4 mt-4">
+                      <label for="formFile" class="form-label">
+                        <h5><strong>Passport Copy</strong></h5>
+                      </label>
+                      <form action="" class="dropzone" id="DropZoneFiddle">
+                        <img class="img-responsive" src="assets/img/upload.svg" width="150px" alt="..." />
+                      </form>
                     </div>
+                  </div>
+                  <div class="col-md-6 my-2">
+                    <div class="mb-4 mt-4">
+                      <label for="formFile" class="form-label">
+                        <h5><strong>IC Copy</strong></h5>
+                      </label>
+                      <form action="" class="dropzone" id="DropZoneFiddle">
+                        <img class="img-responsive" src="assets/img/upload.svg" width="150px" alt="..." />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6 my-2">
+                    <div class="mb-4 mt-4">
+                      <label for="formFile" class="form-label">
+                        <h5><strong>Visa</strong></h5>
+                      </label>
+                      <form action="" class="dropzone" id="DropZoneFiddle">
+                        <img class="img-responsive" src="assets/img/upload.svg" width="150px" alt="..." />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6 my-2">
+                    <div class="mb-4 mt-4">
+                      <label for="formFile" class="form-label">
+                        <h5><strong>Bank Statement</strong></h5>
+                      </label>
+                      <form action="" class="dropzone" id="DropZoneFiddle">
+                        <img class="img-responsive" src="assets/img/upload.svg" width="150px" alt="..." />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6 my-2">
+                    <div class="mb-4 mt-4">
+                      <label for="formFile" class="form-label">
+                        <h5><strong>Employee ID</strong></h5>
+                      </label>
+                      <form action="" class="dropzone" id="DropZoneFiddle">
+                        <img class="img-responsive" src="assets/img/upload.svg" width="150px" alt="..." />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6 my-2">
+                    <div class="mb-4 mt-4">
+                      <label for="formFile" class="form-label">
+                        <h5><strong>Student ID</strong></h5>
+                      </label>
+                      <form action="" class="dropzone" id="DropZoneFiddle">
+                        <img class="img-responsive" src="assets/img/upload.svg" width="150px" alt="..." />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6 my-2">
+                    <div class="mb-4 mt-4">
+                      <label for="formFile" class="form-label">
+                        <h5><strong>Company Registration Letter</strong></h5>
+                      </label>
+                      <form action="" class="dropzone" id="DropZoneFiddle">
+                        <img class="img-responsive" src="assets/img/upload.svg" width="150px" alt="..." />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6 my-2 align-self-center">
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn btn-refer btn-primary btn-lg" onclick="myFunction()" type="button">
+                        <span id="save">Save your edits</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
 
   <footer class="footer section-dark">
@@ -275,19 +283,15 @@
   <!--   Core JS Files   -->
   <!--   Core JS Files   -->
   <div class="kc_fab_wrapper"></div>
-  <script src="./path/to/dropzone.js"></script>
+  <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
   <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
-  <script src="/assets/js/plugins/bootstrap-switch.js"></script>
-  <script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-  <script src="/assets/js/plugins/moment.min.js"></script>
-  <script src="/assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/js/rizurfjs.js" type="text/javascript"></script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <script>
+    function myFunction() {
+      document.getElementById("save").innerHTML = "Saved <i class='fas fa-check'></i>";
+    }
+  </script>
   <script>
     $(document).ready(function () {
       var links = [
@@ -313,6 +317,33 @@
       ]
       $('.kc_fab_wrapper').kc_fab(links);
     })
+  </script>
+  <script>
+    Dropzone.options.DropZoneFiddle = {
+      url: this.location,
+      paramName: "file", //the parameter name containing the uploaded file
+      uploadprogress: true,
+      clickable: true,
+      uploadMultiple: false,
+      maxFiles: 1, // allowing any more than this will stress a basic php/mysql stack
+      maxfilesreached: 1,
+      maxfilesexceeded: 1,
+      addRemoveLinks: true,
+      acceptedFiles: '.png,.jpg', //allowed filetypes
+      dictDefaultMessage: "Upload or drag & drop your files here", //override the default text
+      init: function () {
+        this.on("sending", function (file, xhr, formData) {
+          formData.append("step", "upload"); // Append all the additional input data of your form here!
+          formData.append("id", "1"); // Append all the additional input data of your form here!
+        });
+        this.on("success", function (file, responseText) {
+          //auto remove buttons after upload
+          $("#div-files").html(responseText);
+          var _this = this;
+          _this.removeFile(file);
+        });
+      }
+    }
   </script>
 </body>
 

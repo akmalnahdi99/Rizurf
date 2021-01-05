@@ -1,42 +1,15 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 368.022 368.022" style="enable-background:new 0 0 368.022 368.022;" xml:space="preserve">
+	 viewBox="0 0 368 368" style="enable-background:new 0 0 368 368;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D7443E;}
+	.st1{fill:#D4E1F4;}
+</style>
 <g>
-	<path style="fill:#D7443E;" d="M314.101,54.133c71.79,71.847,71.744,188.287-0.103,260.077s-188.287,71.744-260.077-0.103
-		c-71.75-71.806-71.75-188.167,0-259.974c71.381-71.847,187.49-72.224,259.337-0.843C313.54,53.57,313.821,53.851,314.101,54.133z"
-		/>
-	<polygon style="fill:#D4E1F4;" points="275.439,124.663 215.88,184.223 275.439,243.782 243.57,275.651 184.011,216.092 
-		124.452,275.651 92.582,243.782 152.142,184.223 92.582,124.663 124.452,92.794 184.011,152.353 243.57,92.794 	"/>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
+	<path class="st0" d="M285.2,83c55.8,55.9,55.8,146.4-0.1,202.3s-146.4,55.8-202.3-0.1C27,229.3,27,138.8,82.8,83
+		c55.5-55.9,145.8-56.2,201.7-0.7C284.8,82.6,285,82.8,285.2,83z"/>
+	<polygon class="st1" points="255.1,137.9 208.8,184.2 255.1,230.5 230.3,255.3 184,209 137.7,255.3 112.9,230.5 159.2,184.2 
+		112.9,137.9 137.7,113.1 184,159.4 230.3,113.1 	"/>
 </g>
 </svg>
