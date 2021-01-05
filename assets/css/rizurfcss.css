@@ -605,6 +605,22 @@ button.close {
   appearance: none;
 }
 
+/* circular images */
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--landscape img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+}
+
 /* paymentfilter */
 
 .payfilter {
@@ -757,6 +773,9 @@ button.close {
   height: auto;
   width: 100%;
 }
+.btn-refer {
+  width: 100%;
+}
 /* iconsmall */
 .iconsmall img {
   vertical-align: bottom;
@@ -767,8 +786,8 @@ button.close {
   position: relative;
   z-index: 1;
   bottom: -1.5em;
-  left: 50%;
-  transform: translateX(-50%);
+  left: auto;
+  transform: translate(0px, 10px);
   padding: 0;
 }
 .splide__slide {

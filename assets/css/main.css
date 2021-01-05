@@ -4288,7 +4288,7 @@ License - nucleoapp.com/license/
 .img-circle {
   background-color: #efefef;
   margin-bottom: 10px;
-  padding: 25px;
+  padding: 15px;
   border-radius: 50% !important;
   max-width: 100%;
 }
@@ -4788,7 +4788,7 @@ License - nucleoapp.com/license/
     justify-content: start;
   }
   .img-circle {
-    padding: 15px;
+    padding: 10px;
   }
   .box {
     width: 70%;
@@ -5950,7 +5950,7 @@ ul.footerlist {
 
 .page-header {
   background-color: #B2AFAB;
-  background-position: top left;
+  background-position: center left;
   background-size: cover;
   min-height: 80vh;
   max-height: 999px;
