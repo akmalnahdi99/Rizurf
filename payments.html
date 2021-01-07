@@ -22,13 +22,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
     <link href="assets/css/rizurfcss.css" rel="stylesheet" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 
 </head>
 
 <body class="landing-page sidebar-collapse">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top noboxshadow borderbtm">
+    <nav class="navbar navbar-expand-lg navbar-light">
 
         <div class="container-fluid">
             <div class="navbar-translate">
@@ -70,72 +69,92 @@
 
     </nav>
     <!-- End Navbar -->
-    <br />
-    <section class="section">
-            <div class="justify-content-center">
-                <div class="mb-5">
-                        <div class="row justify-content-center">
-                            <div class="col-md-8 col-12">
+    <section class="section section-dark-blue">
+        <div class="justify-content-center">
+            <div class="container mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-12">
                         <div class="justify-content-center">
                             <div class="container-fluid">
                                 <div class="text-center">
-                                    <h2 class="text-center">Payments</h2>
+                                    <h2 class="text-center title text-white">Payments</h2>
                                 </div>
-                                <hr class="m-1" />
-                                <br />
-                                <div class="payfilter">
+                                <div class="payfilter mt-4 text-white">
                                     <div class="row p-0 justify-content-center">
                                         <div class="col-lg-8 px-2">
-                                            <div id="FilterContainer" class="mb-4 mt-2 multiple-items d-flex text-center">
-                                                    <div class="widthfitcontent p-0 mx-1">
-                                                        <a class="btnfiltermain btnfilter m-1" value="new"
-                                                            onclick="filterSelection('new')">
-                                                            <i class="fas fa-hand-holding-usd me-1"></i>New Payment</a>
-                                                    </div>
-                                                    <div class="widthfitcontent p-0 mx-1">
-                                                        <a class="btnfiltermain btnfilter m-1" value="made"
-                                                            onclick="filterSelection('made')"><i class="fas fa-check"></i>
-                                                            Payments Made</a>
-                                                    </div>
-                                                    <div class="widthfitcontent p-0 mx-1">
-                                                        <a class="btnfiltermain btnfilter current m-1" value="all"
-                                                            onclick="filterSelection('all')">
-                                                            <i class="fas fa-bars me-1"></i>
-                                                            All
-                                                        </a>
-                                                    </div>
+                                            <div id="FilterContainer"
+                                                class="mb-4 mt-2 multiple-items d-flex text-center">
+                                                <div class="widthfitcontent p-0 mx-1">
+                                                    <a class="btnfiltermain btnfilter m-1 text-white" value="new"
+                                                        onclick="filterSelection('new')">
+                                                        <i class="fas fa-hand-holding-usd me-1"></i>New Payment</a>
+                                                </div>
+                                                <div class="widthfitcontent p-0 mx-1">
+                                                    <a class="btnfiltermain btnfilter m-1 text-white" value="made"
+                                                        onclick="filterSelection('made')"><i class="fas fa-check"></i>
+                                                        Payments Made</a>
+                                                </div>
+                                                <div class="widthfitcontent p-0 mx-1 ">
+                                                    <a class="btnfiltermain btnfilter current m-1 text-white" value="all"
+                                                        onclick="filterSelection('all')">
+                                                        <i class="fas fa-bars me-1"></i>
+                                                        All
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                        <div class="row">
-                                            <div class="card nohover" data-name="all, new">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-md-9 col-xs-12">
-                                                        <h5 class="card-title">Booking fees - advanced rental for one month
-                                                            (inclusive of Service Charge)
-                                                            </h5>
-                                                            <p class="my-1"></i> Due date xx-xx-xxxx</p>
-                                                            <a href="#" class="my-1 text-blue"> Listing ID: 7623edxe</a>
-                                                            <p class="my-1 mb-2"><strong>Status:</strong><strong class="text-green"> Paid</strong></p>
-                                                        </div>
-                                                        <div class="col-md-3 col-xs-12" style="align-self: flex-end">
-                                                            <button onclick="location.href = 'paymentdetails.html';" class="btn btn-primary float-end mb-2">
-                                                                View Details
-                                                            </button>
-                                                        </div>
+                                    <div class="row">
+                                        <div class="card" data-name="all, new" >
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-9">
+                                                    <h5 class="card-title">Booking fees - advanced rental for one month
+                                                        (inclusive of Service Charge)
+                                                        </h5>
+                                                        <p class="my-1"></i> Due date xx-xx-xxxx</p>
+                                                        <a href="#" class="my-1 text-blue"> Listing ID: 7623edxe</a>
+                                                        <p class="my-1 mb-2"><strong>Status:</strong><strong class="text-green"> Paid</strong></p>
+                                                    </div>
+                                                    <div class="col-md-3 align-self-end">
+                                                        <a href="paymentdetails.html" class="btn btn-primary float-end mb-2">
+                                                            View Details
+                                                        </a>
                                                     </div>
                                                 </div>
-            
                                             </div>
+        
                                         </div>
-                                        <div class="row" data-name="all, made">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                    <div class="col-md-9 col-xs-12">
+                                    </div>
+                                    <div class="row" data-name="all, made">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                <div class="col-md-9">
+                                                <h5 class="card-title">Booking fees - advanced rental for one month
+                                                    (inclusive of Service Charge)
+                                                    </h5>
+                                                    <p class="my-1"></i> Due date xx-xx-xxxx</p>
+                                                    <a href="#" class="my-1 text-blue"> Listing ID: 7623edxe</a>
+                                                    <p class="my-1 mb-2"><strong>Status:</strong><strong class="text-red"> Unpaid</strong></p>
+                                                </div>
+                                                <div class="col-md-3 align-self-end">
+                                                    <button onclick="location.href = 'paymentdetails.html';" class="btn btn-primary float-end mb-2">
+                                                        View Details
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                    <div class="row" data-name="all, new">
+                                        <div class="card nohover">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-9">
                                                     <h5 class="card-title">Booking fees - advanced rental for one month
                                                         (inclusive of Service Charge)
                                                         </h5>
@@ -143,48 +162,25 @@
                                                         <a href="#" class="my-1 text-blue"> Listing ID: 7623edxe</a>
                                                         <p class="my-1 mb-2"><strong>Status:</strong><strong class="text-red"> Unpaid</strong></p>
                                                     </div>
-                                                    <div class="col-md-3 col-xs-12" style="align-self: flex-end">
+                                                    <div class="col-md-3 align-self-end">
                                                         <button onclick="location.href = 'paymentdetails.html';" class="btn btn-primary float-end mb-2">
                                                             View Details
                                                         </button>
                                                     </div>
                                                 </div>
-                                                </div>
-            
                                             </div>
+        
                                         </div>
-                                        <div class="row" data-name="all, new">
-                                            <div class="card nohover">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-md-9 col-xs-12">
-                                                        <h5 class="card-title">Booking fees - advanced rental for one month
-                                                            (inclusive of Service Charge)
-                                                            </h5>
-                                                            <p class="my-1"></i> Due date xx-xx-xxxx</p>
-                                                            <a href="#" class="my-1 text-blue"> Listing ID: 7623edxe</a>
-                                                            <p class="my-1 mb-2"><strong>Status:</strong><strong class="text-red"> Unpaid</strong></p>
-                                                        </div>
-                                                        <div class="col-md-3 col-xs-12" style="align-self: flex-end">
-                                                            <button onclick="location.href = 'paymentdetails.html';" class="btn btn-primary float-end mb-2">
-                                                                View Details
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-            
-                                            </div>
-                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <br /> <br />
                         </div>
-                        </div>
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
     </section>
-    <footer class="footer copyrighted section-dark footer fixedbtm">
+    <footer class="footer copyrighted section-dark footer ">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-12">
@@ -205,42 +201,34 @@
     <div class="kc_fab_wrapper"></div>
     <!--   Core JS Files   -->
     <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
-    <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
-    <script src="/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/plugins/bootstrap-switch.js"></script>
-    <script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-    <script src="/assets/js/plugins/moment.min.js"></script>
-    <script src="/assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
     <script src="/assets/js/rizurfjs.js" type="text/javascript"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
         $(document).ready(function () {
-          var links = [
-            {
-              "bgcolor": "#51cbce",
-              "icon": "<img src='assets/img/chat.svg' alt='...' width='35px' />"
-            },
-            {
-              "url": "https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.",
-              "bgcolor": "#25D366",
-              "color": "#fffff",
-              "icon": "<img src='assets/img/whatsappcolorised.svg' alt='...' width='20px' />",
-              "target": "_blank",
-              "title": "Whatsapp Us"
-            },
-            {
-              "url": "http://www.example.com",
-              "bgcolor": "#fff",
-              "color": "#006AFF",
-              "icon": "<img src='assets/img/facebook-messenger-logo.svg' alt='...' width='20px' />",
-              "title": "FB Messenger Us"
-            }
-          ]
-          $('.kc_fab_wrapper').kc_fab(links);
+            var links = [
+                {
+                    "bgcolor": "#51cbce",
+                    "icon": "<img src='assets/img/chat.svg' alt='...' width='35px' />"
+                },
+                {
+                    "url": "https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.",
+                    "bgcolor": "#25D366",
+                    "color": "#fffff",
+                    "icon": "<img src='assets/img/whatsappcolorised.svg' alt='...' width='20px' />",
+                    "target": "_blank",
+                    "title": "Whatsapp Us"
+                },
+                {
+                    "url": "http://www.example.com",
+                    "bgcolor": "#fff",
+                    "color": "#006AFF",
+                    "icon": "<img src='assets/img/facebook-messenger-logo.svg' alt='...' width='20px' />",
+                    "title": "FB Messenger Us"
+                }
+            ]
+            $('.kc_fab_wrapper').kc_fab(links);
         })
-      </script>
+    </script>
     <script>
         filterSelection("all")
         function filterSelection(c) {

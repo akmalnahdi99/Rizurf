@@ -2327,6 +2327,9 @@ textarea.form-control {
 .filterDiv {
   display: none;
 }
+.show {
+  display: block;
+}
 
 .widthfitcontent {
   width: fit-content !important;
@@ -5194,7 +5197,7 @@ License - nucleoapp.com/license/
 }
 
 .footer.fixedbtm {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
 }
@@ -6251,6 +6254,7 @@ ul.footerlist {
   padding: 60px 0 100px;
   position: relative;
   background-color: #FFFFFF;
+  min-height: 87vh;
 }
 
 .section.sectionpad {
