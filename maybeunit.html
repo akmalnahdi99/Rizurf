@@ -8,86 +8,34 @@
     <link rel="icon" type="image/png" href="./assets/img//favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        May be | Rizurf | Some Catchy Phrases
+        Maybe | Rizurf | Some Catchy Phrases
     </title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
         name='viewport' />
-    <!--     Fonts and icons     -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- CSS Files -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
     <link href="assets/css/rizurfcss.css" rel="stylesheet" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-    <!-- mapbox -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .rate {
-            float: left;
-        }
-
-        .rate:not(:checked)>input {
-            position: absolute;
-            top: -9999px;
-        }
-
-        .rate:not(:checked)>label {
-            float: right;
-            width: 1em;
-            overflow: hidden;
-            white-space: nowrap;
-            cursor: pointer;
-            font-size: 30px;
-            color: #ccc;
-        }
-
-        .rate:not(:checked)>label:before {
-            content: '★ ';
-        }
-
-        .rate>input:checked~label {
-            color: #c59b08;
-        }
-
-        .rate:not(:checked)>label:hover,
-        .rate:not(:checked)>label:hover~label {
-            color: #c59b08;
-        }
-
-        .rate>input:checked+label:hover,
-        .rate>input:checked+label:hover~label,
-        .rate>input:checked~label:hover,
-        .rate>input:checked~label:hover~label,
-        .rate>label:hover~input:checked~label {
-            color: #c59b08;
-        }
+        .section2 {
+  padding: 10px 0 80px;
+  position: relative;
+  background-color: #FFFFFF;
+  min-height: 87vh;
+}
     </style>
+
 </head>
 
 <body class="landing-page sidebar-collapse">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top noboxshadow borderbtm">
-
+    <nav class="navbar navbar-expand-lg navbar-light noboxshadow borderbtm">
         <div class="container-fluid">
             <div class="navbar-translate">
-                <a class="navbar-brand" href="../index.html" rel="tooltip" title="Coded by Creative Tim"
-                    data-placement="bottom" target="_blank">
+                <a class="navbar-brand" href="../index.html" rel="tooltip" title="Rizurf" data-placement="bottom"
+                    target="_blank">
                     <img src="assets/img/rizurflogo-color.png" width="150px">
                 </a>
                 <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
@@ -113,213 +61,164 @@
                         <a class="nav-link" href="aboutus.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="accountpage.html">My Account</a>
+                        <a class="nav-link active" href="profile-page.html">My Account</a>
                     </li>
                     <li class="nav-item">
                     </li>
                 </ul>
             </div>
-
         </div>
-
     </nav>
     <!-- End Navbar -->
-    <br />
-
-    <section class="mainsection">
-        <div class="container">
-            <div class="justify-content-center">
-                <div class="listingunit">
-                    <div class="container-fluid">
-                        <h3><strong>Unit may rent</strong></h3>
-                        <hr />
-                        <br />
-                        <div class="list tab-content" id="my-tab-content">
-                            <div class="tab-pane active" id="home" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6 col-12 ">
-                                        <div class="card" onclick="location.href='propertypage.html';"
-                                            style="cursor:pointer;">
-                                            <div class="card-img-top ">
-                                                <div>
-                                                    <img class="d-block img-fluid" src="./assets/img/soroush-karimi.jpg"
-                                                        alt="First slide">
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">RM 2,000 (KL Gateway)</h5>
-                                                <div class="d-flex iconsmall">
-                                                    <p class="me-2 ms-1"><i class='bx bx-bed'></i> 3</p>
-                                                    <p class="me-2 ms-1"><i class='bx bx-bath'></i> 2</p>
-                                                    <p class="me-2 ms-1"><i class='bx bx-car'></i> 3</p>
-                                                    <p class="me-2 ms-1"><i class='bx bx-grid'></i> 3000 sqft.</p>
-                                                </div>
-                                                <h6>Unit for rent</h6>
-                                            </div>
+    <br/>
+        <section class="section2">
+            <div class="container">
+                <div class="row mt-5 mb-5 justify-content-center">
+                    <div class="col-12 mx-auto align-self-center text-center">
+                        <h2 class="m-0 title">Unit may rent</h2>
+                    </div>
+                </div>
+                <div class="row mb-5 mt-5 ">
+                    <div class="col-md-10 mx-auto me-auto mb-5">
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-lg-6 col-md-6 col-12 ">
+                                <div class="card" onclick="location.href='propertypage.html';" style="cursor:pointer;">
+                                    <div class="card-img-top ">
+                                        <div>
+                                            <img class="d-block img-fluid" src="./assets/img/soroush-karimi.jpg"
+                                                alt="First slide">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-12">
-                                        <strong style="font-size: 24.5px;">Ratings and Feedback</strong>
-                                        <hr />
-                                        <div class="row">
-                                            <strong style="font-size: 17px;">Rate the unit</strong>
-                                        </div>
-                                        <br />
-                                        <div class="row">
-                                            <p class="rate">Appearance and Design
-                                                <input type="radio" id="star5" name="rate" value="5" />
-                                                <label for="star5" title="text">5 stars</label>
-                                                <input type="radio" id="star4" name="rate" value="4" checked />
-                                                <label for="star4" title="text">4 stars</label>
-                                                <input type="radio" id="star3" name="rate" value="3" />
-                                                <label for="star3" title="text">3 stars</label>
-                                                <input type="radio" id="star2" name="rate" value="2" />
-                                                <label for="star2" title="text">2 stars</label>
-                                                <input type="radio" id="star1" name="rate" value="1" />
-                                                <label for="star1" title="text">1 star</label>
+                                    <div class="card-body">
+                                        <h5 class="card-title">RM 2,000 (KL Gateway)</h5>
+                                        <div class="d-flex iconsmall">
+                                            <p class="me-2 ms-1"><img src="/assets/img/double-bed.svg" alt="..." width="20px"> 3
                                             </p>
-                                        </div>
-                                        <div class="row">
-                                            <p class="rate">Facilities
-                                                <input type="radio" id="1star5" name="rate1" value="5" />
-                                                <label for="1star5" title="text">5 stars</label>
-                                                <input type="radio" id="1star4" name="rate1" value="4" />
-                                                <label for="1star4" title="text">4 stars</label>
-                                                <input type="radio" id="1star3" name="rate1" value="3" checked />
-                                                <label for="1star3" title="text">3 stars</label>
-                                                <input type="radio" id="1star2" name="rate1" value="2" />
-                                                <label for="1star2" title="text">2 stars</label>
-                                                <input type="radio" id="1star1" name="rate1" value="1" />
-                                                <label for="1star1" title="text">1 star</label>
+                                            <p class="me-2 ms-1"><img src="/assets/img/bath-tub.svg" alt="..." width="20px"> 2
                                             </p>
-                                        </div>
-                                        <div class="row">
-                                            <p class="rate">Cleanliness
-                                                <input type="radio" id="2star5" name="rate2" value="5" checked />
-                                                <label for="2star5" title="text">5 stars</label>
-                                                <input type="radio" id="2star4" name="rate2" value="4" />
-                                                <label for="2star4" title="text">4 stars</label>
-                                                <input type="radio" id="2star3" name="rate2" value="3" />
-                                                <label for="2star3" title="text">3 stars</label>
-                                                <input type="radio" id="2star2" name="rate2" value="2" />
-                                                <label for="2star2" title="text">2 stars</label>
-                                                <input type="radio" id="2star1" name="rate2" value="1" />
-                                                <label for="2star1" title="text">1 star</label>
+                                            <p class="me-2 ms-1"><img src="/assets/img/parking.svg" alt="..." width="20px"> 3
                                             </p>
+                                            <p class="me-2 ms-1"><img src="/assets/img/area-graph.svg" alt="..." width="20px">
+                                                3000 sqft.</p>
                                         </div>
-                                        <div class="row">
-                                            <p>Are you interested in this unit?</p>
-                                            <div class="col-lg-4 col-md-6 col-12">
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" 
-                                                        name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                        <h6>Unit for rent</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="row mt-0 ">
+                                    <div class="col-12">
+                                        <h3 class="m-0 mb-2"><strong>Your notes about this unit</strong></h3>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-8 align-self-center">
+                                                    <textarea class="form-control" id="exampleFormControlTextarea2"
+                                                        placeholder="Key in your notes about this unit" rows="3"></textarea>
+                                                </div>
+                                                <div class="col-md-4 align-self-center">
+                                                    <div class="d-grid gap-2 mx-auto">
+                                                        <button class="btn btn-primary btn-sm" type="button">Edit</button>
+                                                        <button class="btn btn-success btn-sm" type="button">Save</button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-6 col-12">
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio"
-                                                        name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                                    <label class="form-check-label" for="inlineRadio2">No</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-12">
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" checked
-                                                        name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                                    <label class="form-check-label" for="inlineRadio2">May Be</label>
-                                                </div>
-                                            </div>
-                                            <br />
-                                            <p><strong>Notes about this unit/viewing</strong></p>
-                                            <textarea class="form-control" id="exampleFormControlTextarea2"
-                                                placeholder="Key in your notes about this unit" rows="2"></textarea>
+                                        </form>
+                                    </div>
+                                </div>
+        
+                                <h3 class="m-0 mt-3"><strong>Ratings and Feedback</strong></h3>
+                                <hr />
+        
+                                <div class="row">
+                                    <strong>Rate the unit</strong>
+                                </div>
+                                <div class="d-grid gap-2 col d-block mt-2">
+                                    <p class="rate m-0">Appearance and Design
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" checked />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </p>
+                                    <p class="rate m-0">Facilities
+                                        <input type="radio" id="1star5" name="rate1" value="5" />
+                                        <label for="1star5" title="text">5 stars</label>
+                                        <input type="radio" id="1star4" name="rate1" value="4" />
+                                        <label for="1star4" title="text">4 stars</label>
+                                        <input type="radio" id="1star3" name="rate1" value="3" checked />
+                                        <label for="1star3" title="text">3 stars</label>
+                                        <input type="radio" id="1star2" name="rate1" value="2" />
+                                        <label for="1star2" title="text">2 stars</label>
+                                        <input type="radio" id="1star1" name="rate1" value="1" />
+                                        <label for="1star1" title="text">1 star</label>
+                                    </p>
+                                    <p class="rate m-0">Cleanliness
+                                        <input type="radio" id="2star5" name="rate2" value="5" checked />
+                                        <label for="2star5" title="text">5 stars</label>
+                                        <input type="radio" id="2star4" name="rate2" value="4" />
+                                        <label for="2star4" title="text">4 stars</label>
+                                        <input type="radio" id="2star3" name="rate2" value="3" />
+                                        <label for="2star3" title="text">3 stars</label>
+                                        <input type="radio" id="2star2" name="rate2" value="2" />
+                                        <label for="2star2" title="text">2 stars</label>
+                                        <input type="radio" id="2star1" name="rate2" value="1" />
+                                        <label for="2star1" title="text">1 star</label>
+                                    </p>
+                                </div>
+                                <hr />
+                                <div class="row mt-4">
+                                    <div class="col-12">
+                                        <p>Are you interested in this unit?</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check form-check-inline mt-1">
+                                            <input class="form-check-input" type="radio" checked name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check form-check-inline mt-1">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">No</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check form-check-inline mt-1">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">May Be</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        </button>
                     </div>
                 </div>
             </div>
-            <br /> <br />
-        </div>
-        </div>
-
-
-        <footer class="footer copyrighted section-dark">
+        </section>
+        <footer class="footer copyrighted section-dark footer fixedbtm">
             <div class="container">
-                <div class="row">
-                    <div class="credits ms-auto me-auto">
-                        <span class="copyright">
-                            ©
-                            <script>
-                                document.write(new Date().getFullYear())
-                            </script> Rizurf Technology Sdn Bhd - All rights reserved
-                        </span>
+                <div class="row justify-content-center text-center">
+                    <div class="col-12">
+                        <div class="credits me-auto ms-auto">
+                            <span class="copyright">
+                                ©
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script> Rizurf Technology Sdn Bhd - All rights reserved
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </footer>
-
-    </section>
-
-
-    <!--   Core JS Files   -->
-    <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
-    <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-    <script src="/assets/js/plugins/bootstrap-switch.js"></script>
-    <script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-    <script src="/assets/js/plugins/moment.min.js"></script>
-    <script src="/assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
-    <script src="/assets/js/rizurfjs.js" type="text/javascript"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        var myModal = document.getElementById('myModal')
-        var myInput = document.getElementById('myInput')
-
-        myModal.addEventListener('shown.bs.modal', function () {
-            myInput.focus()
-        })
-    </script>
-    <script>
-        $(function () {
-            $("#slider-range").slider({
-                range: true,
-                min: 0,
-                max: 500,
-                values: [75, 300],
-                slide: function (event, ui) {
-                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-                }
-            });
-            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-                " - $" + $("#slider-range").slider("values", 1));
-        });
-    </script>
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>
