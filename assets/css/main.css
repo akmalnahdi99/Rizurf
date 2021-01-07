@@ -1892,6 +1892,7 @@
 }
 .form-select {
   padding: 15px 12px;
+  font-size: 14px;
 }
 
 .form-control:focus {
@@ -5185,6 +5186,7 @@ License - nucleoapp.com/license/
   position: relative;
   line-height: 20px;
   padding: 40px 5px;
+  z-index: 1;
 }
 
 .footer.footermb {
@@ -5975,6 +5977,9 @@ ul.footerlist {
   align-items: center;
   justify-content: center;
 }
+.page-header.pagebgfixed {
+  background-attachment: fixed;
+}
 
 .page-header .filter::after {
   background-color: rgba(0, 0, 0, 0.4);
@@ -6105,8 +6110,8 @@ ul.footerlist {
 }
 
 .owner .avatar {
-  padding: 15px;
-  max-width: 180px;
+  /* padding: 15px; */
+  max-width: 200px;
   margin: -85px auto 0;
   display: inline-block;
 }
@@ -6255,6 +6260,9 @@ ul.footerlist {
   position: relative;
   background-color: #FFFFFF;
   min-height: 87vh;
+}
+.section.sectionheight {
+  min-height: auto;
 }
 
 .section.sectionpad {
