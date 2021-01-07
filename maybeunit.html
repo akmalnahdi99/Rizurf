@@ -219,6 +219,48 @@
                 </div>
             </div>
         </footer>
+        <div class="kc_fab_wrapper">
+            <div class="sub_fab_btns_wrapper">
+                <div><button data-link-title="Whatsapp Us"
+                        data-link-href="https://api.whatsapp.com/send?phone=51955081075&amp;text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+                        data-link-target="_blank" class="sub_fab_btn" style="background-color:#25D366;"><span>
+                            <img src="assets/img/whatsappcolorised.svg" alt="..." width="20px"></span></button></div>
+                <div><button data-link-title="FB Messenger Us" data-link-href="http://www.example.com" data-link-target=""
+                        class="sub_fab_btn" style="background-color:#fff;"><span style="color:#006AFF;"><img
+                                src="assets/img/facebook-messenger-logo.svg" alt="..." width="20px"></span></button></div>
+            </div><button data-link-href="" data-link-target="" class="kc_fab_main_btn" style="background-color:#51cbce;">
+                <span><img src="assets/img/chat.svg" alt="..." width="35px"></span></button>
+        </div>
+
+        <!--   Core JS Files   -->
+        <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
+        <script src="/assets/js/rizurfjs.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function () {
+                var links = [
+                    {
+                        "bgcolor": "#51cbce",
+                        "icon": "<img src='assets/img/chat.svg' alt='...' width='35px' />"
+                    },
+                    {
+                        "url": "https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.",
+                        "bgcolor": "#25D366",
+                        "color": "#fffff",
+                        "icon": "<img src='assets/img/whatsappcolorised.svg' alt='...' width='20px' />",
+                        "target": "_blank",
+                        "title": "Whatsapp Us"
+                    },
+                    {
+                        "url": "http://www.example.com",
+                        "bgcolor": "#fff",
+                        "color": "#006AFF",
+                        "icon": "<img src='assets/img/facebook-messenger-logo.svg' alt='...' width='20px' />",
+                        "title": "FB Messenger Us"
+                    }
+                ]
+                $('.kc_fab_wrapper').kc_fab(links);
+            })
+        </script>
 </body>
 
 </html>
