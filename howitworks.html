@@ -56,9 +56,9 @@
                 <a class="nav-link" href="aboutus.html">About Us</a>
               </li>
               <li class="nav-item d-flex">
-                <a class="nav-link pe-0" href="signin.html">Sign-In</a>
+                <a class="nav-link pr-0" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#signInmodal">Sign-In</a>
                 <span class="nav-link px-2">|</span>
-                <a class="nav-link ps-0" href="signup.html">Sign-Up</a>
+                <a class="nav-link pl-0" href="signup.html">Sign-Up</a>
               </li>
               <li class="nav-item">
               </li>
@@ -310,6 +310,40 @@
           </div>
         </div>
       </footer>
+
+
+      <div class="modal fade" id="signInmodal" tabindex="-1" aria-labelledby="signInmodalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal-brdradius">
+            <div class="modal-header text-start">
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+              <h3 class="modal-title m-0 fontw-bold text-center" id="signInmodalLabel1">Sign-In</h3>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="emailUser" aria-describedby="emailHelp"
+                    placeholder="Email Address or Phone Number*" required>
+                </div>
+                <div class="mb-5">
+                  <input type="password" class="form-control" id="passwordInput" placeholder="Password*" required>
+                  <label class="fontw-normal ms-2 mt-1">Forgot your password? Don't worry <a href="signup.html">Reset
+                      Here</a></label>
+                </div>
+                <hr />
+                <div class="d-grid gap-2 mt-3">
+                  <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+                <p class="mt-3 text-center fontw-normal">Don't have an account? <a href="signup.html">Sign-Up Here</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <div class="kc_fab_wrapper"></div>
     <!--   Core JS Files   -->
     <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
