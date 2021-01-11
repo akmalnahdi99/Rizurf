@@ -340,7 +340,7 @@
 }
 
 .listingunit.locationlist {
-  height: calc(83vh - 70px);
+  height: calc(100vh - 70px);
 }
 
 .mb-5px {
@@ -357,6 +357,11 @@
 
 .listingunit::-webkit-scrollbar {
   display: none;
+}
+
+.mainsection2 {
+  position: relative;
+  top: 70px;
 }
 
 .mainsection {
@@ -1023,6 +1028,10 @@ button.close {
     border-right-width: 14px;
     left: -14px;
     right: auto;
+  }
+  .mainsection2 {
+    position: relative;
+    top: 109px;
   }
 }
 
