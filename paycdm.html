@@ -67,48 +67,49 @@
     <section class="section section-dark-blue p-5">
         <div class="container">
             <div class="row justify-content-center">
-                        <div class="col-md-8 col-12">
-                            <div class="justify-content-center">
-                                <div class="container-fluid">
-                                    <div class="text-center">
-                                        <h2 class="text-center title text-white">Payment By CDM</h2>
-                                    </div>
-                                    <div class="row pt-2 mt-5">
-                                        <div class="col-sm-12">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <h5 class="text-doorcase3"><strong>Name payable</strong></h5>
-                                                    <h5 class="m-0">Suez Sdn. Bhd.</h5>
-                                                </div>
-                                            </div>
-                                            <hr />
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <h5 class="text-doorcase3"><strong>Bank name</strong></h5>
-                                                    <h5 class="m-0">CIMB</h5>
-                                                </div>
-                                            </div>
-                                            <hr />
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <h5 class="text-doorcase3"><strong>Account Number</strong></h5>
-                                                    <h5 class="m-0">03-7453 8045</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-5 justify-content-center">
-                                        <div class="col-8 text-center">
-                                            <button class="btn btn-lg btn-primary">Upload Receipt</button>
-                                        </div>
-                                    </div>
+                <div class="col-md-8 col-12">
+                    <div class="justify-content-center">
+                        <div class="container-fluid">
+                            <div class="text-center">
+                                <h2 class="text-center title text-white">Payment By CDM</h2>
+                            </div>
+                            <div class="row pt-2 mt-5">
+                                <div class="col-sm-12">
+                                    <h5 class="text-doorcase3"><strong>Name payable</strong></h5>
+                                    <h5 class="m-0">Suez Sdn. Bhd.</h5>
+                                    <hr />
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="text-doorcase3"><strong>Bank name</strong></h5>
+                                    <h5 class="m-0">CIMB</h5>
+                                    <hr />
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="text-doorcase3"><strong>Account Number</strong></h5>
+                                    <h5 class="m-0">03-7453 8045</h5>
+                                    <hr />
                                 </div>
                             </div>
+                            <div class="row mt-5 justify-content-center">
+                                <div class="col-md-12 my-2 text-center">
+                                    <div class="mb-4 mt-4">
+                                        <label for="formFile" class="form-label">
+                                            <h5><strong>Upload Receipt</strong></h5>
+                                        </label>
+                                        <form action="" class="dropzone" id="DropZoneFiddle">
+                                            <img class="img-responsive" src="assets/img/upload.svg" width="120px"
+                                                alt="..." />
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-8 text-center">
+                                    <button class="btn btn-lg btn-primary">Submit</button>
+                                </div>
+                            </div>
+
                         </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -160,6 +161,33 @@
             ]
             $('.kc_fab_wrapper').kc_fab(links);
         })
+    </script>
+    <script>
+        Dropzone.options.DropZoneFiddle = {
+            url: this.location,
+            paramName: "file", //the parameter name containing the uploaded file
+            uploadprogress: true,
+            clickable: true,
+            uploadMultiple: false,
+            maxFiles: 1, // allowing any more than this will stress a basic php/mysql stack
+            maxfilesreached: 1,
+            maxfilesexceeded: 1,
+            addRemoveLinks: true,
+            acceptedFiles: '.png,.jpg,.pdf', //allowed filetypes
+            dictDefaultMessage: "Upload or drag & drop your files here", //override the default text
+            init: function () {
+                this.on("sending", function (file, xhr, formData) {
+                    formData.append("step", "upload"); // Append all the additional input data of your form here!
+                    formData.append("id", "1"); // Append all the additional input data of your form here!
+                });
+                this.on("success", function (file, responseText) {
+                    //auto remove buttons after upload
+                    $("#div-files").html(responseText);
+                    var _this = this;
+                    _this.removeFile(file);
+                });
+            }
+        }
     </script>
 </body>
 

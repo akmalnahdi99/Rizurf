@@ -2899,7 +2899,7 @@ a:focus, a:active, button::-moz-focus-inner, input[type="reset"]::-moz-focus-inn
 }
 
 .bg-primary {
-  background-color: #6dd3d6 !important;
+  background-color: #10b5df !important;
 }
 
 .bg-info {
@@ -4821,6 +4821,7 @@ License - nucleoapp.com/license/
   top: 0;
   width: 100%;
   z-index: 99999999;
+  padding-right: 0 !important;
 }
 
 .modal-backdrop {
@@ -4917,7 +4918,7 @@ License - nucleoapp.com/license/
 
 .modal-footer {
   border-top: 1px solid #DDDDDD;
-  padding: 0px;
+  padding: 30px;
 }
 
 .modal-footer.no-border-footer {
@@ -5359,13 +5360,13 @@ ul.footerlist {
 
 .card {
   border-radius: 12px;
-  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px 3px rgba(0, 0, 0, 0.15);
   background-color: #FFFFFF;
   color: #333333;
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
-  border: 0 none;
+  border: 1px solid rgb(209, 208, 208);
   -webkit-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
   -moz-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
   -o-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
