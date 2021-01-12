@@ -1247,7 +1247,7 @@
 .btn-primary2 {
   background-color: #ad590a;
   border-color:#ad590a;
-  color: #fff !important;
+  color: #000 !important;
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -1258,7 +1258,7 @@
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled).active:focus, .show>.btn-primary.dropdown-toggle {
   background-color: #108dac;
-  color: #FFFFFF;
+  color: #000;
   border-color: #108dac;
   box-shadow: none;
 }
@@ -1292,14 +1292,14 @@
 .btn-success {
   background-color: #07c75d;
   border-color: #07c75d;
-  color: #fff;
+  color: #000;
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success:active:focus, .btn-success:active:hover, .btn-success.active:focus, .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled).active:focus, .show>.btn-success.dropdown-toggle {
   background-color: #0f8645;
-  color: #FFFFFF;
+  color: #000;
   border-color: #0f8645;
   box-shadow: none;
 }
@@ -4374,10 +4374,10 @@ License - nucleoapp.com/license/
 }
 
 .tooltip-inner {
-  background-color: #FFFFFF;
+  background-color: #111E37;
   border-radius: 4px;
   box-shadow: 0 1px 13px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(115, 71, 38, 0.23);
-  color: #66615B;
+  color: #fff;
   max-width: 200px;
   padding: 10px 10px;
   text-align: center;
@@ -4396,6 +4396,12 @@ License - nucleoapp.com/license/
   position: absolute;
 }
 
+
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before, .bs-tooltip-bottom .tooltip-arrow::before {
+  bottom: -1px;
+  border-width: 0 .4rem .4rem;
+  border-bottom-color: #111E37;
+}
 .tooltip.fade.bs-tooltip-left, .tooltip.fade.bs-tooltip-left.show {
   left: -5px !important;
 }
