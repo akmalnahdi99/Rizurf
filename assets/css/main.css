@@ -1244,6 +1244,14 @@
   filter: alpha(opacity=100);
 }
 
+.btn-primary2 {
+  background-color: #ad590a;
+  border-color:#ad590a;
+  color: #fff !important;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
 .width150 {
   width: 150px;
 }
