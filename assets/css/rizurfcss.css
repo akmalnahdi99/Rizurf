@@ -331,8 +331,8 @@
 }
 
 .listingunit {
-  height: calc(83vh - 70px);
-  overflow: scroll;
+  /* height: calc(83vh - 70px);
+  overflow: scroll; */
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
