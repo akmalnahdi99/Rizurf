@@ -844,6 +844,16 @@ button.close {
 .splide-res {
   display: block;
 }
+.splide__pagination__page.is-active {
+  transform: scale(1.4);
+  background: #002a4d;
+}
+.splide__arrow svg {
+  width: 2.5em;
+  height: 2.5em;
+  fill: #002a4d;
+  transition: fill .2s linear;
+}
 
 /* TimeLine */
 
