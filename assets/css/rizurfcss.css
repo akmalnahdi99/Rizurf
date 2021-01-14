@@ -381,7 +381,9 @@
 .float-none {
   float: none;
 }
-
+.font-xs {
+  font-size: 10px !important
+}
 .font-small {
   font-size: 13px !important
 }

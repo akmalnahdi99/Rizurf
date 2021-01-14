@@ -5991,7 +5991,7 @@ ul.footerlist {
 }
 
 .page-header .filter::after {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   content: "";
   display: block;
   height: 100%;
@@ -6329,7 +6329,7 @@ ul.footerlist {
 }
 
 .section-dark {
-  background-color: #002a4d;
+  background-color: #111E37;
 }
 
 .section-image, .section-gold, .section-dark {
