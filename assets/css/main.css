@@ -2796,13 +2796,13 @@ body {
 }
 
 a {
-  color: #51bcda;
+  color: #94dcf1;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover, a:focus {
-  color: #2ba9cd;
+  color: #0098c2;
   text-decoration: none;
 }
 
@@ -6319,9 +6319,17 @@ ul.footerlist {
   background-color: #111E37;
   color: #FFFFFF;
 }
+.section-dark-gray {
+  background-color: #5d626d;
+  color: #FFFFFF;
+}
+.section-light-gray {
+  background-color: #f9fafb;
+  color: #FFFFFF;
+}
 
 .section-dark {
-  background-color: #0b1011;
+  background-color: #002a4d;
 }
 
 .section-image, .section-gold, .section-dark {
