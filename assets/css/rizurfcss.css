@@ -892,7 +892,7 @@ button.close {
 
 .timeline:before {
   top: 50px;
-  bottom: 291px;
+  bottom: 74px;
   position: absolute;
   content: " ";
   width: 3px;
