@@ -321,7 +321,12 @@
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
-
+.paymobile {
+  display: none;
+}
+.paydesktop {
+  display: block;
+}
 .noboxshadow {
   box-shadow: none;
 }
@@ -485,9 +490,10 @@
 }
 
 #sticky.stick {
-  position: sticky;
-  position: -webkit-sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 10000;
   overflow: scroll;
   width: 100%;
@@ -831,6 +837,10 @@ button.close {
   padding: 1rem 1rem;
 }
 
+.table.tnaked>:not(caption)>*>* {
+  padding: 1rem 1rem;
+  border-bottom-width: 0px;
+}
 /* splide slider */
 
 .splide__pagination {
@@ -883,7 +893,7 @@ button.close {
 }
 
 .timeline.timelinebtm:before {
-  bottom: 120px;
+  bottom: 270px;
 }
 
 .timeline.timelinebtm2:before {
@@ -1891,6 +1901,7 @@ button.kc_fab_main_btn {
   .widget {
     display: none;
   }
+  
 }
 
 @media (min-width: 200px) and (max-width: 767px) {
@@ -1911,6 +1922,12 @@ button.kc_fab_main_btn {
   }
   .feature {
     display: block;
+  }
+  .paymobile {
+    display: block;
+  }
+  .paydesktop {
+    display: none;
   }
 }
 

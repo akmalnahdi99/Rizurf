@@ -2806,6 +2806,7 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+
 hr {
   border-color: #cecbc8;
   border-top: 1px solid rgba(0, 0, 0, .1);
@@ -5402,6 +5403,13 @@ ul.footerlist {
 
 .card a:not(.btn):hover, .card a:not(.btn):focus {
   color: #333333;
+}
+
+.card a.ot-links:not(.btn) {
+  color: #0098c2;
+}
+.card a.ot-links:not(.btn):hover, .card a:not(.btn):focus {
+  color: #94dcf1;
 }
 
 .card .card-description {
