@@ -892,7 +892,7 @@ button.close {
 
 .timeline:before {
   top: 50px;
-  bottom: 225px;
+  bottom: 291px;
   position: absolute;
   content: " ";
   width: 3px;
@@ -1021,7 +1021,7 @@ button.close {
 @media (max-width: 767px) {
   ul.timeline:before {
     left: 25px;
-    bottom: 250px;
+    bottom: 315px;
   }
   ul.timeline>li>.timeline-panel {
     width: calc(100% - 90px);
