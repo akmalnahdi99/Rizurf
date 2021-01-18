@@ -2796,7 +2796,7 @@ body {
 }
 
 a {
-  color: #94dcf1;
+  color: #10b5df;
   text-decoration: none;
   background-color: transparent;
 }
@@ -4329,7 +4329,7 @@ License - nucleoapp.com/license/
 }
 
 .img-no-padding {
-  padding: 0px;
+  padding: 0px !important;
 }
 
 .example-page .img-rounded {
@@ -5423,6 +5423,9 @@ ul.footerlist {
   height: auto;
   border-radius: 12px 12px 0 0;
 }
+.card.imgnobdr img {
+  border-radius: 0;
+}
 
 .card[data-radius="none"] {
   border-radius: 0px;
@@ -5490,8 +5493,8 @@ ul.footerlist {
 }
 
 .card .author .avatar {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   overflow: hidden;
   border-radius: 50%;
   margin-right: 5px;
