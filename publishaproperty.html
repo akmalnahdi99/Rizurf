@@ -40,12 +40,12 @@
         </button>
       </div>
       <div class="collapse navbar-collapse justify-content-end" id="navigation">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ">
           <li class="nav-item">
             <a class="nav-link bloblines" href="refer-steps.html">Refer &amp; Earn</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="publishaproperty.html">Publish a property</a>
+            <a class="nav-link" href="publishaproperty.html">Publish a property</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="howitworks.html">How it Works</a>
@@ -53,8 +53,12 @@
           <li class="nav-item">
             <a class="nav-link" href="aboutus.html">About Us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="profile-page.html">My Account</a>
+          <li class="nav-item d-flex">
+            <a class="nav-link pe-0" href="javascript:void(0)" data-bs-toggle="modal"
+              data-bs-target="#signInmodal">Sign-In</a>
+            <span class="nav-link px-0" style="cursor: pointer;">|</span>
+            <a class="nav-link px-0" href="javascript:void(0)" data-bs-toggle="modal"
+              data-bs-target="#signUpmodal">Sign-Up</a>
           </li>
         </ul>
       </div>
@@ -65,8 +69,8 @@
     <div class="filter"></div>
     <div class="container mb-5 mt-5">
       <div class="motto text-center">
-        <div class="row justify-content-center">
-          <div class="col-md-8 mt-5">
+        <div class="row justify-content-center pt-5">
+          <div class="col-md-10 mt-5">
             <form action="submit-msg.html" class="needs-validation" novalidate>
               <div class="wrap">
                 <br />
@@ -74,39 +78,36 @@
                 <h3 class="text-center mt-3">Contact us to find out more!</h3>
 
                 <div class="mt-3 row justify-content-center">
-                  <div class="col-md-10 my-2">
+                  <div class="col-md-8 my-2">
                     <div class="input-group">
-                      <input type="text" class="form-control" id="nameinput" placeholder="Full name*"
-                        required>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row justify-content-center">
-                  <div class="col-md-10 my-2">
-                    <div class="input-group">
-                      <input type="text" class="form-control" id="hpinput" placeholder="Phone number*"
-                        required>
+                      <input type="text" class="form-control" id="nameinput" placeholder="Full name*" required>
                     </div>
                   </div>
                 </div>
 
                 <div class="row justify-content-center">
                   <div class="col-md-8 my-2">
-                    <button class="btn btn-lg btn-primary text-black btn-width200"
-                      type="submit">Submit</button>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="hpinput" placeholder="Phone number*" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-md-8 my-2">
+                    <button class="btn btn-lg btn-primary text-black btn-width200" type="submit">Submit</button>
                   </div>
                 </div>
                 <hr />
                 <div class="row mt-3 justify-content-center">
-                  <div class="col-4 col-md-4 text-center">
+                  <div class="col-6 col-md-4 text-center">
                     <button class=" btn btn-success text-black btn-refer mt-1 justify-content-center me-2">
                       <img src="assets/img/whatsappcolorised.svg" alt="..." width="30px" />
                       <br />
                       WhatsApp
                     </button>
                   </div>
-                  <div class="col-4 col-md-4 text-center">
+                  <div class="col-6 col-md-4 text-center">
                     <button class=" btn btn-primary text-black btn-refer mt-1 justify-content-center me-2">
                       <img src="assets/img/call.svg" alt="..." width="30px" />
                       <br />
@@ -115,7 +116,7 @@
                   </div>
                 </div>
               </div>
-              
+
             </form>
           </div>
         </div>
@@ -236,7 +237,8 @@
           </div>
           <div class="d-flex justify-content-center text-white font-xs">
             <small>
-              <a class=" text-center" href="https://www.freepik.com/vectors/business" target="_blank">Illustrations by Freepik</a>
+              <a class=" text-center" href="https://www.freepik.com/vectors/business" target="_blank">Illustrations by
+                Freepik</a>
             </small>
             &nbsp;&nbsp;|&nbsp;&nbsp;
             <small class="text-center">
@@ -271,9 +273,116 @@
             <div class="d-grid gap-2 mt-3">
               <button class="btn btn-primary" type="submit">Submit</button>
             </div>
-            <p class="mt-3 text-center fontw-normal">Don't have an account? <a href="signup.html">Sign-Up
-                Here</a></p>
+            <p class="mt-3 text-center fontw-normal">Don't have an account?
+              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-dismiss="modal"
+                data-bs-target="#signUpmodal">Sign-Up
+                Here</a>.
+            </p>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="signUpmodal" tabindex="-1" aria-labelledby="signUpmodal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-brdradius">
+        <div class="modal-header text-start">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h3 class="modal-title m-0 fontw-bold text-center" id="signUpmodalLabel1">Sign-Up</h3>
+        </div>
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-md-12">
+              <form method="POST" action="requirements.html" class="needs-validation" novalidate>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 my-2">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input type="text" class="form-control" placeholder="Full name*" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 my-2">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input type="email" class="form-control" placeholder="Email*" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 my-2 pe-0">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input type="password" class="form-control" placeholder="Password*" required>
+                      </div>
+                    </div>
+                    <div class="col-6 my-2">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input type="password" class="form-control" placeholder="Confirm Password*" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 col-3 my-2 pe-1">
+                      <select class="form-control">
+                        <option selected>MY +60</option>
+                        <option value="1">BD +880</option>
+                        <option value="2">IND +91</option>
+                        <option value="3">SG +65</option>
+                        <option value="4">US +1</option>
+                      </select>
+                    </div>
+                    <div class="col-md-9 col-9 my-2">
+                      <div class="input-group">
+                        <input type="number" class="form-control" placeholder="Phone number*" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 my-2 pe-0">
+                      <div class="input-group-desc">
+                        <button class="btn btn-refer btn-pad btn-primary" type="submit">Request OTP</button>
+                      </div>
+                    </div>
+                    <div class="col-6 my-2">
+                      <div class="input-group">
+                        <input type="number" class="form-control" placeholder="Enter OTP" required>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row justify-content-center mb-5">
+                    <div class="col-lg-12 col-12">
+                      <div class="form-check mt-2 justify-content-center text-center">
+                        <label class="form-check-label" for="invalidCheck">
+                          <input class="form-check-input fontw-normal" id="invalidCheck" type="checkbox" value=""
+                            required>
+                          <span>Agree to Terms &amp; Conditions</span>
+                          <span class="form-check-sign"></span>
+                        </label>
+                        <div class="invalid-feedback">
+                          You must agree before submitting.
+                        </div>
+                      </div>
+                      <button class=" btn btn-refer font-medium btn-primary mt-1" href="refer-steps.html">Sign
+                        up</button>
+                      <p class="text-center mt-4">Already have an account? <a href="javascript:void(0)"
+                          data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#signInmodal">Sign in</a></p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>

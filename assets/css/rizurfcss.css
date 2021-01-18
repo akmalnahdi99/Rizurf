@@ -331,6 +331,16 @@
   box-shadow: none;
 }
 
+.card-agent {
+  position: absolute;
+  bottom: 78px;
+  width: 100%;
+  background: rgba(10, 74, 126, 0.363);
+}
+.card-agent p{
+  font-size: 13px;
+}
+
 .bordertop {
   border-top: 1px solid #e7e7e7;
 }
@@ -442,6 +452,11 @@
 
 .iconsmall p {
   font-size: 14px !important;
+}
+
+.borderradius-top {
+  border-top-left-radius: 12px ;
+  border-top-right-radius: 12px ;
 }
 
 .bdrradius {
@@ -900,6 +915,13 @@ button.close {
   bottom: 122px;
 }
 
+.timeline.timelinebtm3:before {
+  bottom: 450px;
+}
+.timeline.timelinebtm4:before {
+  bottom: 299px;
+}
+
 .timeline:before {
   top: 50px;
   bottom: 74px;
@@ -1028,6 +1050,18 @@ button.close {
   margin-top: 5px;
 }
 
+@media (min-width: 991px) and (max-width: 1024px) {
+  .timeline.timelinebtm3:before {
+    bottom: 370px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline.timelinebtm3:before {
+    bottom: 390px;
+  }
+}
+
 @media (max-width: 767px) {
   ul.timeline:before {
     left: 25px;
@@ -1061,6 +1095,9 @@ button.close {
   .mainsection2 {
     position: relative;
     top: 109px;
+  }
+  .timeline.timelinebtm3:before {
+    bottom: 370px;
   }
 }
 
