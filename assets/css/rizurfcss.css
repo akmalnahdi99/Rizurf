@@ -1288,7 +1288,7 @@ img.profile {
 
 #DropZoneFiddle {
   cursor: pointer;
-  border: 2px dotted #fff;
+  border: 2px dotted rgb(0, 0, 0);
   padding: 30px 0;
   border-radius: 10px;
 }
