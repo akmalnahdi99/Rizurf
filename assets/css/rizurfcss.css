@@ -1250,9 +1250,10 @@ img.profile {
 }
 
 .p-image {
-  position: relative;
-  top: -41px;
-  right: -54px;
+  position: absolute;
+  top: 34px;
+  right: 79px;
+  left: 161px;
   color: rgb(.175, .885, .32, 1.275);
   transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
 }
