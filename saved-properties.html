@@ -8,20 +8,20 @@
     <link rel="icon" type="image/png" href="assets/img//favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        Favorite Properties | Rizurf | Some Catchy Phrases
+        Favourite Properties | Rizurf | Some Catchy Phrases
     </title>
 
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-    <!--     Fonts and icons     -->
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+        name='viewport' />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
     <!-- CSS Files -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="assets/css/main.css" rel="stylesheet" />
     <link href="assets/css/rizurfcss.css" rel="stylesheet" />
-    <style>
-    </style>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body class="landing-page sidebar-collapse">
@@ -68,107 +68,215 @@
 
     </nav>
     <!-- End Navbar -->
+    <br />
     <section class="section p-5">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-10 mb-5">
-                    <div class="col-12 mb-4">
-                        <div class="title text-center mb-3">
-                            <h2>Favourite Properties</h2>
-                        </div>
+            <div class="row mb-5">
+                <div class="col-12 mb-3">
+                    <div class="title text-center mb-2">
+                        <h2>Favourite Properties</h2>
                     </div>
-                    <div class="container-fluid">
-                        <div class="searchfilter">
-                            <p><strong>3</strong> Favorite Properties <br /><strong>KL Gateway
-                                    Residence</strong>
-                            </p>
-                            <div class="dropdown">
-                                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Sort by: <br />Best
-                                    Match
-                                  </button>
-
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#">Sort by: Best Match</a></li>
-                                    <li><a class="dropdown-item" href="#">Sort by: Price</a></li>
-                                    <li><a class="dropdown-item" href="#">Sort by: New Arrivals</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr class="m-1" />
-                        <br />
-                        <div>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 col-12 ">
-                                    <div class="card" onclick="location.href='propertypage.html';"
-                                        style="cursor:pointer;">
-                                        <div class="card-img-top ">
-                                            <div>
-                                                <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg"
-                                                    alt="First slide">
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">RM 2,000</h5>
-                                            <div class="d-flex iconsmall">
-                                                <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..." width="20px"> 3</p>
-                                                <p class="me-2 ms-1"><img src="assets/img/bath-tub.svg" alt="..." width="20px"> 2</p>
-                                                <p class="me-2 ms-1"><img src="assets/img/parking.svg" alt="..." width="20px"> 3</p>
-                                                <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..." width="20px"> 3000 sqft.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
+                </div>
+                <div class="payfilter mt-4">
+                    <div class="row p-0 justify-content-center">
+                        <div class="col-lg-8 px-2">
+                            <div id="FilterContainer"
+                                class="mb-4 mt-2 multiple-items d-flex text-center justify-content-center">
+                                <div class="widthfitcontent p-0 mx-1">
+                                    <a class="btnfiltermain btnfilter m-1" value="pending"
+                                        onclick="filterSelection('pending')">
+                                        <img src="assets/img/destination.svg" alt="Like It!" width="25px" />
+                                        Tour Requested
+                                    </a>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-12 ">
-                                    <div class="card" onclick="location.href='propertypage.html';"
-                                        style="cursor:pointer;">
-                                        <div class="card-img-top ">
-                                            <div>
-                                                <img class="d-block img-fluid" src="assets/img/bruno-abatti.jpg"
-                                                    alt="First slide">
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">RM 2,000</h5>
-                                            <div class="d-flex iconsmall">
-                                                <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..." width="20px"> 3</p>
-                                                <p class="me-2 ms-1"><img src="assets/img/bath-tub.svg" alt="..." width="20px"> 2</p>
-                                                <p class="me-2 ms-1"><img src="assets/img/parking.svg" alt="..." width="20px"> 3</p>
-                                                <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..." width="20px"> 3000 sqft.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
+                                <div class="widthfitcontent p-0 mx-1">
+                                    <a class="btnfiltermain btnfilter m-1" value="maybe"
+                                        onclick="filterSelection('maybe')">
+                                        <img src="assets/img/favourite.svg" alt="Like It!" width="25px" />
+                                        Saved Properties
+                                    </a>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="card" onclick="location.href='propertypage.html';"
-                                        style="cursor:pointer;">
-                                        <div class="card-img-top ">
-                                            <div>
-                                                <img class="d-block img-fluid" src="assets/img/federico-beccari.jpg"
-                                                    alt="First slide">
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">RM 2,000</h5>
-                                            <div class="d-flex iconsmall">
-                                                <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..." width="20px"> 3</p>
-                                                <p class="me-2 ms-1"><img src="assets/img/bath-tub.svg" alt="..." width="20px"> 2</p>
-                                                <p class="me-2 ms-1"><img src="assets/img/parking.svg" alt="..." width="20px"> 3</p>
-                                                <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..." width="20px"> 3000 sqft.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
+                                <div class="widthfitcontent p-0 mx-1">
+                                    <a class="btnfiltermain btnfilter current m-1" value="interested" onclick="filterSelection('interested')">
+                                        <img src="assets/img/all.svg" alt="Like It!" width="25px" />
+                                        <span>All</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <hr />
+                <div class="col-md-10 mx-auto mt-4">
+                    <div class="row justify-content-center" id="visitedProperty">
+                        <div class="col-lg-4 col-md-6 col-12 filterDiv interested" data-name="interested">
+                            <div class="card" onclick="location.href='propertypage.html';" style="cursor:pointer;">
+                                <div class="card-img-top ">
+                                    <img class="d-block img-fluid" src="assets/img/daniel-olahh.jpg"
+                                        alt="First slide" />
+                                </div>
+                                <div class="card-img-overlay">
+                                    <span class="badge bg-primary text-black">Saved Properties</span>
+                                    <img class="float-end" src="assets/img/favourite.svg" alt="Like It!" width="25px" />
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-truncate">RM 2,000 (KL Gateway)</h5>
+                                    <div class="d-flex iconsmall">
+                                        <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..."
+                                                width="20px"> 3
+                                        </p>
+                                        <p class="me-2 ms-1"><img src="assets/img/bath-tub.svg" alt="..." width="20px">
+                                            2</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/parking.svg" alt="..." width="20px">
+                                            3</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..."
+                                                width="20px">
+                                            3000 sqft.</p>
+                                    </div>
+                                    <h6>Unit for rent</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 filterDiv interested" data-name="interested">
+                            <div class="card" onclick="location.href='propertypage.html';" style="cursor:pointer;">
+                                <div class="card-img-top ">
+                                    <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg"
+                                        alt="First slide" />
+                                </div>
+                                <div class="card-img-overlay">
+                                    <span class="badge bg-primary text-black">Saved Properties</span>
+                                    <img class="float-end" src="assets/img/favourite.svg" alt="Like It!" width="25px" />
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-truncate">RM 2,000 (KL Gateway)</h5>
+                                    <div class="d-flex iconsmall">
+                                        <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..."
+                                                width="20px"> 3
+                                        </p>
+                                        <p class="me-2 ms-1"><img src="assets/img/bath-tub.svg" alt="..." width="20px">
+                                            2</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/parking.svg" alt="..." width="20px">
+                                            3</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..."
+                                                width="20px">
+                                            3000 sqft.</p>
+                                    </div>
+                                    <h6>Unit for rent</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 filterDiv interested" data-name="interested">
+                            <div class="card" onclick="location.href='propertypage.html';" style="cursor:pointer;">
+                                <div class="card-img-top ">
+                                    <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg"
+                                        alt="First slide" />
+                                </div>
+                                <div class="card-img-overlay">
+                                    <span class="badge bg-warning text-black">Tour Requested</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-truncate">RM 2,000 (KL Gateway)</h5>
+                                    <div class="d-flex iconsmall">
+                                        <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..."
+                                                width="20px"> 3
+                                        </p>
+                                        <p class="me-2 ms-1"><img src="assets/img/bath-tub.svg" alt="..." width="20px">
+                                            2</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/parking.svg" alt="..." width="20px">
+                                            3</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..."
+                                                width="20px">
+                                            3000 sqft.</p>
+                                    </div>
+                                    <h6>Unit for rent</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 filterDiv maybe" data-name="maybe">
+                            <div class="card" onclick="location.href='propertypage.html';" style="cursor:pointer;">
+                                <div class="card-img-top ">
+                                    <img class="d-block img-fluid" src="assets/img/federico-beccari.jpg"
+                                        alt="First slide" />
+                                </div>
+                                <div class="card-img-overlay">
+                                    <span class="badge bg-primary text-black">Saved Properties</span>
+                                    <img class="float-end" src="assets/img/favourite.svg" alt="Like It!" width="25px" />
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-truncate">RM 2,000 (KL Gateway)</h5>
+                                    <div class="d-flex iconsmall">
+                                        <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..."
+                                                width="20px"> 3
+                                        </p>
+                                        <p class="me-2 ms-1"><img src="assets/img/bath-tub.svg" alt="..." width="20px">
+                                            2</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/parking.svg" alt="..." width="20px">
+                                            3</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..."
+                                                width="20px">
+                                            3000 sqft.</p>
+                                    </div>
+                                    <h6>Unit for rent</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 filterDiv maybe" data-name="maybe">
+                            <div class="card" onclick="location.href='propertypage.html';" style="cursor:pointer;">
+                                <div class="card-img-top ">
+                                    <img class="d-block img-fluid" src="assets/img/federico-beccari.jpg" alt="First slide" />
+                                </div>
+                                <div class="card-img-overlay">
+                                    <span class="badge bg-primary text-black">Saved Properties</span>
+                                    <img class="float-end" src="assets/img/favourite.svg" alt="Like It!" width="25px" />
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-truncate">RM 2,000 (KL Gateway)</h5>
+                                    <div class="d-flex iconsmall">
+                                        <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..." width="20px"> 3
+                                        </p>
+                                        <p class="me-2 ms-1"><img src="assets/img/bath-tub.svg" alt="..." width="20px">
+                                            2</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/parking.svg" alt="..." width="20px">
+                                            3</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..." width="20px">
+                                            3000 sqft.</p>
+                                    </div>
+                                    <h6>Unit for rent</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 filterDiv pending" data-name="pending">
+                            <div class="card" onclick="location.href='propertypage.html';" style="cursor:pointer;">
+                                <div class="card-img-top ">
+                                    <img class="d-block img-fluid" src="assets/img/joshua-stannard.jpg"
+                                        alt="First slide" />
+                                </div>
+                                <div class="card-img-overlay">
+                                    <span class="badge bg-warning text-black">Tour Requested</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-truncate">RM 2,000 (KL Gateway)</h5>
+                                    <div class="d-flex iconsmall">
+                                        <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..."
+                                                width="20px"> 3
+                                        </p>
+                                        <p class="me-2 ms-1"><img src="assets/img/bath-tub.svg" alt="..." width="20px">
+                                            2</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/parking.svg" alt="..." width="20px">
+                                            3</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..."
+                                                width="20px">
+                                            3000 sqft.</p>
+                                    </div>
+                                    <h6>Unit for rent</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
     <footer class="footer copyrighted section-dark footer fixedbtm">
         <div class="container">
@@ -191,7 +299,8 @@
             </div>
         </div>
     </footer>
-    
+
+    <!--   Core JS Files   -->
     <div class="kc_fab_wrapper"></div>
     <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
@@ -221,6 +330,66 @@
             ]
             $('.kc_fab_wrapper').kc_fab(links);
         })
+    </script>
+    <script>
+        filterSelection("interested")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        var btnContainer = document.getElementById("FilterContainer");
+        var btns = btnContainer.getElementsByClassName("btnfilter");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("current");
+                current[0].className = current[0].className.replace("current", "");
+                this.className += " current";
+            });
+        }
+    </script>
+    <script>
+        $("#filteroption").change(function () {
+            var selectItem = $(this).val();
+            filter(selectItem);
+        });
+        function filter(e) {
+            var regex = new RegExp('\\b\\w*' + e + '\\w*\\b');
+            $('.filterDiv').hide().filter(function () {
+                return regex.test($(this).data('name'))
+            }).show();
+            if ($("#visitedProperty").children(":visible").length == 0) {
+                $(".empty").show();
+            } else {
+                $(".empty").hide();
+            }
+        }
     </script>
 </body>
 
