@@ -13,9 +13,6 @@
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
         name='viewport' />
-    <!--     Fonts and icons     -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
     <!-- CSS Files -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -64,7 +61,7 @@
                             data-bs-target="#signInmodal">Sign-In</a>
                         <span class="nav-link px-0">|</span>
                         <a class="nav-link ps-0" href="javascript:void(0)" data-bs-toggle="modal"
-                        data-bs-target="#signUpmodal">Sign-Up</a>
+                            data-bs-target="#signUpmodal">Sign-Up</a>
                     </li>
                 </ul>
             </div>
@@ -128,7 +125,6 @@
                             </li>
                         </ul>
                     </div>
-
                 </div>
             </div>
             <hr />
@@ -153,29 +149,38 @@
                         360 VR
                     </a>
                 </div>
-
-
-
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 text-justify">
+                    <div class="arrowdown">
+                        <a href="#section">
+                            <img alt="Arrow Down Icon" src="assets/img/chevron-down-solid.svg" width="30px" alt="...">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section grey-bg">
+    <section id="section" class="section grey-bg">
         <div class="container">
             <div class="row justify-content-start">
                 <div class="col align-self-end">
                     <h1 class="font-xlarge fontw-bold ">
-                        RM 3,000 <br />
-                        Unit at KL Gateway Residence
+                        RM 3,000
                     </h1>
+                    <h3 class="mt-0">
+                        Unit at KL Gateway Residence
+                    </h3>
                     <p>KL Gateway Residence, Bangsar South</p>
                     <hr />
                 </div>
                 <div class="col-lg-5 align-self-end">
                     <div class="card p-2">
                         <div class="card-body">
-                            <h4 class="card-title font-large"><img src="assets/img/moneybag.svg" alt="..."
-                                    width="40px" /> &nbsp; Refer &amp; Earn</h4>
+                            <h4 class="card-title font-large text-center"><img src="assets/img/moneybag.svg" alt="..."
+                                    width="40px" /> &nbsp; Refer &amp; Earn
+                            </h4>
                             <a href="#" class="btn btn-block btn-warning text-black mt-3" style="width: 100%;">
                                 <sup class="m-0">Up to &nbsp;</sup>
                                 <span class="font-medium fontw-bold m-0">RM 2,500</span>
@@ -224,19 +229,22 @@
                             <div class="container-fluid filterdiv px-3 justify-content-center contentbarlist">
                                 <ul>
                                     <li>
-                                        <a class="font-normal" href="#overview">Overview</a>
+                                        <a class="font-normal centerlist" id="overviewtag" href="#overview">Overview</a>
                                     </li>
                                     <li>
-                                        <a class="font-normal" href="#facilities">Facilities &amp; Amenities</a>
+                                        <a class="font-normal centerlist" href="#facilities">Facilities</a>
+                                    </li>
+                                    <li class="paydesktop ">
+                                        <a class="font-normal centerlist" href="#payment">Payment Terms</a>
+                                    </li>
+                                    <li class="paymobile ">
+                                        <a class="font-normal centerlist" href="#payment-mobile">Payment Terms</a>
                                     </li>
                                     <li>
-                                        <a class="font-normal" href="#payment">Payment Terms</a>
+                                        <a class="font-normal centerlist" href="#howtorizurf">How To Rizurf?</a>
                                     </li>
                                     <li>
-                                        <a class="font-normal" href="#howtorizurf">How To Rizurf?</a>
-                                    </li>
-                                    <li>
-                                        <a class="font-normal" href="#whyrizurf">Why use Rizurf?</a>
+                                        <a class="font-normal centerlist" href="#whyrizurf">Why use Rizurf?</a>
                                     </li>
                                 </ul>
                             </div>
@@ -292,7 +300,7 @@
                         <div class="card-body text-justify">
                             <div class="container">
                                 <h3 class="fontw-semibold">
-                                    Facilities &amp; Amenities
+                                    Facilities
                                 </h3>
                                 <hr />
 
@@ -378,7 +386,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="payment" class="paymobile">
+                    <div id="payment-mobile" class="paymobile">
                         <div class="card p-4">
                             <div class="card-body">
                                 <h4 class="card-title font-large">
@@ -434,7 +442,7 @@
                                         </tr>
                                         <tr class="p-0">
                                             <td colspan="2" class="py-0 ps-0 pe-2">
-                                                <p class="fontw-medium mb-1 font-normal">Stamping fee
+                                                <p class="fontw-medium mb-1 font-normal">Stamp duty
                                                 </p>
                                             </td>
                                             <td class="py-0 px-2"></td>
@@ -449,19 +457,10 @@
                                             </td>
                                             <td class="py-0 px-2"></td>
                                             <td class="p-0">
-                                                <p class="font-normal fontw-bold"><strike>4%</strike> <strong>FREE!</strong></p>
-                                            </td>
-                                        </tr>
-                                        <tr class="p-0">
-                                            <td colspan="2" class="py-0 ps-0 pe-2">
-                                                <p class="fontw-medium mb-1 font-normal">Cancellation policy
+                                                <p class="font-normal fontw-bold mb-0"><strike>4%</strike>
+                                                    <span class="text-warning"><strong>FREE!</strong></span>
                                                 </p>
-                                            </td>
-                                            <td class="py-0 px-2"></td>
-                                            <td class="p-0">
-                                                <a href="#" class="ot-links">
-                                                    <p class="font-normal fontw-semibold">View</p>
-                                                </a>
+                                                <small>*Limited time only</small>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -571,7 +570,7 @@
                                         </tr>
                                         <tr class="p-0">
                                             <td colspan="2" class="p-0">
-                                                <p class="fontw-medium mb-1 font-normal">Stamping fee
+                                                <p class="fontw-medium mb-1 font-normal">Stamp duty
                                                 </p>
                                             </td>
                                             <td class="p-0"></td>
@@ -586,19 +585,10 @@
                                             </td>
                                             <td class="p-0"></td>
                                             <td class="p-0">
-                                                <p class="font-normal"><strike>4%</strike> <b>FREE!</b></p>
-                                            </td>
-                                        </tr>
-                                        <tr class="p-0">
-                                            <td colspan="2" class="p-0">
-                                                <p class="fontw-medium mb-1 font-normal">Cancellation policy
+                                                <p class="font-normal fontw-bold mb-0"><strike>4%</strike>
+                                                    <span class="text-danger"><strong>FREE!</strong></span>
                                                 </p>
-                                            </td>
-                                            <td class="p-0"></td>
-                                            <td class="p-0">
-                                                <a href="#" class="ot-links">
-                                                    <p class="font-normal">View</p>
-                                                </a>
+                                                <small>*Limited time only</small>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -623,7 +613,7 @@
                                                 </div>
                                                 <div class="timeline-body">
                                                     <p>Walk through our property listings with top quality pictures,
-                                                        3600
+                                                        360&#176
                                                         views, guided video tour
                                                         and reserve an appointment for viewing</p>
                                                     <br />
@@ -984,7 +974,7 @@
                     <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
-                    <h3 class="modal-title m-0 fontw-bold text-center" id="requestsmodal">Requested for tour</h3>
+                    <h3 class="modal-title m-0 fontw-bold text-center" id="requestsmodal">Request for tour</h3>
                 </div>
                 <div class="modal-body">
                     <div class="justify-content-center">
@@ -994,48 +984,50 @@
                         <button type="button" class="btn btn-outline-primary btn-round">Afternoon</button>
                         <button type="button" class="btn btn-outline-primary btn-round">Evening</button>
                     </div><br />
-    
+
                     <div class="justify-content-center">
                         <input type="date" class="form-control" id="exampleFormControlInput1"
                             placeholder="Preferred move in date">
                     </div><br />
-    
+
                     <div class="justify-content-center">
                         <button type="button" class="btn btn-outline-primary btn-round">Morning</button>
                         <button type="button" class="btn btn-outline-primary btn-round">Afternoon</button>
                         <button type="button" class="btn btn-outline-primary btn-round">Evening</button>
                     </div><br />
-    
-                    <div class="row">
-                        <div class="col-md-12 my-2">
-                            <h5 class="align-items-center text-black"><strong>Your first and last name</strong></h5>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="First name & last name" required>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-12 my-2">
+                                <label for="fullname" class="form-label"><strong>Full Name</strong></label>
+                                <div class="input-group">
+                                    <input type="text" id="fullname" class="form-control" placeholder="Full Name"
+                                        required>
+                                </div>
                             </div>
                         </div>
-                    </div>
-    
-                    <div class="row">
-                        <div class="col-md-12 my-2">
-                            <h5 class="align-items-center text-black"><strong>Phone</strong></h5>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Phone" required>
+
+                        <div class="row">
+                            <div class="col-md-12 my-2">
+                                <label for="phone" class="form-label"><strong>Phone</strong></label>
+                                <div class="input-group">
+                                    <input type="text" id="phone" class="form-control" placeholder="Phone" required>
+                                </div>
                             </div>
                         </div>
-                    </div>
-    
-                    <div class="row">
-                        <div class="col-md-12 my-2">
-                            <h5 class="align-items-center text-black"><strong>Email</strong></h5>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Email" required>
+
+                        <div class="row">
+                            <div class="col-md-12 my-2">
+                                <label for="email" class="form-label"><strong>Email</strong></label>
+                                <div class="input-group">
+                                    <input type="text" id="email" class="form-control" placeholder="Email" required>
+                                </div>
                             </div>
                         </div>
-                    </div>
-    
-                    <div class="mt-3 text-center fontw-normal mb-3">
-                        <button class="btn btn-primary btn-width300">Send tour request</button>
-                    </div>
+
+                        <div class="mt-3 text-center fontw-normal mb-3">
+                            <button class="btn btn-primary btn-width300" type="submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -1047,47 +1039,45 @@
                     <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
-                    <h3 class="modal-title m-0 fontw-bold text-center" id="requestsmodal2">Offer</h3>
+                    <h3 class="modal-title m-0 fontw-bold text-center" id="requestsmodal2">Make an offer</h3>
                 </div>
                 <div class="modal-body">
-                    <div class="modal-title m-0 fontw-bold text-center" id="requestsmodal2">Offer
-                    </div>
-                    <div class="justify-content-center">
-                        <p><strong>Proposed rent amount</strong></p>
-                        <p>RM XXXX</p>
-                    </div>
-                    <hr />
+                    <form action="">
+                        <div class="justify-content-center">
+                            <label for="offeramount" class="form-label"><strong>Offer
+                                    amount</strong></label>
+                            <input type="number" class="form-control" id="offeramount"
+                                placeholder="Please state your offer" />
+                        </div>
 
-                    <div class="justify-content-center">
-                        <p><strong>Move in date</strong></p>
-                        <p>20/11/2020</p>
-                    </div>
-                    <hr />
+                        <div class="justify-content-center mt-4">
+                            <label for="movein" class="form-label"><strong>Move in date</strong></label>
+                            <input class="form-control" id="movein" type="date" style="cursor: pointer;">
+                        </div>
 
-                    <div class="justify-content-center">
-                        <p><strong>Total occupants</strong></p>
-                        <p>RM XXXX</p>
-                    </div>
-                    <hr />
+                        <div class="justify-content-center mt-4">
+                            <label for="occupants" class="form-label"><strong>Total occupants</strong></label>
+                            <input type="number" class="form-control" id="occupants"
+                                placeholder="How many occupants?" />
+                        </div>
 
-                    <div class="justify-content-center">
-                        <p><strong>Occupation</strong></p>
-                        <p>RM XXXX</p>
-                    </div>
-                    <hr />
+                        <div class="justify-content-center mt-4">
+                            <label for="occupation" class="form-label"><strong>Occupation</strong></label>
+                            <input type="number" class="form-control" id="occupation"
+                                placeholder="What is your occupation" />
+                        </div>
 
-                    <div class="justify-content-center">
-                        <textarea class="form-control" id="exampleFormControlTextarea2" placeholder="Comments (if any)"
-                            rows="3"></textarea>
-                    </div>
+                        <div class="justify-content-centermt-4 mt-4">
+                            <label for="comments" class="form-label"><strong>Leave your Remarks</strong></label>
+                            <textarea class="form-control" id="comments" placeholder="Remarks (if any)"
+                                rows="3"></textarea>
+                        </div>
 
-                    <div class="mt-3 text-center fontw-normal">
-                        <a href="apply.html"><button class="btn btn-primary btn-width300">Apply</button></a>
-                    </div>
+                        <div class="mt-3 text-center fontw-normal">
+                            <button class="btn btn-primary btn-width300" type="submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
-
-
-
             </div>
         </div>
     </div>
@@ -1243,7 +1233,7 @@
 
                 var anchorScrolls = {
                     ANCHOR_REGEX: /^#[^ ]+$/,
-                    OFFSET_HEIGHT_PX: 84,
+                    OFFSET_HEIGHT_PX: 160,
 
                     /**
                      * Establish events, and fix initial scroll position if a hash is provided.
@@ -1317,6 +1307,14 @@
                     'DOMContentLoaded', anchorScrolls.init.bind(anchorScrolls)
                 );
             })(window.document, window.history, window.location);
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('a').click(function () {
+                $('a.centerlist.clicked').removeClass("clicked");
+                $(this).addClass("clicked");
+            });
+        }); 
     </script>
 
 </body>

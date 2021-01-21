@@ -494,6 +494,16 @@
 .mediabar a:hover {
   text-decoration: underline 3px solid #51cbce !important
 }
+.mediabar.whitelink a {
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  text-decoration: none;
+  color: #000;
+}
+
+.mediabar.whitelink a:hover {
+  text-decoration: underline 3px solid #51cbce !important
+}
 
 .textbreak {
   word-wrap: break-word;
@@ -620,6 +630,9 @@ video {
   border: 1px solid #c7c7c7;
 }
 
+.hrdotted{
+  border-top: 3px dotted#c7c7c7;
+}
 .widget {
   position: sticky;
   bottom: 0;
@@ -758,7 +771,25 @@ button.close {
 .contentbarlist ul li a:hover {
   text-decoration: none;
   color: #000;
+  /* border-bottom: 3px solid #51cbce !important */
+}
+
+.contentbarlist li a.centerlist.clicked {
+  text-decoration: none;
+  color: #000;
   border-bottom: 3px solid #51cbce !important
+}
+
+/* arrow down */
+.arrowdown {
+  padding: 50px 0px;
+}
+.arrowdown img{
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 /* unit icon wrapper */
@@ -846,6 +877,10 @@ button.close {
 }
 
 /* Table */
+.table {
+  margin-bottom: 0;
+  vertical-align: middle;
+}
 
 .table.tablebdrblue {
   vertical-align: middle;
@@ -860,10 +895,26 @@ button.close {
 .table>:not(caption)>*>* {
   padding: 1rem 1rem;
 }
+.table.tablesm>:not(caption)>*>* {
+  padding: 0.5rem 0.5rem;
+}
 
 .table.tnaked>:not(caption)>*>* {
   padding: 1rem 1rem;
   border-bottom-width: 0px;
+}
+
+.table-responsive.tbnoborder {
+  border: 0px solid #dddddd !important;
+}
+
+tr.tbnoborderbtm {
+  border-bottom: 0px solid #fff;
+}
+
+/* date of invoice */
+.datefont p{
+ font-size: 13px;
 }
 
 /* splide slider */
@@ -1221,6 +1272,7 @@ button.close {
   padding: 6px 12px;
   cursor: pointer;
 }
+
 .text-justify {
   text-align: justify !important;
 }
@@ -2184,4 +2236,27 @@ button.kc_fab_main_btn {
   .section-navbars .navbar-collapse {
     display: none !important;
   }
+}
+
+@media print {
+  .section {
+    padding: 0;
+    height: auto;
+}
+.card {
+  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
+  border: 0px solid rgb(209, 208, 208);
+}
+.card:not(.card-plain):hover {
+  box-shadow: 0 6px 10px 3px rgba(0, 0, 0, 0);
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+}
+.footer.copyrighted {
+  padding: 10px 5px;
+  border-top: 0px solid #353535;
+}
+
 }

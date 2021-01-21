@@ -6859,6 +6859,9 @@ ul.footerlist {
     -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-overflow-scrolling: touch;
   }
+  .table-responsive.tbnoborder {
+    border: 0px solid #dddddd !important;
+  }
   .typography-line {
     padding-left: 100px !important;
   }
