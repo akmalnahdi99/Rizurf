@@ -32,14 +32,13 @@
         .timeline:before {
             position: absolute;
             content: '';
-            width: 4px;
+            width: 0px;
             height: auto;
             background: rgb(138, 145, 150);
             background: -moz-linear-gradient(left, #10b5df 0%, #10b5df 60%, #10b5df 100%);
             background: -webkit-linear-gradient(left, #10b5df 0%, #10b5df 60%, #10b5df 100%);
             background: linear-gradient(to right, #10b5df 0%, #10b5df 60%, #10b5df 100%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8a9196', endColorstr='#62696d', GradientType=1);
-            left: 14px;
             top: 5px;
             border-radius: 4px;
         }
@@ -73,7 +72,6 @@
 
         .timeline-month:before {
             position: absolute;
-            content: '';
             width: 20px;
             height: 20px;
             background: #10b5df;
@@ -87,26 +85,30 @@
         }
 
         .timeline-section {
-            padding-left: 35px;
+            padding-left: 0px;
             display: block;
             position: relative;
             margin-bottom: 30px;
         }
 
         .timeline-date {
+            text-align: center;
             margin-bottom: 15px;
-            padding: 6px 17px;
-            background: linear-gradient(#07c75d, #07c75d 60%, #07c75d);
+            background: #fff;
             position: relative;
-            display: inline-block;
-            border-radius: 20px;
+            /* display: inline-block; */
+            /* border-radius: 20px; */
             color: #fff;
-            border: 1px solid #111;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            /* border: 1px solid #111; */
+            /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); */
+            font-size: 18px;
+            padding: 25px 15px;
+            box-shadow: 0px 12px 19px -7px rgba(0, 0, 0, 0.3);
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
         }
 
         .timeline-section:before {
-            content: '';
             position: absolute;
             width: 30px;
             height: 1px;
@@ -116,7 +118,6 @@
         }
 
         .timeline-section:after {
-            content: '';
             position: absolute;
             width: 10px;
             height: 10px;
@@ -131,16 +132,7 @@
             margin-bottom: 15px;
         }
 
-        .timeline-box {
-            position: relative;
-
-            background-color: #fff;
-            border-radius: 15px;
-            border-top-left-radius: 0px;
-            border-bottom-right-radius: 0px;
-            transition: all 0.3s ease;
-            overflow: hidden;
-        }
+       
 
         .box-icon {
             position: absolute;
@@ -181,72 +173,89 @@
         }
     </style>
 
+
 </head>
 
 <body class="landing-page sidebar-collapse">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
 
-        <div class="container-fluid">
-            <div class="navbar-translate">
-                <a class="navbar-brand" href="index.html" rel="tooltip" title="Rizurf Logo" data-placement="bottom"
-                    target="_blank">
-                    <img src="assets/img/rizurflogo-color.png" width="150px">
-                </a>
-                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navigation" aria-controls="navigation-index" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-bar bar1"></span>
-                    <span class="navbar-toggler-bar bar2"></span>
-                    <span class="navbar-toggler-bar bar3"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navigation">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link bloblines" href="refer-steps.html">Refer &amp; Earn</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="publishaproperty.html">Publish a property</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="howitworks.html">How it Works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="profile-page.html">My Account</a>
-                    </li>
-                    <li class="nav-item">
-                    </li>
-                </ul>
-            </div>
 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg ">
+
+    <div class="container-fluid">
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="index.html" rel="tooltip" title="Rizurf-Logo" data-placement="bottom"
+                target="_blank">
+                <img src="assets/img/rizurflogo-color.png" style="width:150px">
+            </a>
+            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+            </button>
         </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link bloblines" href="refer-steps.html">Refer &amp; Earn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publishaproperty.html">Publish a property</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="howitworks.html">How it Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="profile-page.html">My Account</a>
+                </li>
+                <li class="nav-item">
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Navbar -->
 
-    </nav>
-    <!-- End Navbar -->
-    <section class="section sectionheight pb-3 pt-5 mt-5">
+
+    <section class="section sectionheight pb-3 pt-5 section-light-gray">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 mx-auto align-self-center text-center">
-                    <h2 class="title pt-5">Appointments</h2>
+                    <h2 class="title pt-5 mt-0">Appointments</h2>
                 </div>
             </div>
+
+            <!-- <div class="timeline-section mt-5">
+                <div class="sticky-top">
+                <div class="timeline-date text-black text-start"> 
+                    21 JAN 2021 | <strong> Today</strong>
+                </div>
+                </div>
+                <div class="row">
+                    <h3 class="text-center mt-3">No Appointments Today!!!</h3>
+                </div>
+            </div> -->
+
+            
+           
             <div class="timeline">
-                <div class="timeline-month text-white">
-                    August, 2020
-                    <span>3 Entries</span>
-                </div>
                 <div class="timeline-section">
-                    <div class="timeline-date">
-                        21, Tuesday
+                    <div class="sticky-top">
+                    <div class="timeline-date text-black text-center">
+                        07 FEB 2021  | <strong> Tuesday </strong>
                     </div>
-                    <div class="row">
+                    </div>
+                    <div class="row mt-5 pt-3">
                         <div class="col-sm-4">
-                            <div class="card timeline-box" onclick="location.href='propertypage.html';"
+                            <div class="card " onclick="location.href='propertypage.html';"
                                 style="cursor:pointer;">
+                                <div class="card-img-overlay">
+                                    <span class="badge bg-warning text-black">4:30 pm</span>
+                                </div>
                                 <div class="card-img-top ">
                                     <div>
                                         <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg"
@@ -291,8 +300,11 @@
 
 
                         <div class="col-sm-4">
-                            <div class="card timeline-box" onclick="location.href='propertypage.html';"
+                            <div class="card " onclick="location.href='propertypage.html';"
                                 style="cursor:pointer;">
+                                <div class="card-img-overlay">
+                                    <span class="badge bg-warning text-black">4:30 pm</span>
+                                </div>
                                 <div class="card-img-top ">
                                     <div>
                                         <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg"
@@ -335,8 +347,11 @@
                         </div>
 
                         <div class="col-sm-4">
-                            <div class="card timeline-box" onclick="location.href='propertypage.html';"
+                            <div class="card " onclick="location.href='propertypage.html';"
                                 style="cursor:pointer;">
+                                <div class="card-img-overlay">
+                                    <span class="badge bg-warning text-black">4:30 pm</span>
+                                </div>
                                 <div class="card-img-top ">
                                     <div>
                                         <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg"
@@ -377,19 +392,23 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
+                
 
                 <div class="timeline-section">
-                    <div class="timeline-date">
-                        22, Wednesday
+                    <div class="sticky-top">
+                    <div class="timeline-date text-black text-center">
+                        23 MAR 2021 | <strong> Monday</strong>
                     </div>
-                    <div class="row">
+                    </div>
+                    <div class="row mt-5 pt-3">
                         <div class="col-sm-4">
-                            <div class="card timeline-box" onclick="location.href='propertypage.html';"
+                            <div class="card " onclick="location.href='propertypage.html';"
                                 style="cursor:pointer;">
+                                <div class="card-img-overlay">
+                                    <span class="badge bg-warning text-black">4:30 pm</span>
+                                </div>
                                 <div class="card-img-top ">
                                     <div>
                                         <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg"
@@ -434,8 +453,11 @@
 
 
                         <div class="col-sm-4">
-                            <div class="card timeline-box" onclick="location.href='propertypage.html';"
+                            <div class="card " onclick="location.href='propertypage.html';"
                                 style="cursor:pointer;">
+                                <div class="card-img-overlay">
+                                    <span class="badge bg-warning text-black">4:30 pm</span>
+                                </div>
                                 <div class="card-img-top ">
                                     <div>
                                         <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg"
@@ -478,27 +500,25 @@
                         </div>
                     </div>
                 </div>
-
-
-                <div class="timeline-month text-white">
-                    September, 2020
-                    <span>3 Entries</span>
-                </div>
+              
 
                 <div class="timeline-section">
-                    <div class="timeline-date">
-                        22, Wednesday
+                    <div class="sticky-top">
+                    <div class="timeline-date text-black text-center">
+                        15 APR 2021 | <strong>Friday</strong>
                     </div>
-                    <div class="row">
+                </div>
+                    <div class="row mt-5 pt-3">
                         <div class="col-sm-4">
-                            <div class="card timeline-box" onclick="location.href='propertypage.html';"
-                                style="cursor:pointer;">
+                            <div class="card " onclick="location.href='propertypage.html';" style="cursor:pointer;">
+                                <div class="card-img-overlay">
+                                    <span class="badge bg-warning text-black">4:30 pm</span>
+                                </div>
                                 <div class="card-img-top ">
                                     <div>
-                                        <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg"
-                                            alt="First slide">
+                                        <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg" alt="First slide">
                                     </div>
-
+                
                                 </div>
                                 <div class="card-agent">
                                     <div class="d-flex p-3 text-start">
@@ -517,34 +537,33 @@
                                         </div>
                                     </div>
                                 </div>
-
+                
                                 <div class="card-body">
                                     <h5 class="card-title text-start">RM 2,000</h5>
                                     <div class="d-flex iconsmall">
-                                        <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..."
-                                                width="20px"> 3</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..." width="20px"> 3</p>
                                         <p class="me-2 ms-1"><img src="assets/img/bath-tub.svg" alt="..." width="20px">
                                             2</p>
                                         <p class="me-2 ms-1"><img src="assets/img/parking.svg" alt="..." width="20px">
                                             3</p>
-                                        <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..."
-                                                width="20px"> 3000 sqft.</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..." width="20px"> 3000 sqft.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-
+                
+                
+                
                         <div class="col-sm-4">
-                            <div class="card timeline-box" onclick="location.href='propertypage.html';"
-                                style="cursor:pointer;">
+                            <div class="card " onclick="location.href='propertypage.html';" style="cursor:pointer;">
+                                <div class="card-img-overlay">
+                                    <span class="badge bg-warning text-black">4:30 pm</span>
+                                </div>
                                 <div class="card-img-top ">
                                     <div>
-                                        <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg"
-                                            alt="First slide">
+                                        <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg" alt="First slide">
                                     </div>
-
+                
                                 </div>
                                 <div class="card-agent">
                                     <div class="d-flex p-3 text-start">
@@ -563,18 +582,112 @@
                                         </div>
                                     </div>
                                 </div>
-
+                
                                 <div class="card-body">
                                     <h5 class="card-title text-start">RM 2,000</h5>
                                     <div class="d-flex iconsmall">
-                                        <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..."
-                                                width="20px"> 3</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..." width="20px"> 3</p>
                                         <p class="me-2 ms-1"><img src="assets/img/bath-tub.svg" alt="..." width="20px">
                                             2</p>
                                         <p class="me-2 ms-1"><img src="assets/img/parking.svg" alt="..." width="20px">
                                             3</p>
-                                        <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..."
-                                                width="20px"> 3000 sqft.</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..." width="20px"> 3000 sqft.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-section">
+                    <div class="sticky-top">
+                        <div class="timeline-date text-black text-center">
+                            15 MAY 2021 | <strong>Sunday</strong>
+                        </div>
+                    </div>
+                    <div class="row mt-5 pt-3">
+                        <div class="col-sm-4">
+                            <div class="card " onclick="location.href='propertypage.html';" style="cursor:pointer;">
+                                <div class="card-img-overlay">
+                                    <span class="badge bg-warning text-black">4:30 pm</span>
+                                </div>
+                                <div class="card-img-top ">
+                                    <div>
+                                        <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg" alt="First slide">
+                                    </div>
+                
+                                </div>
+                                <div class="card-agent">
+                                    <div class="d-flex p-3 text-start">
+                                        <div class="align-self-center author">
+                                            <div class="avatar">
+                                                <img src="assets/img/man.svg" alt="Circle Image"
+                                                    class="img-circle img-no-padding img-responsive">
+                                            </div>
+                                        </div>
+                                        <div class="ms-3 text-white">
+                                            <p>Agent Name : John Smilga</p>
+                                            <p>Contact : +60143723423</p>
+                                            <h5 class="badge bg-primary text-dark">
+                                                Pay to Agent
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="card-body">
+                                    <h5 class="card-title text-start">RM 2,000</h5>
+                                    <div class="d-flex iconsmall">
+                                        <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..." width="20px"> 3</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/bath-tub.svg" alt="..." width="20px">
+                                            2</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/parking.svg" alt="..." width="20px">
+                                            3</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..." width="20px"> 3000 sqft.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                
+                
+                        <div class="col-sm-4">
+                            <div class="card " onclick="location.href='propertypage.html';" style="cursor:pointer;">
+                                <div class="card-img-overlay">
+                                    <span class="badge bg-warning text-black">4:30 pm</span>
+                                </div>
+                                <div class="card-img-top ">
+                                    <div>
+                                        <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg" alt="First slide">
+                                    </div>
+                
+                                </div>
+                                <div class="card-agent">
+                                    <div class="d-flex p-3 text-start">
+                                        <div class="align-self-center author">
+                                            <div class="avatar">
+                                                <img src="assets/img/man.svg" alt="Circle Image"
+                                                    class="img-circle img-no-padding img-responsive">
+                                            </div>
+                                        </div>
+                                        <div class="ms-3 text-white">
+                                            <p>Agent Name : John Smilga</p>
+                                            <p>Contact : +60143723423</p>
+                                            <h5 class="badge bg-danger">
+                                                Viewing
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="card-body">
+                                    <h5 class="card-title text-start">RM 2,000</h5>
+                                    <div class="d-flex iconsmall">
+                                        <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..." width="20px"> 3</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/bath-tub.svg" alt="..." width="20px">
+                                            2</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/parking.svg" alt="..." width="20px">
+                                            3</p>
+                                        <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..." width="20px"> 3000 sqft.</p>
                                     </div>
                                 </div>
                             </div>
@@ -605,6 +718,7 @@
                 </div>
             </div>
     </footer>
+    
     <!--   Core JS Files   -->
     <div class="kc_fab_wrapper">
     </div>
