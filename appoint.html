@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img//apple-icon.png">
+    <link rel="icon" type="image/png" href="assets/img//favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Appointments | Rizurf | Some Catchy Phrases
+    </title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+        name='viewport' />
+
+
+    <!-- CSS Files -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/rizurfcss.css" rel="stylesheet" />
+
+    <style>
+body{
+    margin-top:20px;
+    background:#eee;
+}
+
+.timeline {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    width: 5px;
+    background: #2d353c;
+    left: 20%;
+    margin-left: -2.5px
+}
+
+.timeline>li {
+    position: relative;
+    min-height: 50px;
+    padding: 20px 0
+}
+
+.timeline .timeline-time {
+    position: absolute;
+    left: 0;
+    width: 18%;
+    text-align: right;
+    top: 30px
+}
+
+.timeline .timeline-time .date,
+.timeline .timeline-time .time {
+    display: block;
+    font-weight: 600
+}
+
+.timeline .timeline-time .date {
+    line-height: 16px;
+    font-size: 12px
+}
+
+.timeline .timeline-time .time {
+    line-height: 24px;
+    font-size: 20px;
+    color: #242a30
+}
+
+.timeline .timeline-icon {
+    left: 15%;
+    position: absolute;
+    width: 10%;
+    text-align: center;
+    top: 40px
+}
+
+.timeline .timeline-icon a {
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    background: #d9e0e7;
+    line-height: 10px;
+    color: #fff;
+    font-size: 14px;
+    border: 5px solid #2d353c;
+    transition: border-color .2s linear
+}
+
+.timeline .timeline-body {
+    margin-left: 23%;
+    margin-right: 17%;
+    background: #fff;
+    position: relative;
+    padding: 20px 25px;
+    border-radius: 6px
+}
+
+.timeline .timeline-body:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 10px solid transparent;
+    border-right-color: #fff;
+    left: -20px;
+    top: 20px
+}
+
+.timeline .timeline-body>div+div {
+    margin-top: 15px
+}
+
+.timeline .timeline-body>div+div:last-child {
+    margin-bottom: -20px;
+    padding-bottom: 20px;
+    border-radius: 0 0 6px 6px
+}
+
+.timeline-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e7eb;
+    line-height: 30px
+}
+
+.timeline-header .userimage {
+    float: left;
+    width: 34px;
+    height: 34px;
+    border-radius: 40px;
+    overflow: hidden;
+    margin: -2px 10px -2px 0
+}
+
+.timeline-header .username {
+    font-size: 16px;
+    font-weight: 600
+}
+
+.timeline-header .username,
+.timeline-header .username a {
+    color: #2d353c
+}
+
+.timeline img {
+    max-width: 100%;
+    display: block
+}
+
+.timeline-content {
+    letter-spacing: .25px;
+    line-height: 18px;
+    font-size: 13px
+}
+
+.timeline-content:after,
+.timeline-content:before {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.timeline-title {
+    margin-top: 0
+}
+
+.timeline-footer {
+    background: #fff;
+    border-top: 1px solid #e2e7ec;
+    padding-top: 15px
+}
+
+.timeline-footer a:not(.btn) {
+    color: #575d63
+}
+
+.timeline-footer a:not(.btn):focus,
+.timeline-footer a:not(.btn):hover {
+    color: #2d353c
+}
+
+.timeline-likes {
+    color: #6d767f;
+    font-weight: 600;
+    font-size: 12px
+}
+
+.timeline-likes .stats-right {
+    float: right
+}
+
+.timeline-likes .stats-total {
+    display: inline-block;
+    line-height: 20px
+}
+
+.timeline-likes .stats-icon {
+    float: left;
+    margin-right: 5px;
+    font-size: 9px
+}
+
+.timeline-likes .stats-icon+.stats-icon {
+    margin-left: -2px
+}
+
+.timeline-likes .stats-text {
+    line-height: 20px
+}
+
+.timeline-likes .stats-text+.stats-text {
+    margin-left: 15px
+}
+
+.timeline-comment-box {
+    background: #f2f3f4;
+    margin-left: -25px;
+    margin-right: -25px;
+    padding: 20px 25px
+}
+
+.timeline-comment-box .user {
+    float: left;
+    width: 34px;
+    height: 34px;
+    overflow: hidden;
+    border-radius: 30px
+}
+
+.timeline-comment-box .user img {
+    max-width: 100%;
+    max-height: 100%
+}
+
+.timeline-comment-box .user+.input {
+    margin-left: 44px
+}
+
+.lead {
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.text-danger, .text-red {
+    color: #ff5b57!important;
+}
+    </style>
+
+</head>
+
+<body class="landing-page sidebar-collapse">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+
+        <div class="container-fluid">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="index.html" rel="tooltip" title="Rizurf Logo" data-placement="bottom"
+                    target="_blank">
+                    <img src="assets/img/rizurflogo-color.png" width="150px">
+                </a>
+                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navigation" aria-controls="navigation-index" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link bloblines" href="refer-steps.html">Refer &amp; Earn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publishaproperty.html">Publish a property</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="howitworks.html">How it Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="profile-page.html">My Account</a>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- End Navbar -->
+    <section class="section sectionheight pb-3 pt-5 mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 mx-auto align-self-center text-center">
+                    <h2 class="title pt-5">Appointments</h2>
+                </div>
+            </div>
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <ul class="timeline">
+        <li>
+            <!-- begin timeline-time -->
+            <div class="timeline-time">
+                <span class="date">today</span>
+                <span class="time">04:20</span>
+            </div>
+            <!-- end timeline-time -->
+            <!-- begin timeline-icon -->
+            <div class="timeline-icon">
+                <a href="javascript:;">&nbsp;</a>
+            </div>
+            <!-- end timeline-icon -->
+            <!-- begin timeline-body -->
+            <div class="timeline-body">
+                <div class="col-sm-6">
+                    <div class="card timeline-box" onclick="location.href='propertypage.html';" style="cursor:pointer;">
+                        <div class="card-img-top ">
+                            <div>
+                                <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg" alt="First slide">
+                            </div>
+                
+                        </div>
+                        <div class="card-agent">
+                            <div class="d-flex p-3 text-start">
+                                <div class="align-self-center author">
+                                    <div class="avatar">
+                                        <img src="assets/img/man.svg" alt="Circle Image"
+                                            class="img-circle img-no-padding img-responsive">
+                                    </div>
+                                </div>
+                                <div class="ms-3 text-white">
+                                    <p>Agent Name : John Smilga</p>
+                                    <p>Contact : +60143723423</p>
+                                    <h5 class="badge bg-primary text-dark">
+                                        Pay to Agent
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="card-body">
+                            <h5 class="card-title text-start">RM 2,000</h5>
+                            <div class="d-flex iconsmall">
+                                <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..." width="20px"> 3</p>
+                                <p class="me-2 ms-1"><img src="assets/img/bath-tub.svg" alt="..." width="20px">
+                                    2</p>
+                                <p class="me-2 ms-1"><img src="assets/img/parking.svg" alt="..." width="20px">
+                                    3</p>
+                                <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..." width="20px"> 3000 sqft.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end timeline-body -->
+        </li>
+        <li>
+            <!-- begin timeline-time -->
+            <div class="timeline-time">
+                <span class="date">24 February 2014</span>
+                <span class="time">08:17</span>
+            </div>
+            <!-- end timeline-time -->
+            <!-- begin timeline-icon -->
+            <div class="timeline-icon">
+                <a href="javascript:;">&nbsp;</a>
+            </div>
+            <!-- end timeline-icon -->
+            <!-- begin timeline-body -->
+            <div class="timeline-body">
+                <div class="timeline-header">
+                    <span class="userimage"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt=""></span>
+                    <span class="username">Richard Leong</span>
+                    <span class="pull-right text-muted">1,282 Views</span>
+                </div>
+                <div class="timeline-content">
+                    <p class="lead">
+                        <i class="fa fa-quote-left fa-fw pull-left"></i>
+                        Quisque sed varius nisl. Nulla facilisi. Phasellus consequat sapien sit amet nibh molestie
+                        placerat. Donec nulla quam, ullamcorper ut velit vitae, lobortis condimentum magna. Suspendisse
+                        mollis in sem vel mollis.
+                        <i class="fa fa-quote-right fa-fw pull-right"></i>
+                    </p>
+                </div>
+                <div class="timeline-footer">
+                    <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                            class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i> Like</a>
+                    <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                            class="fa fa-comments fa-fw fa-lg m-r-3"></i> Comment</a>
+                    <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                            class="fa fa-share fa-fw fa-lg m-r-3"></i> Share</a>
+                </div>
+            </div>
+            <!-- end timeline-body -->
+        </li>
+        <li>
+            <!-- begin timeline-time -->
+            <div class="timeline-time">
+                <span class="date">10 January 2014</span>
+                <span class="time">20:43</span>
+            </div>
+            <!-- end timeline-time -->
+            <!-- begin timeline-icon -->
+            <div class="timeline-icon">
+                <a href="javascript:;">&nbsp;</a>
+            </div>
+            <!-- end timeline-icon -->
+            <!-- begin timeline-body -->
+            <div class="timeline-body">
+                <div class="timeline-header">
+                    <span class="userimage"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt=""></span>
+                    <span class="username">Lelouch Wong</span>
+                    <span class="pull-right text-muted">1,021,282 Views</span>
+                </div>
+                <div class="timeline-content">
+                    <h4 class="template-title">
+                        <i class="fa fa-map-marker text-danger fa-fw"></i>
+                        795 Folsom Ave, Suite 600 San Francisco, CA 94107
+                    </h4>
+                    <p>In hac habitasse platea dictumst. Pellentesque bibendum id sem nec faucibus. Maecenas molestie,
+                        augue vel accumsan rutrum, massa mi rutrum odio, id luctus mauris nibh ut leo.</p>
+                    <p class="m-t-20">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+                    </p>
+                </div>
+                <div class="timeline-footer">
+                    <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                            class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i> Like</a>
+                    <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                            class="fa fa-comments fa-fw fa-lg m-r-3"></i> Comment</a>
+                    <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                            class="fa fa-share fa-fw fa-lg m-r-3"></i> Share</a>
+                </div>
+            </div>
+            <!-- end timeline-body -->
+        </li>
+        <li>
+            <!-- begin timeline-icon -->
+            <div class="timeline-icon">
+                <a href="javascript:;">&nbsp;</a>
+            </div>
+            <!-- end timeline-icon -->
+            <!-- begin timeline-body -->
+            <div class="timeline-body">
+                Loading...
+            </div>
+            <!-- begin timeline-body -->
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="modal fade" id="requestsmodal" tabindex="-1" aria-labelledby="requestsmodal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-brdradius">
+                    <div class="modal-header text-start">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h3 class="modal-title m-0 fontw-bold" id="requestsmodal">Scheduled Appointments</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p>Type of appoinment</p>
+                        <p><strong>Propoerty Viewing</strong></p>
+                        <hr />
+                        <p>Status of appoinment</p>
+                        <p><strong>Scheduled</strong></p>
+                        <hr />
+                        <p>Date of appoinment</p>
+                        <p><strong>25-Feb-2020</strong></p>
+                        <hr />
+                        <p>Time of appoinment</p>
+                        <p><strong>11.30 A.M. To 11.40 A.M</strong></p>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer copyrighted section-dark footer fixedbtm">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-12">
+                    <div class="credits me-auto ms-auto">
+                        <span class="copyright">
+                            ©
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> Rizurf Technology Sdn Bhd - All rights reserved
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-center text-white font-xs">
+                        <small class="text-center">
+                            <a href="https://www.flaticon.com/" title="Flaticon">Icons by Flaticon</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!--   Core JS Files   -->
+    <div class="kc_fab_wrapper">
+    </div>
+    <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/rizurfjs.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            var links = [
+                {
+                    "bgcolor": "#51cbce",
+                    "icon": "<img src='assets/img/chat.svg' alt='...' width='35px' />"
+                },
+                {
+                    "url": "https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.",
+                    "bgcolor": "#25D366",
+                    "color": "#fffff",
+                    "icon": "<img src='assets/img/whatsappcolorised.svg' alt='...' width='20px' />",
+                    "target": "_blank",
+                    "title": "Whatsapp Us"
+                },
+                {
+                    "url": "http://www.example.com",
+                    "bgcolor": "#fff",
+                    "color": "#006AFF",
+                    "icon": "<img src='assets/img/facebook-messenger-logo.svg' alt='...' width='20px' />",
+                    "title": "FB Messenger Us"
+                }
+            ]
+            $('.kc_fab_wrapper').kc_fab(links);
+        })
+    </script>
+
+    <script>
+        
+    </script>
+</body>
+
+</html>

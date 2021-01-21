@@ -84,39 +84,30 @@
 
 
           <div class="row">
-            <div class="col-6 my-2">
+            <div class="col-sm-6 my-2">
               <h5 class="align-items-center text-black">Budget</h5>
               <div class="input-group">
-                <select class="form-control form-select" style="cursor: pointer;" list="budget"
-                  placeholder="Select Your Monthly Budget">
-                  <option selected class="text-muted"> - Select Your Monthly Budget - </option>
-                  <option>Below RM 1,000</option>
-                  <option>RM 1,000 - RM 1,500</option>>
-                  <option>RM 1,500 - RM 2,000</option>
-                  <option>RM 2,000 - RM 3,000</option>
-                  <option>Above RM 3,000</option>
-                </select>
+                <input type="number" class="form-control" placeholder="-Put your Monthly Budget in MYR">
               </div>
             </div>
-            <div class="col-6 my-2  ps-0">
+            <div class="col-sm-6 my-2">
               <h5 class="align-items-center text-black">Bed</h5>
               <div class="input-group">
                 <select class="form-control form-select" style="cursor: pointer;" list="bed"
                   placeholder="Select how many bedroom required?">
                   <option selected class="text-muted"> - Select how many bedroom required? - </option>
-                  <option>One Bed</option>
-                  <option>Two Beds</option>
-                  <option>Three Beds</option>
-                  <option>Four Beds</option>
-                  <option>Five Beds</option>
-                  <option>Six Beds</option>
+                  <option>1 Bed</option>
+                  <option>2 Beds</option>
+                  <option>3 Beds</option>
+                  <option>4 Beds</option>
+                  <option>5 Beds</option>
                 </select>
               </div>
             </div>
           </div>
           <hr class="text-black" />
           <div class="row">
-            <div class="col-6 my-2">
+            <div class="col-sm-6 my-2">
               <h5 class="align-items-center text-black">Furnishing</h5>
               <div class="input-group">
                 <select class="form-control form-select" style="cursor: pointer;" list="furnishing"
@@ -127,27 +118,26 @@
                 </select>
               </div>
             </div>
-            <div class="col-sm-6 my-2  ps-0">
+            <div class="col-sm-6 my-2">
               <h5 class="align-items-center text-black">Preferred move in date</h5>
               <div class="input-group">
-                <input class="form-control" type="date" style="cursor: pointer;">
+                <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Preferred move in date">
               </div>
             </div>
           </div>
           <hr class="text-black" />
 
           <div class="row">
-            <div class="col-6 my-2">
+            <div class="col-sm-6 my-2">
               <h5 class="align-items-center text-black">Total occupants</h5>
               <div class="input-group">
                 <input type="number" class="form-control" placeholder="- How many occupants? -">
               </div>
             </div>
-            <div class="col-6 my-2  ps-0">
+            <div class="col-sm-6 my-2">
               <h5 class="align-items-center text-black">Occupation</h5>
               <div class="input-group">
-                <input type="text" class="form-control form-select" placeholder="- What is your occupation? -"
-                  style="cursor: pointer;" list="occupation" required>
+                <input type="text" class="form-control" placeholder="- What is your occupation? -">
                 <datalist id="occupation">
                   <option>Chiropractor</option>
                   <option>Dentist</option>>
@@ -230,7 +220,7 @@
 
 
           <div class="row">
-            <div class="col-6 my-2">
+            <div class="col-sm-6 my-2">
               <h5 class="align-items-center text-black">Nationality</h5>
               <div class="input-group">
                 <input type="text" class="form-control form-select" style="cursor: pointer;" list="country"
@@ -485,7 +475,7 @@
                 </datalist>
               </div>
             </div>
-            <div class="col-6 my-2 ps-0">
+            <div class="col-sm-6 my-2">
               <h5 class="align-items-center text-black">Gender</h5>
               <div class="input-group">
                 <select class="form-control form-select" style="cursor: pointer;" list="gender"
@@ -500,17 +490,16 @@
           <hr class="text-black" />
 
           <div class="row">
-            <div class="col-6 my-2">
+            <div class="col-sm-6 my-2">
               <h5 class="align-items-center text-black">Duration of tenancy</h5>
               <div class="input-group">
                 <select class="form-control form-select" style="cursor: pointer;" list="duration"
                   placeholder="- How long you want to stay? -">
                   <option selected class="text-muted"> - How long you want to stay? - </option>
-                  <option>1 year</option>
-                  <option>2 year</option>
-                  <option>3 year</option>
-                  <option>4 year</option>
-                  <option>5 year</option>
+                  <option>3 months</option>
+                  <option>6 months</option>
+                  <option>9 months</option>
+                  <option>12 months</option>
                 </select>
               </div>
             </div>
