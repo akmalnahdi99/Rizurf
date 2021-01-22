@@ -367,6 +367,12 @@
   height: calc(100vh - 70px);
 }
 
+.dropdown-menu-center {
+  --bs-position: center;
+  right: 0 !important;
+  left: 0;
+}
+
 .mb-5px {
   margin-bottom: 5px;
 }
@@ -1936,7 +1942,7 @@ button.kc_fab_main_btn {
     margin-top: 20px;
   }
   .filterdiv {
-    justify-content: center !important;
+    justify-content: start !important;
   }
 }
 
