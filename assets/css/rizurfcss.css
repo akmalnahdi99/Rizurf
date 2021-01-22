@@ -114,6 +114,10 @@
   margin: 0 auto;
 }
 
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0 !important;
+}
+
 /* pulsing lines */
 
 .bloblines {
@@ -908,6 +912,7 @@ button.close {
 .table.tnaked>:not(caption)>*>* {
   padding: 1rem 1rem;
   border-bottom-width: 0px;
+  vertical-align: top;
 }
 
 .table-responsive.tbnoborder {
@@ -977,7 +982,7 @@ tr.tbnoborderbtm {
 }
 
 .timeline.timelinebtm:before {
-  bottom: 270px;
+  bottom: 230px;
 }
 
 .timeline.timelinebtm2:before {

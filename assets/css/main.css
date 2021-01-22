@@ -6019,6 +6019,12 @@ ul.footerlist {
   z-index: 1;
 }
 
+
+.page-header.page-header-lg {
+  min-height: 100vh !important;
+  background-position: center center;
+}
+
 .page-header.page-header-small {
   min-height: 65vh !important;
   max-height: 700px;
@@ -6328,7 +6334,10 @@ ul.footerlist {
 }
 
 .section-light-blue {
-  background-color: #51cbce;
+  background: #000046;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   color: #FFFFFF;
 }
 
@@ -7021,7 +7030,7 @@ ul.footerlist {
     border-left: 1px solid #CCC5B9;
     padding-right: 35px;
     padding-left: 35px;
-    padding-top: 15px;
+    padding-top: 45px;
     -webkit-transform: translateX(230px);
     -moz-transform: translateX(230px);
     -o-transform: translateX(230px);
