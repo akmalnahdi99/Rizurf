@@ -22,6 +22,23 @@
     <link href="assets/css/lightslider.css" rel="stylesheet" />
     <link href="assets/css/lightgallery.css" rel="stylesheet" />
     <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css" />
+
+    <style 
+    type="text/css">
+        input,
+        input[type=password] {
+            width: 150px;
+            height: 50px;
+        }
+    
+        #toggle_pwd {
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body class="landing-page sidebar-collapse">
@@ -819,7 +836,7 @@
                     </button>
                     <h3 class="modal-title m-0 fontw-bold text-center" id="signInmodalLabel">Sign-In</h3>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body p-4">
                     <form>
                         <div class="mb-3">
                             <input type="email" class="form-control" id="emailUser" aria-describedby="emailHelp"
@@ -836,7 +853,7 @@
                         <div class="d-grid gap-2 mt-3">
                             <button class="btn btn-primary" type="submit">Submit</button>
                         </div>
-                        <p class="mt-3 text-center fontw-normal">Don't have an account?
+                        <p class="mt-3 text-center fontw-normal">Don't have an account? <br/>
                             <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-dismiss="modal"
                                 data-bs-target="#signUpmodal">Sign-Up
                                 Here</a>.
@@ -884,6 +901,12 @@
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                 </div>
+
+                                                
+                                                <input type="password" id="txtPassword" class="form-control" placeholder="Password"/>
+                                                <span id="toggle_pwd" class="fa fa-fw fa-eye field_icon"></span>
+
+
                                                 <input type="password" class="form-control" placeholder="Password" required>
                                             </div>
                                         </div>
@@ -898,9 +921,9 @@
                                     </div>
     
                                     <div class="row">
-                                        <div class="col-4 my-2">
+                                        <div class="col-sm-4 my-2">
                                             <input type="text" class="form-control form-select" list="country"
-                                                placeholder="- My +60 ">
+                                                placeholder="My +60 ">
                                             <datalist id="country">
                                                 <option data-countryCode="DZ">Algeria (+213)</option>
                                                 <option data-countryCode="AD">Andorra (+376)</option>
@@ -1117,7 +1140,7 @@
                                             </datalist>
                                         </div>
     
-                                        <div class="col-8 my-2">
+                                        <div class="col-sm-8 my-2">
                                             <div class="input-group">
                                                 <input type="number" class="form-control" placeholder="Phone number"
                                                     required>
@@ -1126,13 +1149,13 @@
                                     </div>
     
                                     <div class="row">
-                                        <div class="col-6 my-2">
+                                        <div class="col-sm-6 my-2">
                                             <div class="input-group-desc">
                                                 <button class="btn btn-refer btn-pad btn-primary" type="submit">Request
                                                     OTP</button>
                                             </div>
                                         </div>
-                                        <div class="col-6 my-2">
+                                        <div class="col-sm-6 my-2">
                                             <div class="input-group">
                                                 <input type="number" class="form-control" placeholder="Enter OTP" required>
                                             </div>
@@ -1156,9 +1179,9 @@
                                                 href="refer-steps.html">Sign
                                                 up</button>
     
-                                            <p class="text-center mt-4">Already have an account? <a
+                                            <p class="text-center mt-4">Already have an account? <br/> <a
                                                     href="javascript:void(0)" data-bs-toggle="modal" data-bs-dismiss="modal"
-                                                    data-bs-target="#signInmodal">Sign in</a>.</p>
+                                                    data-bs-target="#signInmodal">Sign in</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1290,19 +1313,7 @@
                             <label for="movein" class="form-label"><strong>Move in date</strong></label>
                             <input class="form-control" id="movein" type="date" style="cursor: pointer;">
                         </div>
-
-                        <div class="justify-content-center mt-4">
-                            <label for="occupants" class="form-label"><strong>Total occupants</strong></label>
-                            <input type="number" class="form-control" id="occupants"
-                                placeholder="How many occupants?" />
-                        </div>
-
-                        <div class="justify-content-center mt-4">
-                            <label for="occupation" class="form-label"><strong>Occupation</strong></label>
-                            <input type="number" class="form-control" id="occupation"
-                                placeholder="What is your occupation" />
-                        </div>
-
+                        
                         <div class="justify-content-centermt-4 mt-4">
                             <label for="comments" class="form-label"><strong>Leave your Remarks</strong></label>
                             <textarea class="form-control" id="comments" placeholder="Remarks (if any)"
@@ -1544,13 +1555,16 @@
                 );
             })(window.document, window.history, window.location);
     </script>
-    <script>
-        $(document).ready(function () {
-            $('a').click(function () {
-                $('a.centerlist.clicked').removeClass("clicked");
-                $(this).addClass("clicked");
+    
+
+    <script type="text/javascript">
+        $(function () {
+            $("#toggle_pwd").click(function () {
+                $(this).toggleClass("fa-eye fa-eye-slash");
+                var type = $(this).hasClass("fa-eye-slash") ? "text" : "password";
+                $("#txtPassword").attr("type", type);
             });
-        }); 
+        });
     </script>
 
 </body>
