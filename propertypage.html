@@ -29,18 +29,24 @@
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
 
-        <style>
-            .eye{
-                position: absolute;
-                align-items: flex-end;
-            }
-            #hide1{
-                display: none;
-            }
-            #hide3{
-                display: none;
-            }
-        </style>
+    <style>
+        .eye {
+            position: absolute;
+            align-items: flex-end;
+        }
+
+        #hide1 {
+            display: none;
+        }
+
+        #hide3 {
+            display: none;
+        }
+
+        #hide7 {
+            display: none;
+        }
+    </style>
 
 
 </head>
@@ -847,15 +853,16 @@
                                 placeholder="Email Address or Phone Number" required>
                         </div>
                         <div class="mb-5">
-                        <div class="input-group">
-                            <input id="myInput" type="password" class="form-control" placeholder="Password" required>
-                            <button class="btn btn-outline-default p-2" type="button" onclick="myFunction()">
-                                <span>
-                                    <i id="hide1" class="far fa-eye" style="width: 15px;"></i>
-                                    <i id="hide2" class="far fa-eye-slash" style="width: 15px;"></i>
-                                </span>
-                            </button>
-                        </div>
+                            <div class="input-group">
+                                <input id="myInput3" type="password" class="form-control" placeholder="Password"
+                                    required>
+                                <button class="btn btn-outline-default p-2" type="button" onclick="myFunction3()">
+                                    <span>
+                                        <i id="hide7" class="far fa-eye" style="width: 15px;"></i>
+                                        <i id="hide8" class="far fa-eye-slash" style="width: 15px;"></i>
+                                    </span>
+                                </button>
+                            </div>
 
                             <label class="fontw-normal ms-2 mt-1">Forgot your password? Don't worry <a
                                     href="resetpassword.html">Reset
@@ -914,14 +921,16 @@
                                         <div class="col-sm-6 my-2">
                                             <div class="input-group">
 
-                                                <input id="myInput" type="password" class="form-control" placeholder="Password" required>
-                                                <button class="btn btn-outline-default p-2" type="button" onclick="myFunction()">
-                                                <span>
-                                                    <i id="hide1" class="far fa-eye" style="width: 15px;"></i>
-                                                    <i id="hide2" class="far fa-eye-slash" style="width: 15px;"></i>
-                                                </span>
+                                                <input id="myInput" type="password" class="form-control"
+                                                    placeholder="Password" required>
+                                                <button class="btn btn-outline-default p-2" type="button"
+                                                    onclick="myFunction()">
+                                                    <span>
+                                                        <i id="hide1" class="far fa-eye" style="width: 15px;"></i>
+                                                        <i id="hide2" class="far fa-eye-slash" style="width: 15px;"></i>
+                                                    </span>
                                                 </button>
-                                                    <!-- <input type="password" class="form-control" placeholder="Password" required> -->
+                                                <!-- <input type="password" class="form-control" placeholder="Password" required> -->
                                             </div>
                                         </div>
 
@@ -930,18 +939,25 @@
                                                 <input type="password" class="form-control" placeholder="Confirm Password">
                                             </div>
                                         </div> -->
+
+
                                         <div class="col-sm-6 my-2">
                                             <div class="input-group">
                                                 <input id="myInput2" type="password" class="form-control"
                                                     placeholder="Confirm Password" required>
-                                                    <button class="btn btn-outline-default p-2" type="button" onclick="myFunction2()">
+                                                <button class="btn btn-outline-default p-2" type="button"
+                                                    onclick="myFunction2()">
                                                     <span>
                                                         <i id="hide3" class="far fa-eye" style="width: 15px;"></i>
                                                         <i id="hide4" class="far fa-eye-slash" style="width: 15px;"></i>
                                                     </span>
+
                                             </div>
                                         </div>
                                     </div>
+
+
+
                                     <div class="row">
                                         <div class="col-sm-4 my-2">
                                             <input type="text" class="form-control form-select" list="country"
@@ -1605,87 +1621,87 @@
         }
     </script>
 
-    
-<script>
 
-    // this of eye method
-    var inputPass2 = document.getElementById('pass2'),
-        togglePassword = document.getElementById('togglePassword');
+    <script>
 
-    togglePassword.onclick = function () {
+        // this of eye method
+        var inputPass2 = document.getElementById('pass2'),
+            togglePassword = document.getElementById('togglePassword');
 
-        if (inputPass2.className == 'active') {
-            inputPass2.setAttribute('type', 'text');
-            togglePassword.className = 'far fa-eye';
-            inputPass2.className = '';
+        togglePassword.onclick = function () {
 
-        } else {
-            inputPass2.setAttribute('type', 'password');
-            togglePassword.className = 'far fa-eye-slash';
-            inputPass2.className = 'active';
+            if (inputPass2.className == 'active') {
+                inputPass2.setAttribute('type', 'text');
+                togglePassword.className = 'far fa-eye';
+                inputPass2.className = '';
+
+            } else {
+                inputPass2.setAttribute('type', 'password');
+                togglePassword.className = 'far fa-eye-slash';
+                inputPass2.className = 'active';
+            }
+
         }
+    </script>
 
-    }
-</script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput")
+            var y = document.getElementById("hide1")
+            var z = document.getElementById("hide2")
 
-<script>
-    function myFunction(){
-        var x = document.getElementById("myInput")
-        var y = document.getElementById("hide1")
-        var z = document.getElementById("hide2")
-
-        if(x.type === 'password'){
-            x.type = 'text';
-            y.style.display = "block";
-            z.style.display = "none";
+            if (x.type === 'password') {
+                x.type = 'text';
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else {
+                x.type = 'password';
+                y.style.display = "none";
+                z.style.display = "block";
+            }
         }
-        else{
-            x.type = 'password';
-            y.style.display = "none";
-            z.style.display = "block";
+    </script>
+
+
+
+    <script>
+        function myFunction2() {
+            var a = document.getElementById("myInput2")
+            var b = document.getElementById("hide3")
+            var c = document.getElementById("hide4")
+
+            if (a.type === 'password') {
+                a.type = 'text';
+                b.style.display = "block";
+                c.style.display = "none";
+            }
+            else {
+                a.type = 'password';
+                b.style.display = "none";
+                c.style.display = "block";
+            }
         }
-    }
-</script>
+    </script>
 
+    <script>
+        function myFunction3() {
+            var d = document.getElementById("myInput3")
+            var e = document.getElementById("hide7")
+            var f = document.getElementById("hide8")
 
-
-<script>
-    function myFunction2() {
-        var a = document.getElementById("myInput2")
-        var b = document.getElementById("hide3")
-        var c = document.getElementById("hide4")
-
-        if (a.type === 'password') {
-            a.type = 'text';
-            b.style.display = "block";
-            c.style.display = "none";
+            if (d.type === 'password') {
+                d.type = 'text';
+                e.style.display = "block";
+                f.style.display = "none";
+            }
+            else {
+                d.type = 'password';
+                e.style.display = "none";
+                f.style.display = "block";
+            }
         }
-        else {
-            a.type = 'password';
-            b.style.display = "none";
-            c.style.display = "block";
-        }
-    }
-</script>
-
-<script>
-    function myFunction3() {
-        var d = document.getElementById("myInput3")
-        var e = document.getElementById("hide5")
-        var f = document.getElementById("hide6")
-
-        if (d.type === 'password') {
-            d.type = 'text';
-            e.style.display = "block";
-            f.style.display = "none";
-        }
-        else {
-            d.type = 'password';
-            e.style.display = "none";
-            f.style.display = "block";
-        }
-    }
-</script>
+    </script>
 
 </body>
 
