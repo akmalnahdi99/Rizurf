@@ -902,7 +902,7 @@ button.close {
 [for="heart"] {
   color: #aab8c2;
   cursor: pointer;
-  font-size: 6em;
+  font-size: 25px;
   align-self: center;  
   transition: color 0.2s ease-in-out;
 }
@@ -926,10 +926,6 @@ button.close {
   will-change: font-size;
   animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
 }
-
-
-
-@keyframes heart {0%, 17.5% {font-size: 0;}}
 
 /* 3d carousel */
 
