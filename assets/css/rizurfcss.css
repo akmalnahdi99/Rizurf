@@ -2069,7 +2069,7 @@ button.kc_fab_main_btn {
 
 @media (max-width: 768px) {
   .btn, .btn-morphing {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
   .parallax .motto {
     top: 170px;
