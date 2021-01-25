@@ -15,6 +15,7 @@
         name='viewport' />
 
     <!-- CSS Files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
     <link href="assets/css/rizurfcss.css" rel="stylesheet" />
@@ -26,7 +27,7 @@
 
 <body class="landing-page sidebar-collapse">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-transparent navbar-absolute">
+    <nav class="navbar navbar-expand-lg noboxshadow bkgtransparent navbar-absolute navbar-light">
 
         <div class="container-fluid">
             <div class="navbar-translate">
@@ -34,10 +35,10 @@
                     target="_blank">
                     <img src="assets/img/rizurflogo-color.png" width="120px">
                 </a>
-                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
+                <button class="navbar-toggler navbar-toggler " type="button" data-toggle="collapse"
                     data-target="#navigation" aria-controls="navigation-index" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar1 text-black"></span>
                     <span class="navbar-toggler-bar bar2"></span>
                     <span class="navbar-toggler-bar bar3"></span>
                 </button>
@@ -72,7 +73,7 @@
         <div class="container px-4 mt-5">
             <div class="row justify-content-center mt-5 pt-5">
                 <div class="col-md-12 mb-5">
-                    <div class="unitgallery">
+                    <div class="">
                         <ul id="lightSlider">
                             <li data-src="http://sachinchoolur.github.io/lightslider/img/cS-1.jpg"
                                 data-thumb="http://sachinchoolur.github.io/lightslider/img/cS-1.jpg">
@@ -124,41 +125,42 @@
                             </li>
                         </ul>
                     </div>
+
                 </div>
-            </div>
-            <hr />
-            <div class="d-grid gap-2 d-flex mediabar mb-5 mt-5">
-                <a id="galleryphoto" href="#" class="btn-width300 text-black">
-                    <img src="assets/img/photos.svg" alt="..." width="30px" />
-                    <br />
-                    Photos
-                </a>
-                <div id="galleryvideo" class="btn-width300 ">
-                    <a href="#" class=" text-black" >
-                        <img src="assets/img/youtube.svg" alt="..." width="30px" />
+                <hr />
+                <div class="d-grid gap-2 d-flex mediabar mb-5 mt-5">
+                    <a id="galleryphoto" href="#" class="btn-width300 text-black">
+                        <img src="assets/img/photos.svg" alt="..." width="30px" />
                         <br />
-                        Videos
+                        Photos
                     </a>
-                </div>
-                <div class="btn-width300" data-iframe="true" id="gallery360"
-                    data-src="https://eyespy360.vr-360-tour.com/e/IkwBdj4VMCY/e?room=2b13bf2b-26b4-43e4-b83c-6576a5cd2305&initvars.autorotate.enabled=true&hidehotspotlabels=true">
-                    <a href="#" class=" text-black" >
-                        <img src="assets/img/video-player.svg" alt="..." width="30px" />
-                        <br />
-                        360 VR
-                    </a>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-8 text-justify">
-                    <div class="arrowdown">
-                        <a href="#section">
-                            <img alt="Arrow Down Icon" src="assets/img/chevron-down-solid.svg" width="30px" alt="..." />
+                    <div id="galleryvideo" class="btn-width300 ">
+                        <a href="#" class=" text-black">
+                            <img src="assets/img/youtube.svg" alt="..." width="30px" />
+                            <br />
+                            Videos
+                        </a>
+                    </div>
+                    <div class="btn-width300" data-iframe="true" id="gallery360"
+                        data-src="https://eyespy360.vr-360-tour.com/e/IkwBdj4VMCY/e?room=2b13bf2b-26b4-43e4-b83c-6576a5cd2305&initvars.autorotate.enabled=true&hidehotspotlabels=true">
+                        <a href="#" class=" text-black">
+                            <img src="assets/img/video-player.svg" alt="..." width="30px" />
+                            <br />
+                            360 VR
                         </a>
                     </div>
                 </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 text-justify">
+                        <div class="arrowdown">
+                            <a href="#section">
+                                <img alt="Arrow Down Icon" src="assets/img/chevron-down-solid.svg" width="30px"
+                                    alt="..." />
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
     </section>
 
     <section id="section" class="section section-light-gray pb-3">
@@ -477,7 +479,10 @@
                                 <div class="row pb-5">
                                     <div class="col-md-12 mt-3 pb-4">
                                         <div class="info d-flex">
-                                            <img class="me-3" src="assets/img/original.svg" width="80px" alt="..." />
+                                            <div>
+                                                <img class="me-3" src="assets/img/original.svg" width="80px"
+                                                    alt="100% Authentic" />
+                                            </div>
                                             <div>
                                                 <h4 class="info-title mb-3 mt-3">100% Authentic Listings
                                                 </h4>
@@ -489,8 +494,10 @@
                                     <hr />
                                     <div class="col-md-12 mt-3 pb-4">
                                         <div class="info d-flex">
-                                            <img class="me-3" src="assets/img/money-back-guarantee.svg" width="80px"
-                                                alt="..." />
+                                            <div>
+                                                <img class="me-3" src="assets/img/money-back-guarantee.svg" width="80px"
+                                                    alt="Refund Guaranteed" />
+                                            </div>
                                             <div>
                                                 <h4 class="info-title mb-3 mt-3">Guaranteed Refund Of Deposit*
                                                 </h4>
@@ -502,7 +509,10 @@
                                     <hr />
                                     <div class="col-md-12 mt-3">
                                         <div class="info d-flex">
-                                            <img class="me-3" src="assets/img/tour-guide.svg" width="80px" alt="..." />
+                                            <div>
+                                                <img class="me-3" src="assets/img/tour-guide.svg" width="80px"
+                                                    alt="Home Tour" />
+                                            </div>
                                             <div>
                                                 <h4 class="info-title mb-3 mt-3">Guided Home Tour
                                                 </h4>
@@ -659,38 +669,38 @@
             </div>
         </div>
     </section>
-    
-        <section class="section sectionnopad text-center sectionheight mt-0 pb-3">
-            <div class="container">
+
+    <section class="section sectionnopad text-center sectionheight mt-0 pb-3">
+        <div class="container">
             <div class="row mt-4 justify-content-center">
                 <div class="col-md-8">
-                <h4 class="text-black mb-2"><strong>
-                    Need a personal home finder? Its free*</strong>
-                </h4>
-                <p class="description">
-                    Contact us and let us matchmake for you!
-                </p>
-                <div class="row mt-3 justify-content-center">
-                    <div class="col-6 col-md-4 text-center">
-                    <button class=" btn btn-success text-black btn-refer mt-1 justify-content-center me-2">
-                        <img src="assets/img/whatsappcolorised.svg" alt="..." width="30px" />
-                        <br />
-                        WhatsApp
-                    </button>
+                    <h4 class="text-black mb-2"><strong>
+                            Need a personal home finder? Its free*</strong>
+                    </h4>
+                    <p class="description">
+                        Contact us and let us matchmake for you!
+                    </p>
+                    <div class="row mt-3 justify-content-center">
+                        <div class="col-6 col-md-4 text-center">
+                            <button class=" btn btn-success text-black btn-refer mt-1 justify-content-center me-2">
+                                <img src="assets/img/whatsappcolorised.svg" alt="..." width="30px" />
+                                <br />
+                                WhatsApp
+                            </button>
+                        </div>
+                        <div class="col-6 col-md-4 text-center">
+                            <button class=" btn btn-primary text-black btn-refer mt-1 justify-content-center me-2">
+                                <img src="assets/img/call.svg" alt="..." width="30px" />
+                                <br />
+                                Call Us
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-6 col-md-4 text-center">
-                    <button class=" btn btn-primary text-black btn-refer mt-1 justify-content-center me-2">
-                        <img src="assets/img/call.svg" alt="..." width="30px" />
-                        <br />
-                        Call Us
-                    </button>
-                    </div>
-                </div>
-                <p class="text-black mt-2">*Limited time offer</p>
+                    <p class="text-black mt-2">*Limited time offer</p>
                 </div>
             </div>
-            </div>
-        </section>
+        </div>
+    </section>
     <footer class="footer section-dark">
         <div class="container">
             <div class="row">
@@ -865,7 +875,8 @@
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                 </div>
-                                                <input type="text" class="form-control" placeholder="Full name" required>
+                                                <input type="text" class="form-control" placeholder="Full name"
+                                                    required>
                                             </div>
                                         </div>
                                     </div>
@@ -878,25 +889,26 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="row">
                                         <div class="col-sm-6 my-2">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                 </div>
-                                                <input type="password" class="form-control" placeholder="Password" required>
+                                                <input type="password" class="form-control" placeholder="Password"
+                                                    required>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 my-2">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                 </div>
-                                                <input type="password" class="form-control" placeholder="Confirm Password"
-                                                    required>
+                                                <input type="password" class="form-control"
+                                                    placeholder="Confirm Password" required>
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="row">
                                         <div class="col-4 my-2">
                                             <input type="text" class="form-control form-select" list="country"
@@ -1096,7 +1108,8 @@
                                                 <option data-countryCode="TR">Turkey (+90)</option>
                                                 <option data-countryCode="TM">urkmenistan (+7)</option>
                                                 <option data-countryCode="TM">Turkmenistan (+993)</option>
-                                                <option data-countryCode="TC">Turks &amp; Caicos Islands (+1649)</option>
+                                                <option data-countryCode="TC">Turks &amp; Caicos Islands (+1649)
+                                                </option>
                                                 <option data-countryCode="TV">Tuvalu (+688)</option>
                                                 <option data-countryCode="UG">Uganda (+256)</option>
                                                 <option data-countryCode="UA">Ukraine (+380)</option>
@@ -1116,7 +1129,7 @@
                                                 <option data-countryCode="ZW">Zimbabwe (+263)</option>
                                             </datalist>
                                         </div>
-    
+
                                         <div class="col-8 my-2">
                                             <div class="input-group">
                                                 <input type="number" class="form-control" placeholder="Phone number"
@@ -1124,7 +1137,7 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="row">
                                         <div class="col-6 my-2">
                                             <div class="input-group-desc">
@@ -1134,7 +1147,8 @@
                                         </div>
                                         <div class="col-6 my-2">
                                             <div class="input-group">
-                                                <input type="number" class="form-control" placeholder="Enter OTP" required>
+                                                <input type="number" class="form-control" placeholder="Enter OTP"
+                                                    required>
                                             </div>
                                         </div>
                                     </div>
@@ -1155,15 +1169,16 @@
                                             <button class=" btn btn-refer font-medium btn-primary mt-1"
                                                 href="refer-steps.html">Sign
                                                 up</button>
-    
+
                                             <p class="text-center mt-4">Already have an account? <a
-                                                    href="javascript:void(0)" data-bs-toggle="modal" data-bs-dismiss="modal"
-                                                    data-bs-target="#signInmodal">Sign in</a>.</p>
+                                                    href="javascript:void(0)" data-bs-toggle="modal"
+                                                    data-bs-dismiss="modal" data-bs-target="#signInmodal">Sign in</a>.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </form>
-    
+
                         </div>
                     </div>
                 </div>
@@ -1325,6 +1340,8 @@
     <script src="assets/js/plugins/lightslider.js"></script>
     <script src="assets/js/plugins/lightgallery-all.js"></script>
     <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+    <script src="assets/js/feature.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
     <script>
         var myModal = document.getElementById('myModal')
         var myInput = document.getElementById('myInput')
@@ -1391,25 +1408,28 @@
             item: 3,
             arrows: true,
             loop: true,
-            gallery: true,
-            slideMargin: 2,
             enableDrag: true,
-            thumbLeft: true,
-            thumbItem: 8,
-            auto: true,
-            speed: 600,
-            currentPagerPosition: 'right',
-            zoom: true,
+            autoplay: true,
+            speed: 800,
+            currentPagerPosition: 'middle',
+            gallery: false,
+            pager: true,
             fullScreen: true,
             keyPress: true,
-            autWidth: true,
+            slideMove: 1,
             responsive: [
                 {
-                    breakpoint: 767,
+                    breakpoint: 1050,
+                    settings: {
+                        item: 2,
+                        slideMove: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
                     settings: {
                         item: 1,
-                        slideMove: 1,
-                        slideMargin: 6,
+                        slideMove: 1
                     }
                 },
                 {
@@ -1552,6 +1572,7 @@
             });
         }); 
     </script>
+
 
 </body>
 

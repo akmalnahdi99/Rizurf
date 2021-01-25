@@ -598,6 +598,13 @@ video {
   padding-left: 2rem;
 }
 
+.bkgtransparent {
+  background: transparent !important;
+}
+.litegray {
+  background: #e8e9ea !important;
+}
+
 .grey-bg {
   background: #eeeeee;
 }
@@ -837,6 +844,7 @@ button.close {
 
 .lSSlideWrapper {
   border-radius: 15px;
+  -webkit-border-radius: 15px; 
 }
 
 .unitgallery {
@@ -851,7 +859,6 @@ button.close {
 
 .unitgallery li {
   display: block;
-  float: left;
   margin-right: 6px;
   cursor: pointer;
 }
@@ -884,6 +891,55 @@ button.close {
 
 .datediv {
   display: block;
+}
+
+/* 3d carousel */
+
+.coverflow {
+  display: flex;
+	 justify-content: center;
+	 align-items: center;
+   background:transparent;
+}
+
+.carousel-container {
+  position: relative;
+  width: 640px;
+}
+.carousel-container a{
+  color: #000;
+}
+.carousel-container a:hover{
+  color: #51cbce;
+}
+
+.carousel-main {
+  height: 350px;
+  width: 640px;
+  position: relative;
+  margin-bottom: 0.5em;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+.carousel-feature {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.carousel-feature a {
+  font-size: 18px;
+}
+
+.carousel-image {
+  border: 0;
+  display: block;
+  border-radius: 12px;
 }
 
 /* Table */
@@ -2241,6 +2297,25 @@ button.kc_fab_main_btn {
 
 .section-images {
   padding-bottom: 0;
+}
+
+.center {
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.center .slick-center h3 {
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -o-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  color: #e67e22;
+  opacity: 1;
+  transform: scale(1.08);
+}
+.center h3 {
+  opacity: 0.8;
+  transition: all 300ms ease;
 }
 
 @media screen and (max-width: 991px) {
