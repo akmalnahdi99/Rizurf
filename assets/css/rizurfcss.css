@@ -835,8 +835,12 @@ button.close {
   border-bottom: 3px solid #51cbce !important
 }
 
-/* target */
-
+/* heart overlay */
+.heart-overlay {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 
 
 /* arrow down */
