@@ -918,7 +918,9 @@ button.close {
   display: block;
 }
 
-/* favorite checked */
+/* favorite checked  - for hearts as favorite, i will remove all the css except 1 class as we using variables*/
+
+/* heart 1 */
 [id="heart"] {
   position: absolute;
   left: -100vw;
@@ -950,7 +952,246 @@ button.close {
   color: #e2264d;
   will-change: font-size;
   animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+} 
+
+/* heart 2 */
+[id="heart2"] {
+  position: absolute;
+  left: -100vw;
 }
+
+[for="heart2"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 25px;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart2"]:hover {
+  color: grey;
+}
+
+[for="heart2"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart2"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart2"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+} 
+/* heart 3 */
+[id="heart3"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart3"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 25px;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart3"]:hover {
+  color: grey;
+}
+
+[for="heart3"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart3"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart3"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+} 
+
+/* heart 4 */
+[id="heart4"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart4"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 25px;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart4"]:hover {
+  color: grey;
+}
+
+[for="heart4"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart4"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart4"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+} 
+
+/* heart 5 */
+[id="heart5"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart5"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 25px;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart5"]:hover {
+  color: grey;
+}
+
+[for="heart5"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart5"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart5"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+} 
+
+/* heart 6 */
+[id="heart6"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart6"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 25px;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart6"]:hover {
+  color: grey;
+}
+
+[for="heart6"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart6"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart6"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+} 
+
+
+/* heart 7 */
+[id="heart7"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart7"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 25px;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart7"]:hover {
+  color: grey;
+}
+
+[for="heart7"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart7"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart7"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+} 
+
+
+/* heart 8 */
+[id="heart8"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart8"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 25px;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart8"]:hover {
+  color: grey;
+}
+
+[for="heart8"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart8"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart8"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+} 
 
 /* 3d carousel */
 
