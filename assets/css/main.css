@@ -4186,7 +4186,7 @@ License - nucleoapp.com/license/
 .navbar-absolute {
   position: absolute;
   width: 100%;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   z-index: 1029;
 }
 
@@ -7030,7 +7030,7 @@ ul.footerlist {
     border-left: 1px solid #CCC5B9;
     padding-right: 35px;
     padding-left: 35px;
-    padding-top: 25px;
+
     -webkit-transform: translateX(230px);
     -moz-transform: translateX(230px);
     -o-transform: translateX(230px);
