@@ -29,14 +29,14 @@
 </head>
 
 <body class="landing-page sidebar-collapse">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg ">
 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top noboxshadow borderbtm">
     <div class="container-fluid">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="index.html" rel="tooltip" title="Rizurf-Logo" data-placement="bottom"
+        <a class="navbar-brand" href="index.html" rel="tooltip" title="Rizurf Logo" data-placement="bottom"
           target="_blank">
-          <img src="assets/img/rizurflogo-color.png" style="width:150px">
+          <img src="assets/img/rizurflogo-color.png" width="120px">
         </a>
         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
           aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,105 +62,91 @@
           <li class="nav-item">
             <a class="nav-link active" href="profile-page.html">My Account</a>
           </li>
-          <li class="nav-item">
-          </li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- End Navbar -->
 
-  <section class="section section-light-gray">
+  <section class="section sectionheight mt-5">
     <div class="container justify-content-center">
       <div class="mb-5">
         <div class="row justify-content-center">
           <div class="col-md-8 col-12">
             <div class="justify-content-center">
-              <div class="container-fluid">
-                <h2 class="text-center title text-black">Documents</h2>
-                <div class="row justify-content-center">
-                  <div class="col-md-6 my-2 align-self-center">
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                      <button class="btn btn-refer btn-primary btn-lg" onclick="myFunction()" type="button">
-                        <span id="save">Save your edits</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <hr />
+              <div class="container-fluid mt-5">
+                <h2 style="padding-bottom: 20px;" class="text-center title text-black">Checklist</h2>
+
                 <div class="row">
-                  <div class="col-md-6 my-2">
-                    <div class="mb-4 mt-4">
-                      <label for="formFile" class="form-label">
-                        <h5><strong>Passport Copy</strong></h5>
-                      </label>
-                      <form action="" class="dropzone" id="DropZoneFiddle">
-                        <img class="img-responsive" src="assets/img/upload.svg" width="150px" alt="..." />
-                      </form>
+                    <div class="col-sm-6 font-medium fontw-normal">
+                      <div class="form-check mb-3">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" onclick="return false;" checked>
+                          Passport
+                          <span class="form-check-sign"></span>
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" onclick="return false;" checked>
+                          Student visa
+                          <span class="form-check-sign"></span>
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" onclick="return false;" checked>
+                          Student Id
+                          <span class="form-check-sign"></span>
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" onclick="return false;" checked>
+                          University offer letter
+                          <span class="form-check-sign"></span>
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" onclick="return false;">
+                          Employment letter
+                          <span class="form-check-sign"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6 font-medium fontw-normal">
+                      <div class="form-check mb-3">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" onclick="return false;">
+                          Business card
+                          <span class="form-check-sign"></span>
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" onclick="return false;">
+                          Work permit
+                          <span class="form-check-sign"></span>
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" onclick="return false;">
+                          Employeee Id
+                          <span class="form-check-sign"></span>
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" onclick="return false;">
+                          IC
+                          <span class="form-check-sign"></span>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-6 my-2">
-                    <div class="mb-4 mt-4">
-                      <label for="formFile" class="form-label">
-                        <h5><strong>IC Copy</strong></h5>
-                      </label>
-                      <form action="" class="dropzone" id="DropZoneFiddle">
-                        <img class="img-responsive" src="assets/img/upload.svg" width="150px" alt="..." />
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6 my-2">
-                    <div class="mb-4 mt-4">
-                      <label for="formFile" class="form-label">
-                        <h5><strong>Visa</strong></h5>
-                      </label>
-                      <form action="" class="dropzone" id="DropZoneFiddle">
-                        <img class="img-responsive" src="assets/img/upload.svg" width="150px" alt="..." />
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6 my-2">
-                    <div class="mb-4 mt-4">
-                      <label for="formFile" class="form-label">
-                        <h5><strong>Bank Statement</strong></h5>
-                      </label>
-                      <form action="" class="dropzone" id="DropZoneFiddle">
-                        <img class="img-responsive" src="assets/img/upload.svg" width="150px" alt="..." />
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6 my-2">
-                    <div class="mb-4 mt-4">
-                      <label for="formFile" class="form-label">
-                        <h5><strong>Employee ID</strong></h5>
-                      </label>
-                      <form action="" class="dropzone" id="DropZoneFiddle">
-                        <img class="img-responsive" src="assets/img/upload.svg" width="150px" alt="..." />
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6 my-2">
-                    <div class="mb-4 mt-4">
-                      <label for="formFile" class="form-label">
-                        <h5><strong>Student ID</strong></h5>
-                      </label>
-                      <form action="" class="dropzone" id="DropZoneFiddle">
-                        <img class="img-responsive" src="assets/img/upload.svg" width="150px" alt="..." />
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6 my-2">
-                    <div class="mb-4 mt-4">
-                      <label for="formFile" class="form-label">
-                        <h5><strong>Company Registration Letter</strong></h5>
-                      </label>
-                      <form action="" class="dropzone" id="DropZoneFiddle">
-                        <img class="img-responsive" src="assets/img/upload.svg" width="150px" alt="..." />
-                      </form>
-                    </div>
-                  </div>
-                  
-                </div>
               </div>
             </div>
           </div>
