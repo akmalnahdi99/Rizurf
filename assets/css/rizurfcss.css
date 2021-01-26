@@ -793,7 +793,7 @@ button.close {
   font-size: 12px;
   text-align: center
 }
-.contentbarlist ul li a.scrolled {
+.contentbarlist ul li .scrolled a {
   text-decoration: none;
   color: #000;
   border-bottom: 3px solid #51cbce !important
@@ -817,6 +817,10 @@ button.close {
   color: #000;
   border-bottom: 3px solid #51cbce !important
 }
+
+/* target */
+
+
 
 /* arrow down */
 .arrowdown {

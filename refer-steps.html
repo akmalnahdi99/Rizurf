@@ -125,7 +125,7 @@
         <div class="row justify-content-center">
           <div class="col-8 text-justify">
               <div class="arrowdown">
-                  <a href="#section">
+                  <a href="#steps">
                       <img alt="Arrow Down Icon" src="assets/img/chevron-down-white.svg" width="30px" />
                   </a>
               </div>
@@ -376,6 +376,31 @@
       $('.kc_fab_wrapper').kc_fab(links);
     })
   </script>
+  <script>
+    (function($, window) {
+        var adjustAnchor = function() {
+
+            var $anchor = $(':target'),
+                    fixedElementHeight = 83;
+
+            if ($anchor.length > 0) {
+
+                $('html, body')
+                    .stop()
+                    .animate({
+                        scrollTop: $anchor.offset().top - fixedElementHeight
+                    }, 200);
+
+            }
+
+        };
+
+        $(window).on('hashchange load', function() {
+            adjustAnchor();
+        });
+
+    })(jQuery, window);
+</script>
 </body>
 
 </html>
