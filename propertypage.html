@@ -203,7 +203,7 @@
                     <p class="font-normal">KL Gateway Residence, Bangsar South</p>
                     <hr />
                     <div class="row mb-3">
-                        <div class="col sharelist">
+                        <div class="col sharelist mb-3">
                             <ul>
                                 <li>
                                     <p>Share: </p>
@@ -219,6 +219,13 @@
                                         data-placement="bottom" href="#" target="_blank">
                                         <img src="assets/img/fbmessenger-white.svg" alt="..." width="30px" />
 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="socialmediaicon" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="#"
+                                        target="_blank">
+                                        <img src="assets/img/sms.svg" alt="..." width="30px">
+                                
                                     </a>
                                 </li>
                                 <li>
@@ -243,7 +250,9 @@
                             <h4 class="card-title font-large text-center"><img src="assets/img/moneybag.svg" alt="..."
                                     width="40px" /> &nbsp; Refer &amp; Earn
                             </h4>
-                            <a href="#" class="btn btn-block btn-warning text-black mt-3" style="width: 100%;">
+
+                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#refer" class="btn btn-block btn-warning text-black mt-3" style="width: 100%;">
                                 <sup class="m-0">Up to &nbsp;</sup>
                                 <span class="font-medium fontw-bold m-0">RM 2,500</span>
 
@@ -887,6 +896,140 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="refer" tabindex="-1" aria-labelledby="referLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-brdradius">
+                <div class="modal-header text-start">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h3 class="modal-title fontw-bold text-start ps-1" id="referLabel" style="margin-top: 15px;">
+                        Friend's or refree's details</h3>
+                </div>
+                <div class="modal-body p-3" style="margin-top: -18px;">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="emailUser" aria-describedby="emailHelp"
+                                placeholder="Full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="emailUser" aria-describedby="emailHelp"
+                                placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <input type="number" class="form-control" placeholder="Phone" required>
+                            </div>
+                        </div>
+                        <h3 class="mb-2">Kl Gateway (For Rent)</h3>
+
+                        <div class="col-lg-12 col-md-6 col-12 ">
+                            <div class="card" onclick="location.href='propertypage.html';" style="cursor:pointer;">
+                                <div class="card-img-top ">
+                                    <div>
+                                        <img class="d-block img-fluid" src="assets/img/soroush-karimi.jpg" alt="First slide">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">RM 2,000 (KL Gateway)</h5>
+                                    <div class="d-flex iconsmall">
+                                        <p class="me-2 ms-1"><img src="assets/img/double-bed.svg" alt="..." width="20px"> 3
+                                        </p>
+                                        <p class="me-2 ms-1"><img src="assets/img/bath-tub.svg" alt="..." width="20px">
+                                            2
+                                        </p>
+                                        <p class="me-2 ms-1"><img src="assets/img/parking.svg" alt="..." width="20px"> 3
+                                        </p>
+                                        <p class="me-2 ms-1"><img src="assets/img/area-graph.svg" alt="..." width="20px">
+                                            3000 sqft.</p>
+                                    </div>
+                                </div>
+                                <h5 class=" ms-1 mb-2">Kl Gateway (For Rent)</h5>
+                            </div>
+                        </div>
+                        <h3 class="modal-title fontw-bold text-start ps-1 mb-3" id="referLabel" style="margin-top: 2px;">
+                            Referrer details</h3>
+
+                            <div class="mb-3">
+                                <input type="text" class="form-control is-valid" data-bs-toggle="modal" data-bs-target="#detailverify"
+                                    placeholder="Jane portman" required disabled>
+                            </div>
+                            <div class="mb-3">
+                            <input type="email" class="form-control is-valid" data-bs-toggle="modal" data-bs-target="#detailverify"
+                                placeholder="janeportman@email.com" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <input type="number" class="form-control is-valid" data-bs-toggle="modal" data-bs-target="#detailverify"
+                                        placeholder="0142410435" disabled>
+                                </div>
+                            </div>
+
+                            <h3 class="modal-title text-center" id="referLabel" style="margin-top: 2px;">
+                                Share</h3>
+
+                            <div class="col sharelist text-center mt-3">
+                                <ul>
+                                    <li>
+                                        <a class="socialmediaicon pe-3" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="#"
+                                            target="_blank">
+                                            <img src="assets/img/whatsapp.svg" alt="..." width="30px">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialmediaicon pe-3" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="#"
+                                            target="_blank">
+                                            <img src="assets/img/fbmessenger-white.svg" alt="..." width="30px">
+                            
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialmediaicon pe-3" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="#"
+                                            target="_blank">
+                                            <img src="assets/img/sms.svg" alt="..." width="30px">
+                                    
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialmediaicon pe-3" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="#"
+                                            target="_blank">
+                                            <img src="assets/img/email.svg" alt="..." width="30px">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        <!-- <div class="row justify-content-center mt-3 mb-3">
+                            <div class="col-4 col-md-4 text-center">
+                                <button class=" btn btn-success text-black btn-refer mt-1 justify-content-center">
+                                    <img src="assets/img/whatsappcolorised.svg" alt="..." width="30px" />
+                                    <br />
+                                    WhatsApp
+                                </button>
+                            </div>
+                            <div class="col-4 col-md-4 text-center">
+                                <button class=" btn btn-warning btn-refer mt-1 justify-content-center text-black">
+                                    <img src="assets/img/sms.svg" alt="..." width="30px" />
+                                    <br />
+                                    SMS </button>
+                            </div>
+                            <div class="col-4 col-md-4 text-center">
+                                <button class=" btn btn-primary text-black btn-refer mt-1 justify-content-center">
+                                    <img src="assets/img/email.svg" alt="..." width="30px" />
+                                    <br />
+                                    Email
+                                </button>
+                            </div>
+                        </div> -->
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="signInmodal" tabindex="-1" aria-labelledby="signInmodalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content modal-brdradius">
