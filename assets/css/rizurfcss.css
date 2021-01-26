@@ -681,6 +681,15 @@ button.close {
   appearance: none;
 }
 
+.sharelist ul {
+  display: inline-flex;
+  list-style: none;
+  padding-inline-start: 0px;
+}
+.sharelist li {
+  margin-right: 10px;
+}
+
 /* circular images */
 
 .circular--landscape {
@@ -784,11 +793,23 @@ button.close {
   font-size: 12px;
   text-align: center
 }
+.contentbarlist ul li a.scrolled {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 3px solid #51cbce !important
+}
+
 
 .contentbarlist ul li a:hover {
   text-decoration: none;
   color: #000;
   /* border-bottom: 3px solid #51cbce !important */
+}
+
+.contentbarlist li a.centerlist {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 0px solid #51cbce !important
 }
 
 .contentbarlist li a.centerlist.clicked {

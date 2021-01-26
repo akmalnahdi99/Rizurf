@@ -96,7 +96,7 @@
         </div>
     </nav>
     <!-- End Navbar -->
-    <section class="section section-light-gray pb-3 pt-5">
+    <section class="section section-light-gray pb-5 pt-5">
         <div class="container px-4 mt-5">
             <div class="row justify-content-center mt-5 pt-5">
                 <div class="col-md-12 mb-5">
@@ -190,7 +190,7 @@
         </div>
     </section>
 
-    <section id="section" class="section section-light-gray pb-3 pt-1">
+    <section id="section" class="section section-light-gray pb-3 pt-3">
         <div class="container">
             <div class="row justify-content-start">
                 <div class="col">
@@ -202,45 +202,42 @@
                     </h3>
                     <p class="font-normal">KL Gateway Residence, Bangsar South</p>
                     <hr />
-                    <div class="d-flex">
-                        <div class="left">
-                            <nav class="footer-nav">
-                                <ul>
-                                    <li>
-                                        <a class="socialmediaicon" rel="tooltip" title="Like us on Facebook"
-                                            data-placement="bottom" href="#" target="_blank">
-                                            <img src="assets/img/facebook.svg" alt="..." width="30px" />
+                    <div class="row mb-3">
+                        <div class="col sharelist">
+                            <ul>
+                                <li>
+                                    <p>Share: </p>
+                                </li>
+                                <li>
+                                    <a class="socialmediaicon" rel="tooltip" title="Follow us on Instagram"
+                                        data-placement="bottom" href="#" target="_blank">
+                                        <img src="assets/img/whatsapp.svg" alt="..." width="30px" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="socialmediaicon" rel="tooltip" title="Like us on Facebook"
+                                        data-placement="bottom" href="#" target="_blank">
+                                        <img src="assets/img/fbmessenger-white.svg" alt="..." width="30px" />
 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="socialmediaicon" rel="tooltip" title="Follow us on Instagram"
-                                            data-placement="bottom" href="#" target="_blank">
-                                            <img src="assets/img/instagram.svg" alt="..." width="30px" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="socialmediaicon" rel="tooltip" title="Star on GitHub"
-                                            data-placement="bottom" href="#" target="_blank">
-                                            <img src="assets/img/tik-tok.svg" alt="..." width="30px" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="socialmediaicon" rel="tooltip" title="Star on GitHub"
-                                            data-placement="bottom" href="#" target="_blank">
-                                            <img src="assets/img/youtube.svg" alt="..." width="40px" />
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="socialmediaicon" rel="tooltip" title="Star on GitHub"
+                                        data-placement="bottom" href="#" target="_blank">
+                                        <img src="assets/img/email.svg" alt="..." width="30px" />
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="right">
+                        <div class="col justify-self-end text-end">
                             <input id="heart" type="checkbox" />
-                            <label for="heart">❤ Favorite</label>
+                            <label for="heart" class="align-self-center me-2">❤ </label><span
+                                class="align-self-center font-normal" style="position: relative;top: -4px;">Save as
+                                favorite</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 align-self-end">
+                <div class="col-lg-5 pt-0">
                     <div class="card p-2">
                         <div class="card-body">
                             <h4 class="card-title font-large text-center"><img src="assets/img/moneybag.svg" alt="..."
@@ -292,24 +289,30 @@
 
                         <div id="contentNavi" class="contentalign bg-white">
                             <div class="container-fluid filterdiv px-3 justify-content-center contentbarlist">
-                                <ul>
+                                <ul id="featureNav">
                                     <li>
-                                        <a class="font-normal centerlist" id="overviewtag" href="#overview">Overview</a>
+                                        <a class="font-normal centerlist " id="overviewtag"
+                                            href="#overview">Overview</a>
                                     </li>
                                     <li>
-                                        <a class="font-normal centerlist" href="#facilities">Facilities</a>
+                                        <a class="font-normal centerlist" id="facilitiestag"
+                                            href="#facilities">Facilities</a>
                                     </li>
                                     <li class="paydesktop ">
-                                        <a class="font-normal centerlist" href="#payment">Payment Terms</a>
+                                        <a class="font-normal centerlist" id="payTermtagDesktop" href="#payment">Payment
+                                            Terms</a>
                                     </li>
                                     <li class="paymobile ">
-                                        <a class="font-normal centerlist" href="#payment-mobile">Payment Terms</a>
+                                        <a class="font-normal centerlist" id="payTermtagMobile"
+                                            href="#payment-mobile">Payment Terms</a>
                                     </li>
                                     <li>
-                                        <a class="font-normal centerlist" href="#whyrizurf">Why use Rizurf?</a>
+                                        <a class="font-normal centerlist" id="whyuseRizurf" href="#whyrizurf">Why use
+                                            Rizurf?</a>
                                     </li>
                                     <li>
-                                        <a class="font-normal centerlist" href="#howtorizurf">How To Rizurf?</a>
+                                        <a class="font-normal centerlist" id="howtoRizurf" href="#howtorizurf">How To
+                                            Rizurf?</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1424,11 +1427,9 @@
     <script src="assets/js/plugins/lightslider.js"></script>
     <script src="assets/js/plugins/lightgallery-all.js"></script>
     <script src="http://vjs.zencdn.net/4.12/video.js"> </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
-        integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw=="
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
 
-    <script>
+    <script type="text/javascript">
         var myModal = document.getElementById('myModal')
         var myInput = document.getElementById('myInput')
 
@@ -1489,7 +1490,7 @@
 
 
     </script>
-    <script>
+    <script type="text/javascript">
         $('#lightSlider').lightSlider({
             item: 3,
             arrows: true,
@@ -1535,7 +1536,7 @@
             }
         });
     </script>
-    <script>
+    <script type="text/javascript">
         function sticky_relocate() {
             var window_top = $(window).scrollTop();
             var div_top = $('#sticky-anchor').offset().top;
@@ -1649,31 +1650,7 @@
                 );
             })(window.document, window.history, window.location);
     </script>
-
     <script>
-        const togglePassword = document.querySelector('#togglePassword');
-        const password = document.querySelector('#password');
-        togglePassword.addEventListener('click', function (e) {
-            // toggle the type attribute
-            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-            password.setAttribute('type', type);
-            // toggle the eye slash icon
-            this.classList.toggle('far fa-eye-slash');
-        });
-    </script>
-
-
-    <script>
-        function myFunction() {
-            var element = document.getElementById("showpassword");
-            element.classList.toggle("far fa-eye-slash");
-        }
-    </script>
-
-
-    <script>
-
-        // this of eye method
         var inputPass2 = document.getElementById('pass2'),
             togglePassword = document.getElementById('togglePassword');
 
@@ -1689,10 +1666,8 @@
                 togglePassword.className = 'far fa-eye-slash';
                 inputPass2.className = 'active';
             }
-
         }
     </script>
-
     <script>
         function myFunction() {
             var x = document.getElementById("myInput")
@@ -1710,11 +1685,6 @@
                 z.style.display = "block";
             }
         }
-    </script>
-
-
-
-    <script>
         function myFunction2() {
             var a = document.getElementById("myInput2")
             var b = document.getElementById("hide3")
@@ -1731,9 +1701,6 @@
                 c.style.display = "block";
             }
         }
-    </script>
-
-    <script>
         function myFunction3() {
             var d = document.getElementById("myInput3")
             var e = document.getElementById("hide7")
@@ -1750,6 +1717,22 @@
                 f.style.display = "block";
             }
         }
+    </script>
+    <script>
+
+        $(".centerlist").click(function () {
+
+            // Select all list items 
+            var listItems = $(".centerlist");
+
+            // Remove 'active' tag for all list items 
+            for (let i = 0; i < listItems.length; i++) {
+                listItems[i].classList.remove("clicked");
+            }
+
+            // Add 'active' tag for currently selected item 
+            this.classList.add("clicked");
+        }); 
     </script>
 
 </body>
