@@ -2011,6 +2011,12 @@ img.profile {
   pointer-events: none;
 }
 
+.fas-fa-info-circle-new{
+      text-align: center;
+      font-size: 18px;
+      vertical-align: text-top;
+    }
+
 .sub_fab_btns_wrapper {
   right: 0;
   bottom: 75px;
