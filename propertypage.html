@@ -22,6 +22,8 @@
     <link href="assets/css/lightslider.css" rel="stylesheet" />
     <link href="assets/css/lightgallery.css" rel="stylesheet" />
     <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet" />
+
+   
 </head>
 
 <body class="landing-page sidebar-collapse">
@@ -531,9 +533,9 @@
                                                     alt="100% Authentic" />
                                             </div>
                                             <div>
-                                                <h4 class="info-title mb-3 mt-3">100% Authentic Listings
+                                                <h4 class="info-title ps-3 mb-3 mt-3">100% Authentic Listings
                                                 </h4>
-                                                <p class="description">All our listings have real pictures and real
+                                                <p class="description ps-3">All our listings have real pictures and real
                                                     prices</p>
                                             </div>
                                         </div>
@@ -546,9 +548,17 @@
                                                     alt="Refund Guaranteed" />
                                             </div>
                                             <div>
-                                                <h4 class="info-title mb-3 mt-3">Guaranteed Refund Of Deposit*
-                                                </h4>
-                                                <p class="description">No dues or damages! We guarantee refund of
+                                                <h4 class="info-title ps-3 mb-3 mt-3">Guaranteed Refund Of Deposit
+                                                    <i class="fas fa-info-circle" id="TC" data-toggle="popover" 
+                                                    title="Terms &amp; Conditions Apply"></i></h4>
+
+
+                                                <!-- <a href="javascript:void" rel="noreferrer noopener" referrerpolicy="no-referrer" aria-label="Terms &amp; Conditions Apply">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a> -->
+                                                
+                                                
+                                                <p class="description ps-3">No dues or damages! We guarantee refund of
                                                     deposit.</p>
                                             </div>
                                         </div>
@@ -561,9 +571,9 @@
                                                     alt="Home Tour" />
                                             </div>
                                             <div>
-                                                <h4 class="info-title mb-3 mt-3">Guided Home Tour
+                                                <h4 class="info-title ps-3 mb-3 mt-3">Guided Home Tour
                                                 </h4>
-                                                <p class="description">We serve you in making the right choice</p>
+                                                <p class="description ps-3">We serve you in making the right choice</p>
                                             </div>
                                         </div>
                                     </div>
@@ -717,12 +727,13 @@
         </div>
     </section>
 
-    <section class="section sectionnopad text-center sectionheight mt-0 pb-3">
+    <section class="section sectionnopad text-center sectionheight mt-0 pb-3 mb-5">
         <div class="container">
             <div class="row mt-4 justify-content-center">
                 <div class="col-md-8">
                     <h4 class="text-black mb-2"><strong>
-                            Need a personal home finder? Its free*</strong>
+                            Need a personal home finder? Its free</strong>
+                            <i class="fas fa-info-circle" id="free" data-toggle="popover" title="Limited time offer!"></i>
                     </h4>
                     <p class="description">
                         Contact us and let us matchmake for you!
@@ -743,7 +754,6 @@
                             </button>
                         </div>
                     </div>
-                    <p class="text-black mt-2">*Limited time offer</p>
                 </div>
             </div>
         </div>
@@ -876,7 +886,7 @@
                         <span aria-hidden="true">×</span>
                     </button>
                     <h3 class="modal-title fontw-bold text-start ps-1" id="referLabel" style="margin-top: 15px;">
-                        Friend's or refree's details</h3>
+                        Friend's or referee's details</h3>
                 </div>
                 <div class="modal-body p-3" style="margin-top: -18px;">
                     <form>
@@ -916,28 +926,13 @@
                                             3000 sqft.</p>
                                     </div>
                                 </div>
-                                <h5 class=" ms-1 mb-2">Kl Gateway (For Rent)</h5>
                             </div>
                         </div>
-                        <h3 class="modal-title fontw-bold text-start ps-1 mb-3" id="referLabel" style="margin-top: 2px;">
-                            Referrer details</h3>
+                        <div class="mt-5 mb-5 text-center fontw-normal">
+                            <button class="btn btn-primary btn-width300" type="submit">Submit</button>
+                        </div>
 
-                            <div class="mb-3">
-                                <input type="text" class="form-control is-valid" data-bs-toggle="modal" data-bs-target="#detailverify"
-                                    placeholder="Jane portman" required disabled>
-                            </div>
-                            <div class="mb-3">
-                            <input type="email" class="form-control is-valid" data-bs-toggle="modal" data-bs-target="#detailverify"
-                                placeholder="janeportman@email.com" disabled>
-                            </div>
-                            <div class="mb-3">
-                                <div class="input-group">
-                                    <input type="number" class="form-control is-valid" data-bs-toggle="modal" data-bs-target="#detailverify"
-                                        placeholder="0142410435" disabled>
-                                </div>
-                            </div>
-
-                            <h3 class="modal-title text-center" id="referLabel" style="margin-top: 2px;">
+                            <!-- <h3 class="modal-title text-center" id="referLabel" style="margin-top: 2px;">
                                 Share</h3>
 
                             <div class="col sharelist text-center mt-3">
@@ -969,9 +964,9 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
 
-                        <!-- <div class="row justify-content-center mt-3 mb-3">
+                        <div class="row justify-content-center mt-3 mb-5">
                             <div class="col-4 col-md-4 text-center">
                                 <button class=" btn btn-success text-black btn-refer mt-1 justify-content-center">
                                     <img src="assets/img/whatsappcolorised.svg" alt="..." width="30px" />
@@ -992,7 +987,7 @@
                                     Email
                                 </button>
                             </div>
-                        </div> -->
+                        </div>
 
 
                     </form>
