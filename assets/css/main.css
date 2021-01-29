@@ -24,6 +24,9 @@
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
+
+/* organizing */
+
 .bootstrap-switch .bootstrap-switch-container {
   display: inline-flex;
   top: 0;
