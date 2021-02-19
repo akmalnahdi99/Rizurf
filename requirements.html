@@ -4,8 +4,8 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img//apple-icon.png">
-  <link rel="icon" type="image/png" href="assets/img//favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img//apple-icon.png">
+  <link rel="icon" type="image/png" href="/assets/img//favicon.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -24,9 +24,9 @@
   <!-- CSS Files -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/css/main.css" rel="stylesheet" />
-  <link href="assets/css/rizurfcss.css" rel="stylesheet" />
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/assets/css/main.css" rel="stylesheet" />
+  <link href="/assets/css/rizurfcss.css" rel="stylesheet" />
   <style>
   </style>
 </head>
@@ -39,7 +39,7 @@
       <div class="navbar-translate">
         <a class="navbar-brand" href="index.html" rel="tooltip" title="Rizurf-Logo" data-placement="bottom"
           target="_blank">
-          <img src="assets/img/rizurflogo-color.png" style="width:150px">
+          <img src="/assets/img/rizurflogo-color.png" style="width:150px">
         </a>
         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
           aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,7 +105,6 @@
               </div>
             </div>
           </div>
-          <hr class="text-black" />
           <div class="row">
             <div class="col-sm-6 my-2">
               <h5 class="align-items-center text-black">Furnishing</h5>
@@ -125,9 +124,23 @@
               </div>
             </div>
           </div>
-          <hr class="text-black" />
 
           <div class="row">
+            <div class="col-sm-6 my-2">
+              <h5 class="align-items-center text-black">Preferred Apartments</h5>
+              <div class="input-group">
+                <select class="form-control form-select" style="cursor: pointer;" list="duration"
+                  placeholder="How long you want to stay?">
+                  <option selected class="text-muted">Which apartments you interested?</option>
+                  <option>KL Gateway Residences</option>
+                  <option>Camellia Serviced Suites</option>
+                  <option>Novum Bangsar South</option>
+                  <option>South View Serviced Apartments</option>
+                  <option>Inwood Residences @ Pantai Sentral Park</option>
+                  <option>The Establishment</option>
+                </select>
+              </div>
+            </div>
             <div class="col-sm-6 my-2">
               <h5 class="align-items-center text-black">Total occupants</h5>
               <div class="input-group">
@@ -135,89 +148,19 @@
               </div>
             </div>
             <div class="col-sm-6 my-2">
-              <h5 class="align-items-center text-black">Occupation</h5>
+              <h5 class="align-items-center text-black">Duration of tenancy</h5>
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="What is your occupation?">
-                <datalist id="occupation">
-                  <option>Chiropractor</option>
-                  <option>Dentist</option>
-                  <option>Dietitian or Nutritionist</option>
-                  <option>Optometrist</option>
-                  <option>Pharmacist</option>
-                  <option>Physician</option>
-                  <option>Physician Assistant</option>
-                  <option>Podiatrist</option>
-                  <option>Registered Nurse</option>
-                  <option>Therapist</option>
-                  <option>Veterinarian</option>
-                  <option>Health Technologist or Technician</option>
-                  <option>Other Healthcare Practitioners and Technical Occupation</option>
-                  <option>Nursing, Psychiatric, or Home Health Aide</option>
-                  <option>Occupational and Physical Therapist Assistant or Aide</option>
-                  <option>Other Healthcare Support Occupation</option>
-                  <option>Chief Executive</option>
-                  <option>General and Operations Manager</option>
-                  <option>Advertising, Marketing, Promotions, Public Relations, and Sales Manager</option>
-                  <option>Operations Specialties Manager (e.g., IT or HR Manager)</option>
-                  <option>Construction Manager</option>
-                  <option>Engineering Manager</option>
-                  <option>Accountant, Auditor</option>
-                  <option>Business Operations or Financial Specialist</option>
-                  <option>Business Owner</option>
-                  <option>Other Business, Executive, Management, Financial Occupation</option>
-                  <option>Architect, Surveyor, or Cartographer</option>
-                  <option>Engineer</option>
-                  <option>Other Architecture and Engineering Occupation</option>
-                  <option>Postsecondary Teacher (e.g., College Professor)</option>
-                  <option>Primary, Secondary, or Special Education School Teacher</option>
-                  <option>Other Teacher or Instructor</option>
-                  <option>Other Education, Training, and Library Occupation</option>
-                  <option>Arts, Design, Entertainment, Sports, and Media Occupations</option>
-                  <option>Computer Specialist, Mathematical Science</option>
-                  <option>Counselor, Social Worker, or Other Community and Social Service Specialist</option>
-                  <option>Lawyer, Judge</option>
-                  <option>Life Scientist (e.g., Animal, Food, Soil, or Biological Scientist, Zoologist)</option>
-                  <option>Physical Scientist (e.g., Astronomer, Physicist, Chemist, Hydrologist)</option>
-                  <option>Religious Worker (e.g., Clergy, Director of Religious Activities or Education)</option>
-                  <option>Social Scientist and Related Worker</option>
-                  <option>Other Professional Occupation</option>
-                  <option>Supervisor of Administrative Support Workers</option>
-                  <option>Financial Clerk</option>
-                  <option>Secretary or Administrative Assistant</option>
-                  <option>Material Recording, Scheduling, and Dispatching Worker</option>
-                  <option>Other Office and Administrative Support Occupation</option>
-                  <option>Protective Service (e.g., Fire Fighting, Police Officer, Correctional Officer)</option>
-                  <option>Chef or Head Cook</option>
-                  <option>Cook or Food Preparation Worker</option>
-                  <option>Food and Beverage Serving Worker (e.g., Bartender, Waiter, Waitress)</option>
-                  <option>Building and Grounds Cleaning and Maintenance</option>
-                  <option>Personal Care and Service (e.g., Hairdresser, Flight Attendant, Concierge)</option>
-                  <option>Sales Supervisor, Retail Sales</option>
-                  <option>Retail Sales Worker</option>
-                  <option>Insurance Sales Agent</option>
-                  <option>Sales Representative</option>
-                  <option>Real Estate Sales Agent</option>
-                  <option>Other Services Occupation</option>
-                  <option>Construction and Extraction (e.g., Construction Laborer, Electrician)</option>
-                  <option>Farming, Fishing, and Forestry</option>
-                  <option>Installation, Maintenance, and Repair</option>
-                  <option>Production Occupations</option>
-                  <option>Other Agriculture, Maintenance, Repair, and Skilled Crafts Occupation</option>
-                  <option>Aircraft Pilot or Flight Engineer</option>
-                  <option>Motor Vehicle Operator (e.g., Ambulance, Bus, Taxi, or Truck Driver)</option>
-                  <option>Other Transportation Occupation</option>
-                  <option>Military</option>
-                  <option>Homemaker</option>
-                  <option>Other Occupation</option>
-                  <option>Don't Know</option>
-                  <option>Not Applicable</option>
-                </datalist>
+                <select class="form-control form-select" style="cursor: pointer;" list="duration"
+                  placeholder="How long you want to stay?">
+                  <option selected class="text-muted">How long you want to stay?</option>
+                  <option>3 months</option>
+                  <option>6 months</option>
+                  <option>9 months</option>
+                  <option>12 months</option>
+                </select>
               </div>
-            </div>
-          </div>
-          <hr class="text-black" />
 
-          <div class="row">
+            </div>
             <div class="col-sm-6 my-2">
               <h5 class="align-items-center text-black">Nationality</h5>
               <div class="input-group">
@@ -484,21 +427,11 @@
                 </select>
               </div>
             </div>
-          </div>
-          <hr class="text-black" />
-
-          <div class="row">
             <div class="col-sm-6 my-2">
-              <h5 class="align-items-center text-black">Duration of tenancy</h5>
+              
+              <h5 class="align-items-center text-black">Occupation</h5>
               <div class="input-group">
-                <select class="form-control form-select" style="cursor: pointer;" list="duration"
-                  placeholder="How long you want to stay?">
-                  <option selected class="text-muted">How long you want to stay?</option>
-                  <option>3 months</option>
-                  <option>6 months</option>
-                  <option>9 months</option>
-                  <option>12 months</option>
-                </select>
+                <input type="text" class="form-control" placeholder="What is your occupation?">
               </div>
             </div>
           </div>
@@ -529,7 +462,7 @@
       <div class="row">
         <div class="col-md-4 col-6">
           <a href="index.html" rel="tooltip" title="Rizurf-Logo" data-placement="bottom" target="_blank">
-            <img src="assets/img/rizurflogo-white.png" class="widthRes">
+            <img src="/assets/img/rizurflogo-white.png" class="widthRes">
           </a>
           <ul class="footerlist mt-3">
             <li>
@@ -590,26 +523,26 @@
                   <li>
                     <a class="socialmediaicon" rel="tooltip" title="Like us on Facebook" data-placement="bottom"
                       href="#" target="_blank">
-                      <img src="assets/img/facebook.svg" alt="..." width="30px" />
+                      <img src="/assets/img/facebook.svg" alt="..." width="30px" />
 
                     </a>
                   </li>
                   <li>
                     <a class="socialmediaicon" rel="tooltip" title="Follow us on Instagram" data-placement="bottom"
                       href="#" target="_blank">
-                      <img src="assets/img/instagram.svg" alt="..." width="30px" />
+                      <img src="/assets/img/instagram.svg" alt="..." width="30px" />
                     </a>
                   </li>
                   <li>
                     <a class="socialmediaicon" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="#"
                       target="_blank">
-                      <img src="assets/img/tik-tok.svg" alt="..." width="30px" />
+                      <img src="/assets/img/tik-tok.svg" alt="..." width="30px" />
                     </a>
                   </li>
                   <li>
                     <a class="socialmediaicon" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="#"
                       target="_blank">
-                      <img src="assets/img/youtube.svg" alt="..." width="40px" />
+                      <img src="/assets/img/youtube.svg" alt="..." width="40px" />
                     </a>
                   </li>
                 </ul>
@@ -644,17 +577,17 @@
   <!--   Core JS Files   -->
   <!--   Core JS Files   -->
   <div class="kc_fab_wrapper"></div>
-  <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
-  <script src="assets/js/plugins/bootstrap-switch.js"></script>
-  <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-  <script src="assets/js/plugins/moment.min.js"></script>
-  <script src="assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
-  <script src="assets/js/rizurfjs.js" type="text/javascript"></script>
+  <script src="/assets/js/plugins/bootstrap-switch.js"></script>
+  <script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <script src="/assets/js/plugins/moment.min.js"></script>
+  <script src="/assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+  <script src="/assets/js/rizurfjs.js" type="text/javascript"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <script>
     function myFunction() {
@@ -666,13 +599,13 @@
       var links = [
         {
           "bgcolor": "#51cbce",
-          "icon": "<img src='assets/img/chat.svg' alt='...' width='35px' />"
+          "icon": "<img src='/assets/img/chat.svg' alt='...' width='35px' />"
         },
         {
           "url": "https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.",
           "bgcolor": "#25D366",
           "color": "#fffff",
-          "icon": "<img src='assets/img/whatsappcolorised.svg' alt='...' width='20px' />",
+          "icon": "<img src='/assets/img/whatsappcolorised.svg' alt='...' width='20px' />",
           "target": "_blank",
           "title": "Whatsapp Us"
         },
@@ -680,7 +613,7 @@
           "url": "http://www.example.com",
           "bgcolor": "#fff",
           "color": "#006AFF",
-          "icon": "<img src='assets/img/facebook-messenger-logo.svg' alt='...' width='20px' />",
+          "icon": "<img src='/assets/img/facebook-messenger-logo.svg' alt='...' width='20px' />",
           "title": "FB Messenger Us"
         }
       ]

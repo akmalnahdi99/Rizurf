@@ -356,9 +356,19 @@
   box-shadow: none;
 }
 
+.card-img-top {
+  position: relative;
+}
+
+.cardbadge {
+  position: absolute;
+  top: 10px;
+  left: 21px;
+}
+
 .card-agent {
   position: absolute;
-  bottom: 78px;
+  bottom: 0;
   width: 100%;
   background: rgba(10, 74, 126, 0.363);
 }
@@ -521,6 +531,7 @@
 .mediabar a:hover {
   text-decoration: underline 3px solid #51cbce !important
 }
+
 .mediabar.whitelink a {
   font-weight: 600 !important;
   font-size: 16px !important;
@@ -618,6 +629,7 @@ video {
 .bkgtransparent {
   background: transparent !important;
 }
+
 .litegray {
   background: #e8e9ea !important;
 }
@@ -664,9 +676,10 @@ video {
   border: 1px solid #c7c7c7;
 }
 
-.hrdotted{
+.hrdotted {
   border-top: 3px dotted#c7c7c7;
 }
+
 .widget {
   position: sticky;
   bottom: 0;
@@ -703,6 +716,7 @@ button.close {
   list-style: none;
   padding-inline-start: 0px;
 }
+
 .sharelist li {
   margin-right: 10px;
 }
@@ -810,12 +824,12 @@ button.close {
   font-size: 12px;
   text-align: center
 }
+
 .contentbarlist ul li .scrolled a {
   text-decoration: none;
   color: #000;
   border-bottom: 3px solid #51cbce !important
 }
-
 
 .contentbarlist ul li a:hover {
   text-decoration: none;
@@ -836,18 +850,20 @@ button.close {
 }
 
 /* heart overlay */
+
 .heart-overlay {
   position: absolute;
   right: 10px;
   top: 10px;
 }
 
-
 /* arrow down */
+
 .arrowdown {
   padding: 20px 0px;
 }
-.arrowdown img{
+
+.arrowdown img {
   margin-right: auto;
   margin-left: auto;
   position: absolute;
@@ -890,7 +906,7 @@ button.close {
 
 .lSSlideWrapper {
   border-radius: 15px;
-  -webkit-border-radius: 15px; 
+  -webkit-border-radius: 15px;
 }
 
 .unitgallery {
@@ -942,6 +958,7 @@ button.close {
 /* favorite checked  - for hearts as favorite, i will remove all the css except 1 class as we using variables*/
 
 /* heart 1 */
+
 [id="heart"] {
   position: absolute;
   left: -100vw;
@@ -951,7 +968,7 @@ button.close {
   color: #aab8c2;
   cursor: pointer;
   font-size: 25px;
-  align-self: center;  
+  align-self: center;
   transition: color 0.2s ease-in-out;
 }
 
@@ -969,13 +986,14 @@ button.close {
   background: transparent;
 }
 
-[id="heart"]:checked + label {
+[id="heart"]:checked+label {
   color: #e2264d;
   will-change: font-size;
   animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
-} 
+}
 
 /* heart 2 */
+
 [id="heart2"] {
   position: absolute;
   left: -100vw;
@@ -985,7 +1003,7 @@ button.close {
   color: #aab8c2;
   cursor: pointer;
   font-size: 25px;
-  align-self: center;  
+  align-self: center;
   transition: color 0.2s ease-in-out;
 }
 
@@ -1003,12 +1021,14 @@ button.close {
   background: transparent;
 }
 
-[id="heart2"]:checked + label {
+[id="heart2"]:checked+label {
   color: #e2264d;
   will-change: font-size;
   animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
-} 
+}
+
 /* heart 3 */
+
 [id="heart3"] {
   position: absolute;
   left: -100vw;
@@ -1018,7 +1038,7 @@ button.close {
   color: #aab8c2;
   cursor: pointer;
   font-size: 25px;
-  align-self: center;  
+  align-self: center;
   transition: color 0.2s ease-in-out;
 }
 
@@ -1036,13 +1056,14 @@ button.close {
   background: transparent;
 }
 
-[id="heart3"]:checked + label {
+[id="heart3"]:checked+label {
   color: #e2264d;
   will-change: font-size;
   animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
-} 
+}
 
 /* heart 4 */
+
 [id="heart4"] {
   position: absolute;
   left: -100vw;
@@ -1052,7 +1073,7 @@ button.close {
   color: #aab8c2;
   cursor: pointer;
   font-size: 25px;
-  align-self: center;  
+  align-self: center;
   transition: color 0.2s ease-in-out;
 }
 
@@ -1070,13 +1091,14 @@ button.close {
   background: transparent;
 }
 
-[id="heart4"]:checked + label {
+[id="heart4"]:checked+label {
   color: #e2264d;
   will-change: font-size;
   animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
-} 
+}
 
 /* heart 5 */
+
 [id="heart5"] {
   position: absolute;
   left: -100vw;
@@ -1086,7 +1108,7 @@ button.close {
   color: #aab8c2;
   cursor: pointer;
   font-size: 25px;
-  align-self: center;  
+  align-self: center;
   transition: color 0.2s ease-in-out;
 }
 
@@ -1104,13 +1126,14 @@ button.close {
   background: transparent;
 }
 
-[id="heart5"]:checked + label {
+[id="heart5"]:checked+label {
   color: #e2264d;
   will-change: font-size;
   animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
-} 
+}
 
 /* heart 6 */
+
 [id="heart6"] {
   position: absolute;
   left: -100vw;
@@ -1120,7 +1143,7 @@ button.close {
   color: #aab8c2;
   cursor: pointer;
   font-size: 25px;
-  align-self: center;  
+  align-self: center;
   transition: color 0.2s ease-in-out;
 }
 
@@ -1138,14 +1161,14 @@ button.close {
   background: transparent;
 }
 
-[id="heart6"]:checked + label {
+[id="heart6"]:checked+label {
   color: #e2264d;
   will-change: font-size;
   animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
-} 
-
+}
 
 /* heart 7 */
+
 [id="heart7"] {
   position: absolute;
   left: -100vw;
@@ -1155,7 +1178,7 @@ button.close {
   color: #aab8c2;
   cursor: pointer;
   font-size: 25px;
-  align-self: center;  
+  align-self: center;
   transition: color 0.2s ease-in-out;
 }
 
@@ -1173,14 +1196,14 @@ button.close {
   background: transparent;
 }
 
-[id="heart7"]:checked + label {
+[id="heart7"]:checked+label {
   color: #e2264d;
   will-change: font-size;
   animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
-} 
-
+}
 
 /* heart 8 */
+
 [id="heart8"] {
   position: absolute;
   left: -100vw;
@@ -1190,7 +1213,7 @@ button.close {
   color: #aab8c2;
   cursor: pointer;
   font-size: 25px;
-  align-self: center;  
+  align-self: center;
   transition: color 0.2s ease-in-out;
 }
 
@@ -1208,29 +1231,31 @@ button.close {
   background: transparent;
 }
 
-[id="heart8"]:checked + label {
+[id="heart8"]:checked+label {
   color: #e2264d;
   will-change: font-size;
   animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
-} 
+}
 
 /* 3d carousel */
 
 .coverflow {
   display: flex;
-	 justify-content: center;
-	 align-items: center;
-   background:transparent;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
 }
 
 .carousel-container {
   position: relative;
   width: 640px;
 }
-.carousel-container a{
+
+.carousel-container a {
   color: #000;
 }
-.carousel-container a:hover{
+
+.carousel-container a:hover {
   color: #51cbce;
 }
 
@@ -1253,6 +1278,7 @@ button.close {
   box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
+
 .carousel-feature a {
   font-size: 18px;
 }
@@ -1264,6 +1290,7 @@ button.close {
 }
 
 /* Table */
+
 .table {
   margin-bottom: 0;
   vertical-align: middle;
@@ -1282,6 +1309,7 @@ button.close {
 .table>:not(caption)>*>* {
   padding: 1rem 1rem;
 }
+
 .table.tablesm>:not(caption)>*>* {
   padding: 0.5rem 0.5rem;
 }
@@ -1305,7 +1333,6 @@ tr.tbnoborderbtm {
 .timelineDiv {
   margin-top: 20px;
   position: relative;
-
 }
 
 .timelineDiv:before {
@@ -1409,8 +1436,6 @@ tr.tbnoborderbtm {
   margin-bottom: 15px;
 }
 
-
-
 .box-icon {
   position: absolute;
   right: 5px;
@@ -1450,8 +1475,9 @@ tr.tbnoborderbtm {
 }
 
 /* date of invoice */
-.datefont p{
- font-size: 13px;
+
+.datefont p {
+  font-size: 13px;
 }
 
 /* splide slider */
@@ -2011,11 +2037,11 @@ img.profile {
   pointer-events: none;
 }
 
-.fas-fa-info-circle-new{
-      text-align: center;
-      font-size: 18px;
-      vertical-align: text-top;
-    }
+.fas-fa-info-circle-new {
+  text-align: center;
+  font-size: 18px;
+  vertical-align: text-top;
+}
 
 .sub_fab_btns_wrapper {
   right: 0;
@@ -2789,6 +2815,7 @@ button.kc_fab_main_btn {
   opacity: 1;
   transform: scale(1.08);
 }
+
 .center h3 {
   opacity: 0.8;
   transition: all 300ms ease;
@@ -2804,21 +2831,20 @@ button.kc_fab_main_btn {
   .section {
     padding: 0;
     height: auto;
-}
-.card {
-  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
-  border: 0px solid rgb(209, 208, 208);
-}
-.card:not(.card-plain):hover {
-  box-shadow: 0 6px 10px 3px rgba(0, 0, 0, 0);
-  transform: translateY(0px);
-  -webkit-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-}
-.footer.copyrighted {
-  padding: 10px 5px;
-  border-top: 0px solid #353535;
-}
-
+  }
+  .card {
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
+    border: 0px solid rgb(209, 208, 208);
+  }
+  .card:not(.card-plain):hover {
+    box-shadow: 0 6px 10px 3px rgba(0, 0, 0, 0);
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+  }
+  .footer.copyrighted {
+    padding: 10px 5px;
+    border-top: 0px solid #353535;
+  }
 }

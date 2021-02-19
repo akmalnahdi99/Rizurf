@@ -304,10 +304,10 @@ function debounce(func, wait, immediate) {
 $(function () { 
   $(window).scroll(function () {
       if ($(this).scrollTop() > 90) { 
-          $('.navbar .logo img').attr('src','assets/img/rizurflogo-color.png');
+          $('.navbar .logo img').attr('src','/assets/img/rizurflogo-color.png');
       }
       if ($(this).scrollTop() < 90) { 
-          $('.navbar .logo img').attr('src','assets/img/rizurflogo-white.png');
+          $('.navbar .logo img').attr('src','/assets/img/rizurflogo-white.png');
       }
   })
 });
