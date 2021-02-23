@@ -987,7 +987,7 @@ button.close {
 }
 
 [id="heart"]:checked+label {
-  color: #e2264d;
+  color: #f33f3f;
   will-change: font-size;
   animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
 }
