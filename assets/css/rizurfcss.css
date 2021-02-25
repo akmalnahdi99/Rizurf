@@ -3,6 +3,10 @@
   margin-bottom: 20px;
 }
 
+.cover-container {
+  max-width: 42em;
+}
+
 .rizurf-white-buttons {
   background-color: #777777;
 }

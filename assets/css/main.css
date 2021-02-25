@@ -1208,9 +1208,9 @@
   outline: 0 !important;
 }
 
-.btn[class*="btn-outline-"] {
+/* .btn[class*="btn-outline-"] {
   background-color: transparent;
-}
+} */
 
 .btn .nc-icon {
   position: relative;
@@ -5222,6 +5222,11 @@ License - nucleoapp.com/license/
   width: 100%;
   bottom: 0;
 }
+.footer.footer-absolute {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
 
 ul.footerlist {
   padding-inline-start: 0px !important;
@@ -5464,7 +5469,12 @@ ul.footerlist {
 }
 
 .card .card-link {
-  color: #FFFFFF;
+  color: #0ab5e9 !important;
+  font-weight: 500;
+}
+.card .card-link:hover {
+  color: #0a8dca !important;
+  text-decoration: underline;
 }
 
 .card .card-background-image ul li {
@@ -6308,6 +6318,9 @@ ul.footerlist {
 }
 .section.sectionpad3 {
   padding: 150px 0px;
+}
+.section.sectionpad4 {
+  padding: 150px 0 100px;
 }
 
 .section.sectionnopad {
